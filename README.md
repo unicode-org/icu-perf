@@ -23,14 +23,14 @@ The performance tests execution and time measurment is a layered process.
   Each API invocation iteration iterates 1,114,112 times and calls isAlpha()
   once at each iteration with the respective code point.
 * Loops: For illustration, let's assume that the calibration phase determines
-  that the above 1,114,112 iterations can be repeated 1,000 times within
+  that the above 1,114,112 iterations can be repeated 1,600 times within
   5 seconds.
 * Passes: Each pass runs 1,600 loops of 1,114,112 iterations and records the
   execution time of the 1,600 loops. If the number of passes is set to 10,
   we get 10 performance numbers.
 * Final calculation: The minimum number among the passes is selected and
   divided by loops*iterations.
-  In this example: "minimum pass"/(1,000 * 1,114,112). The result is the average
+  In this example: "minimum pass"/(1,600 * 1,114,112). The result is the average
   execution time of one call of isAlpha() from the fastest pass.
   
 ## Performance Test Charts
@@ -98,7 +98,7 @@ data processed.
 * Ustrperf:
   Performance tests for a variety of Unicode string functions or operators:
   constructors, assignments (setTo, =), charAt(), concatenate (+), indexOf().
-  Time measures is per line of the test data.
+  Time measured is per line of the test data.
 
   * [TestNames_Asian](https://unicode-org.github.io/icu-perf/results/ustrperf/TestNames_Asian/)
   * [TestNames_Chinese](https://unicode-org.github.io/icu-perf/results/ustrperf/TestNames_Chinese/)
@@ -112,6 +112,19 @@ data processed.
   * [TestNames_Simplified_Chinese](https://unicode-org.github.io/icu-perf/results/ustrperf/TestNames_Simplified_Chinese/)
   * [TestNames_Thai](https://unicode-org.github.io/icu-perf/results/ustrperf/TestNames_Thai/)
   * [th18057](https://unicode-org.github.io/icu-perf/results/ustrperf/th18057/)
+
+* Strsrchperf:
+  Performance tests for usearch_next() and usearch_previous() for a variety of
+  locales and corresponding test data files.
+  Time measured is per character in the test data file.
+
+  * [de](https://unicode-org.github.io/icu-perf/results/strsrchperf/de/)
+  * [en](https://unicode-org.github.io/icu-perf/results/strsrchperf/en/)
+  * [fr](https://unicode-org.github.io/icu-perf/results/strsrchperf/fr/)
+  * [ja](https://unicode-org.github.io/icu-perf/results/strsrchperf/ja/)
+  * [ru](https://unicode-org.github.io/icu-perf/results/strsrchperf/ru/)
+  * [th](https://unicode-org.github.io/icu-perf/results/strsrchperf/th/)
+  * [zh](https://unicode-org.github.io/icu-perf/results/strsrchperf/zh/)
 
 # LICENSE
 
