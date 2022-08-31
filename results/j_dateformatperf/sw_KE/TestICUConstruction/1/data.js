@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1661539236777,
+  "lastUpdate": 1661903795929,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -868,6 +868,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUConstruction",
             "value": 3783.7220150127478,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "yumaoka@users.noreply.github.com",
+            "name": "Yoshito Umaoka",
+            "username": "yumaoka"
+          },
+          "committer": {
+            "email": "yumaoka@users.noreply.github.com",
+            "name": "Yoshito Umaoka",
+            "username": "yumaoka"
+          },
+          "distinct": true,
+          "id": "3e6219ba4d309acb7f48deca96100127ade8d084",
+          "message": "ICU-21957 BRS72 organize import statements",
+          "timestamp": "2022-08-30T19:34:01-04:00",
+          "tree_id": "b0d2f65c1c26b0904a5b30ddac24f9151758e67f",
+          "url": "https://github.com/unicode-org/icu/commit/3e6219ba4d309acb7f48deca96100127ade8d084"
+        },
+        "date": 1661902799900,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 3339.994065733814,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "y.umaoka@gmail.com",
+            "name": "yumaoka",
+            "username": "yumaoka"
+          },
+          "committer": {
+            "email": "yumaoka@users.noreply.github.com",
+            "name": "Yoshito Umaoka",
+            "username": "yumaoka"
+          },
+          "distinct": true,
+          "id": "3d935f2d493bc613d9884a7878d04fb5515f5005",
+          "message": "ICU-21957 BRS72 Updating currency numeric code data.",
+          "timestamp": "2022-08-30T19:34:49-04:00",
+          "tree_id": "f1ca2d572a984c9eac3146ef873f3cd4e95cdb74",
+          "url": "https://github.com/unicode-org/icu/commit/3d935f2d493bc613d9884a7878d04fb5515f5005"
+        },
+        "date": 1661903791032,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 4180.374307971597,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

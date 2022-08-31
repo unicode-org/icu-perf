@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1661539394533,
+  "lastUpdate": 1661904066712,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -2038,6 +2038,126 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFC_Text",
             "value": 12.16856937540731,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "yumaoka@users.noreply.github.com",
+            "name": "Yoshito Umaoka",
+            "username": "yumaoka"
+          },
+          "committer": {
+            "email": "yumaoka@users.noreply.github.com",
+            "name": "Yoshito Umaoka",
+            "username": "yumaoka"
+          },
+          "distinct": true,
+          "id": "3e6219ba4d309acb7f48deca96100127ade8d084",
+          "message": "ICU-21957 BRS72 organize import statements",
+          "timestamp": "2022-08-30T19:34:01-04:00",
+          "tree_id": "b0d2f65c1c26b0904a5b30ddac24f9151758e67f",
+          "url": "https://github.com/unicode-org/icu/commit/3e6219ba4d309acb7f48deca96100127ade8d084"
+        },
+        "date": 1661903069605,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 11.387833501568048,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "yumaoka@users.noreply.github.com",
+            "name": "Yoshito Umaoka",
+            "username": "yumaoka"
+          },
+          "committer": {
+            "email": "yumaoka@users.noreply.github.com",
+            "name": "Yoshito Umaoka",
+            "username": "yumaoka"
+          },
+          "distinct": true,
+          "id": "3e6219ba4d309acb7f48deca96100127ade8d084",
+          "message": "ICU-21957 BRS72 organize import statements",
+          "timestamp": "2022-08-30T19:34:01-04:00",
+          "tree_id": "b0d2f65c1c26b0904a5b30ddac24f9151758e67f",
+          "url": "https://github.com/unicode-org/icu/commit/3e6219ba4d309acb7f48deca96100127ade8d084"
+        },
+        "date": 1661903143236,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 14.250520102385055,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "y.umaoka@gmail.com",
+            "name": "yumaoka",
+            "username": "yumaoka"
+          },
+          "committer": {
+            "email": "yumaoka@users.noreply.github.com",
+            "name": "Yoshito Umaoka",
+            "username": "yumaoka"
+          },
+          "distinct": true,
+          "id": "3d935f2d493bc613d9884a7878d04fb5515f5005",
+          "message": "ICU-21957 BRS72 Updating currency numeric code data.",
+          "timestamp": "2022-08-30T19:34:49-04:00",
+          "tree_id": "f1ca2d572a984c9eac3146ef873f3cd4e95cdb74",
+          "url": "https://github.com/unicode-org/icu/commit/3d935f2d493bc613d9884a7878d04fb5515f5005"
+        },
+        "date": 1661904033915,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 13.96344009810115,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "y.umaoka@gmail.com",
+            "name": "yumaoka",
+            "username": "yumaoka"
+          },
+          "committer": {
+            "email": "yumaoka@users.noreply.github.com",
+            "name": "Yoshito Umaoka",
+            "username": "yumaoka"
+          },
+          "distinct": true,
+          "id": "3d935f2d493bc613d9884a7878d04fb5515f5005",
+          "message": "ICU-21957 BRS72 Updating currency numeric code data.",
+          "timestamp": "2022-08-30T19:34:49-04:00",
+          "tree_id": "f1ca2d572a984c9eac3146ef873f3cd4e95cdb74",
+          "url": "https://github.com/unicode-org/icu/commit/3d935f2d493bc613d9884a7878d04fb5515f5005"
+        },
+        "date": 1661904063159,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 12.491963464611617,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
