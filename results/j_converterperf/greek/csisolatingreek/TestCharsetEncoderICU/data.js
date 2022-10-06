@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1664568071575,
+  "lastUpdate": 1665072768834,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -2548,6 +2548,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 2.2886880740754427,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pedberg@unicode.org",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "committer": {
+            "email": "42151464+pedberg-icu@users.noreply.github.com",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "distinct": true,
+          "id": "fe17bab2bb1499a30f10453228ab31173f0d2e83",
+          "message": "ICU-21958 integrate CLDR release-42-beta3 to ICU main for 72",
+          "timestamp": "2022-10-06T08:40:32-07:00",
+          "tree_id": "d7afe17aae18d2fa4edc38a5a0d269d7ca13be5b",
+          "url": "https://github.com/unicode-org/icu/commit/fe17bab2bb1499a30f10453228ab31173f0d2e83"
+        },
+        "date": 1665071045601,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 2.344144998552718,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ccornelius@google.com",
+            "name": "Craig Cornelius",
+            "username": "sven-oly"
+          },
+          "committer": {
+            "email": "cwcornelius@gmail.com",
+            "name": "Craig Cornelius",
+            "username": "sven-oly"
+          },
+          "distinct": true,
+          "id": "599ecdc4a181062c47ea500a72145c40e42982d8",
+          "message": "ICU-21958 Improved process for Releasing ICU API Docs",
+          "timestamp": "2022-10-06T09:07:55-07:00",
+          "tree_id": "d63d033e13575c68686acb09a088dff586018ce8",
+          "url": "https://github.com/unicode-org/icu/commit/599ecdc4a181062c47ea500a72145c40e42982d8"
+        },
+        "date": 1665072760719,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 2.3458814359263735,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
