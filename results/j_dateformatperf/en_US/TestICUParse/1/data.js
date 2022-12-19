@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1671153258337,
+  "lastUpdate": 1671415406882,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -3838,6 +3838,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUParse",
             "value": 495.74023211837,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "committer": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "distinct": true,
+          "id": "f6353aeedcfa4b5907f1037a9d924660ff8f4d87",
+          "message": "ICU-12811 Make CI jobs for Maven run serially to avoid CI cache race condition",
+          "timestamp": "2022-12-17T12:59:35-05:00",
+          "tree_id": "0392e4c95b704e3f6885fc5bed37e19012ad8259",
+          "url": "https://github.com/unicode-org/icu/commit/f6353aeedcfa4b5907f1037a9d924660ff8f4d87"
+        },
+        "date": 1671300271110,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUParse",
+            "value": 495.86001570083494,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "82115c060f14dc68601ccd66bcb2fa6e6918d926",
+          "message": "ICU-22193 Make clang-release-build-and-test work with ubuntu-latest.\n\nContemporary implementations of the C++ standard library also use the\n@deprecated annotation in its header files and these then get included\nby the preprocessor when preprocessing the ICU header files, like this:\n\n  /// @deprecated Non-standard. Use `is_null_pointer` instead.\n\nIn order to work as expected, testtagsguards.sh must therefore be\nupdated to ignore @deprecated annotations unless they're for ICU.",
+          "timestamp": "2022-12-19T10:56:01+09:00",
+          "tree_id": "ad9a42e55c0d1d045b196e9d43b859fcf6e2d39d",
+          "url": "https://github.com/unicode-org/icu/commit/82115c060f14dc68601ccd66bcb2fa6e6918d926"
+        },
+        "date": 1671415394795,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUParse",
+            "value": 492.17604168675894,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
