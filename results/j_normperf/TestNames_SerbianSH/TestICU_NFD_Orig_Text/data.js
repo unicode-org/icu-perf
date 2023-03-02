@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1677548699448,
+  "lastUpdate": 1677714401218,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -5668,6 +5668,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_Orig_Text",
             "value": 14.572550516159653,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "d8e80fea88fe5b48d305444e19c07ddaee4952eb",
+          "message": "ICU-21833 remove pre-C++11 code; U_SIZEOF_UCHAR=2",
+          "timestamp": "2023-03-01T15:23:34-08:00",
+          "tree_id": "e5f398604863be223e30b7161b88a49d44a183b0",
+          "url": "https://github.com/unicode-org/icu/commit/d8e80fea88fe5b48d305444e19c07ddaee4952eb"
+        },
+        "date": 1677713678061,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_Orig_Text",
+            "value": 12.652926044875157,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "28643799377ecf654564f6f31854b02788cebe33",
+          "message": "ICU-21833 replace U_NOEXCEPT with C++11 standard noexcept",
+          "timestamp": "2023-03-01T15:24:34-08:00",
+          "tree_id": "270c042f0a59e17ed55a92489897e2ee8f42f78e",
+          "url": "https://github.com/unicode-org/icu/commit/28643799377ecf654564f6f31854b02788cebe33"
+        },
+        "date": 1677714379359,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_Orig_Text",
+            "value": 12.170988016708858,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

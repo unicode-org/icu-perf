@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1677548766137,
+  "lastUpdate": 1677714669926,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -7450,6 +7450,78 @@ window.BENCHMARK_DATA = {
           {
             "name": "Test_ICU_Backward_Search",
             "value": 68.2495,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "d8e80fea88fe5b48d305444e19c07ddaee4952eb",
+          "message": "ICU-21833 remove pre-C++11 code; U_SIZEOF_UCHAR=2",
+          "timestamp": "2023-03-01T15:23:34-08:00",
+          "tree_id": "e5f398604863be223e30b7161b88a49d44a183b0",
+          "url": "https://github.com/unicode-org/icu/commit/d8e80fea88fe5b48d305444e19c07ddaee4952eb"
+        },
+        "date": 1677714459970,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Test_ICU_Forward_Search",
+            "value": 32.1966,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "Test_ICU_Backward_Search",
+            "value": 52.1691,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "28643799377ecf654564f6f31854b02788cebe33",
+          "message": "ICU-21833 replace U_NOEXCEPT with C++11 standard noexcept",
+          "timestamp": "2023-03-01T15:24:34-08:00",
+          "tree_id": "270c042f0a59e17ed55a92489897e2ee8f42f78e",
+          "url": "https://github.com/unicode-org/icu/commit/28643799377ecf654564f6f31854b02788cebe33"
+        },
+        "date": 1677714644942,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Test_ICU_Forward_Search",
+            "value": 40.4745,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "Test_ICU_Backward_Search",
+            "value": 74.3854,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
