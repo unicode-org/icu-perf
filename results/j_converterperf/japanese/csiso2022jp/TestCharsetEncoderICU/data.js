@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679068425811,
+  "lastUpdate": 1679071907929,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -6628,6 +6628,126 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 32.615137906768446,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "74641a344e231c01570ed99025ef4319a2186be6",
+          "message": "ICU-12725 adjust API docs for new impl != JDK",
+          "timestamp": "2023-03-17T08:48:42-07:00",
+          "tree_id": "be6d51e4869ff2f00298db834c887868e9b47b07",
+          "url": "https://github.com/unicode-org/icu/commit/74641a344e231c01570ed99025ef4319a2186be6"
+        },
+        "date": 1679069168413,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 48.300056053065354,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pedberg@unicode.org",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "committer": {
+            "email": "42151464+pedberg-icu@users.noreply.github.com",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "distinct": true,
+          "id": "70ed5b4702fc4e1526478260a3674855df5ea134",
+          "message": "ICU-21940 DateFormatSymbols::assignArray should handle null srcArray",
+          "timestamp": "2023-03-17T08:52:19-07:00",
+          "tree_id": "d98fea6e0f7f9944a79314bd513a7a042af1fc18",
+          "url": "https://github.com/unicode-org/icu/commit/70ed5b4702fc4e1526478260a3674855df5ea134"
+        },
+        "date": 1679070232380,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 37.683154432538366,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pandeyrah@microsoft.com",
+            "name": "Rahul Pandey",
+            "username": "rp9-next"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "3076874c3231047f55c561e1dd797137e764efea",
+          "message": "ICU-22301 Add azure CI tests to be run post merge\n\nSee #2363",
+          "timestamp": "2023-03-17T08:57:01-07:00",
+          "tree_id": "e08301f68d681be212cb45ee1fdc186741b2cdcc",
+          "url": "https://github.com/unicode-org/icu/commit/3076874c3231047f55c561e1dd797137e764efea"
+        },
+        "date": 1679070976347,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 37.39852158562143,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kirill@korins.ky",
+            "name": "Kirill A. Korinsky",
+            "username": "catap"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "f2459c16dccd26e0cc07580e43e06e852dfc3104",
+          "message": "ICU-22211 macOS PPC should use `.p2align 4` instead `.balign 16`\n\nAn attempt to build ICU on old macOS with PowerPC leads to an issue:\n```\n./out/tmp/icudt72b_dat.S:7:Unknown pseudo-op: .balign\n./out/tmp/icudt72b_dat.S:7:Rest of line ignored. 1st junk character valued 49 (1).\n```\n\nWhy? Because `as` is too old.\n\nAnyway, switch back to `.p2align` fix a build and allows to pass all tests.\n\nSee: https://trac.macports.org/ticket/66258\n\nSigned-off-by: Kirill A. Korinsky <kirill@korins.ky>",
+          "timestamp": "2023-03-17T09:10:21-07:00",
+          "tree_id": "f494b28370b81547138598de04ce1cf627d5f5a1",
+          "url": "https://github.com/unicode-org/icu/commit/f2459c16dccd26e0cc07580e43e06e852dfc3104"
+        },
+        "date": 1679071881782,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 39.533570849986745,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
