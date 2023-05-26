@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1685130139589,
+  "lastUpdate": 1685134845724,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -9058,6 +9058,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 0.01708202491053932,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "manishsmail@gmail.com",
+            "name": "Manish Goregaokar",
+            "username": "Manishearth"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "8bbb8f506ea0f4c2fe5ea5fd1cdadbd53d11ced6",
+          "message": "ICU-22403 Fix icuexportdata out-of-bounds during decomposition",
+          "timestamp": "2023-05-26T13:27:55-07:00",
+          "tree_id": "a6e5ee837a7db2fa3da2efd7831214d119e2784c",
+          "url": "https://github.com/unicode-org/icu/commit/8bbb8f506ea0f4c2fe5ea5fd1cdadbd53d11ced6"
+        },
+        "date": 1685133433164,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 0.014312864482808786,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "shane@unicode.org",
+            "name": "Shane F. Carr",
+            "username": "sffc"
+          },
+          "committer": {
+            "email": "shane@unicode.org",
+            "name": "Shane F. Carr",
+            "username": "sffc"
+          },
+          "distinct": true,
+          "id": "de26ea8c6a37c4f6e1382560fb8f791f7cecaa2b",
+          "message": "ICU-22322 Revert extra parallelism for data-filter test in .azure-pipelines.yml\n\nSee #2471",
+          "timestamp": "2023-05-26T13:39:11-07:00",
+          "tree_id": "661eaf1a4ee4fa0f6d79244e29c7b4b7cbbc431d",
+          "url": "https://github.com/unicode-org/icu/commit/de26ea8c6a37c4f6e1382560fb8f791f7cecaa2b"
+        },
+        "date": 1685134804540,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 0.013150840766962775,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
