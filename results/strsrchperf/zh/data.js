@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1687476391384,
+  "lastUpdate": 1687894707459,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -12130,6 +12130,78 @@ window.BENCHMARK_DATA = {
           {
             "name": "Test_ICU_Backward_Search",
             "value": 76.2381,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "vichang@google.com",
+            "name": "Victor Chang",
+            "username": "gvictor"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "83ee7e662f8b027e653f5e8b7afd73738782c088",
+          "message": "ICU-22390 Transliterator.<clinit> can be optimized - part 2\n\nWIDTH_FIX instance could be lazily initialized, because it's used\nonly if transliterate() is called on the AnyTransliterator instance,\nbut apparently not used by other Transliterator instance.",
+          "timestamp": "2023-06-27T11:25:43-07:00",
+          "tree_id": "027a15f4548f8c7c1ac95506a236d995de9870e5",
+          "url": "https://github.com/unicode-org/icu/commit/83ee7e662f8b027e653f5e8b7afd73738782c088"
+        },
+        "date": 1687893466885,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Test_ICU_Forward_Search",
+            "value": 29.3584,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "Test_ICU_Backward_Search",
+            "value": 63.7877,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "shane@unicode.org",
+            "name": "Shane F. Carr",
+            "username": "sffc"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "4a255c4301f99183d2dae99f4ddd1ce6d60f8b35",
+          "message": "ICU-21239 Improve docs for MeasureUnit default constructor",
+          "timestamp": "2023-06-27T11:27:25-07:00",
+          "tree_id": "5376b9db51ec6af5e68ff75d58687d8f948ddddf",
+          "url": "https://github.com/unicode-org/icu/commit/4a255c4301f99183d2dae99f4ddd1ce6d60f8b35"
+        },
+        "date": 1687894661829,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Test_ICU_Forward_Search",
+            "value": 25.3014,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "Test_ICU_Backward_Search",
+            "value": 49.9583,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
