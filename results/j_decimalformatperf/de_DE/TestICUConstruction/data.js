@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1689033622438,
+  "lastUpdate": 1689268158927,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -9778,6 +9778,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUConstruction",
             "value": 445.1605302471486,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "shane@unicode.org",
+            "name": "Shane F. Carr",
+            "username": "sffc"
+          },
+          "committer": {
+            "email": "shane@unicode.org",
+            "name": "Shane F. Carr",
+            "username": "sffc"
+          },
+          "distinct": true,
+          "id": "034a8086049336e105179d98c6f7492ee4e6b47e",
+          "message": "ICU-20898 Improve number skeleton rounding increment docs\n\nSee #2475",
+          "timestamp": "2023-07-13T18:41:05+02:00",
+          "tree_id": "797bd0b27ddcb31a228faa17e9f638741ebe7ff2",
+          "url": "https://github.com/unicode-org/icu/commit/034a8086049336e105179d98c6f7492ee4e6b47e"
+        },
+        "date": 1689267030523,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 610.9329814913995,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "5826bf7ed7f45afd18793c491313b86e2b9385ba",
+          "message": "ICU-22434 Not calling setFirstDayOfWeek(MONDAY) if the locale has fw\n\nThe Calendar constructor already take care of the fw override.\nWe should not set the first day of week for iso8601 to Monday if\nwe have a fw keyword/type in the locale.\n\nICU-22434 Fix incorrect calendar keyword extraction",
+          "timestamp": "2023-07-13T09:49:32-07:00",
+          "tree_id": "a375506ffaf4e7b361bc909f4de15008e7abd541",
+          "url": "https://github.com/unicode-org/icu/commit/5826bf7ed7f45afd18793c491313b86e2b9385ba"
+        },
+        "date": 1689268101174,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 613.8908515974819,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
