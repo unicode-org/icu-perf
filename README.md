@@ -15,7 +15,7 @@ The performance tests execution and time measurment is a layered process.
 * Passes: Pre-defined number of performance test tries, typically ten passes.
   At each pass the API invocation iteration is executed in loops as often as
   determined by the calibration.
-  
+
 ## Example: ICU character property APIs such as isAlpha(), etc.
 
 * Test data: the test data for all ICU character property APIs are all code
@@ -32,7 +32,7 @@ The performance tests execution and time measurment is a layered process.
   divided by loops*iterations.
   In this example: "minimum pass"/(1,600 * 1,114,112). The result is the average
   execution time of one call of isAlpha() from the fastest pass.
-  
+
 ## Performance Test Charts
 
 The performance tests are all run on Ubuntu and broken out by feature.
@@ -40,7 +40,7 @@ The performance tests are all run on Ubuntu and broken out by feature.
 * [Charperf](https://unicode-org.github.io/icu-perf/results/charperf/)
   Performance tests for character property APIs, cf. the charts.
   The measured time is for one call of the respective character property API.
-  
+
 * [Utfperf](https://unicode-org.github.io/icu-perf/results/utfperf/)
   Performance tests for Unicode converters: ucnv_fromUnicode(),
   ucnv_toUnicode(), ucnv_convertEx().
@@ -54,7 +54,7 @@ The performance tests are all run on Ubuntu and broken out by feature.
   U_UNASSIGNED codepoints).
   Also tests UnicodeSet::applyPattern() for three pre-defined pattern of
   different complexity.
-  
+
 The following performance tests are additionally broken out by type of test
 data processed.
 
@@ -126,10 +126,10 @@ data processed.
   * [th](https://unicode-org.github.io/icu-perf/results/strsrchperf/th/)
   * [zh](https://unicode-org.github.io/icu-perf/results/strsrchperf/zh/)
 
-# LICENSE
+### Copyright & Licenses
 
-See [LICENSE](./LICENSE)
+Copyright © 2022-2023 Unicode, Inc. Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the United States and other countries.
 
-```
-SPDX-License-Identifier: Unicode-DFS-2016
-```
+The project is released under [LICENSE](./LICENSE).
+
+A CLA is required to contribute to this project - please refer to the [CONTRIBUTING.md](https://github.com/unicode-org/.github/blob/main/.github/CONTRIBUTING.md) file (or start a Pull Request) for more information.
