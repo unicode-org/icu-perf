@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1692418411154,
+  "lastUpdate": 1692638694005,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -21358,6 +21358,126 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFC_Text",
             "value": 3.043249202154078,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "1fc560c07f34165a56b109b1a3c4be27d345a4ad",
+          "message": "ICU-22465 Change .s to .data() for replacing TinyString with CharString.\n\nThis was forgotten by ICU-7496 which replaced the local TinyString data\ntype with the shared CharString data type, but as it's in code heavily\nnested in #ifdef's it hasn't been noticed until now.",
+          "timestamp": "2023-08-21T15:57:20+02:00",
+          "tree_id": "966093ae5aeb7a7004e6267c7a180025cf1b5425",
+          "url": "https://github.com/unicode-org/icu/commit/1fc560c07f34165a56b109b1a3c4be27d345a4ad"
+        },
+        "date": 1692627265131,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 5.459293988581373,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "1fc560c07f34165a56b109b1a3c4be27d345a4ad",
+          "message": "ICU-22465 Change .s to .data() for replacing TinyString with CharString.\n\nThis was forgotten by ICU-7496 which replaced the local TinyString data\ntype with the shared CharString data type, but as it's in code heavily\nnested in #ifdef's it hasn't been noticed until now.",
+          "timestamp": "2023-08-21T15:57:20+02:00",
+          "tree_id": "966093ae5aeb7a7004e6267c7a180025cf1b5425",
+          "url": "https://github.com/unicode-org/icu/commit/1fc560c07f34165a56b109b1a3c4be27d345a4ad"
+        },
+        "date": 1692627372592,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 3.7084673360800378,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "committer": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "distinct": true,
+          "id": "248b1c2a13fc7fc346e9e9419c4794df8a590ad9",
+          "message": "ICU-22309 update to LICENSE v3, Readme.md, CONTRIBUTING.md\n\n- LICENSE is now the v3 license with the correct year and title\n- README.md now has the required features and drops Terms of Use\n- CONTRIBUTING.md now matches the updated language",
+          "timestamp": "2023-08-21T11:48:04-05:00",
+          "tree_id": "ebf670f363b6ef1b0628ce3d13b5d3270995cc65",
+          "url": "https://github.com/unicode-org/icu/commit/248b1c2a13fc7fc346e9e9419c4794df8a590ad9"
+        },
+        "date": 1692638519933,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 3.696209280484793,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "committer": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "distinct": true,
+          "id": "248b1c2a13fc7fc346e9e9419c4794df8a590ad9",
+          "message": "ICU-22309 update to LICENSE v3, Readme.md, CONTRIBUTING.md\n\n- LICENSE is now the v3 license with the correct year and title\n- README.md now has the required features and drops Terms of Use\n- CONTRIBUTING.md now matches the updated language",
+          "timestamp": "2023-08-21T11:48:04-05:00",
+          "tree_id": "ebf670f363b6ef1b0628ce3d13b5d3270995cc65",
+          "url": "https://github.com/unicode-org/icu/commit/248b1c2a13fc7fc346e9e9419c4794df8a590ad9"
+        },
+        "date": 1692638636367,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 5.19743307366651,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
