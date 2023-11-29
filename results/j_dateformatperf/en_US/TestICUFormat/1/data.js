@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1701289233159,
+  "lastUpdate": 1701299346366,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -14308,6 +14308,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUFormat",
             "value": 235.19474686189457,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "0bfa5f4c44ef3344982a23c1e1aa1bd6af6f8427",
+          "message": "ICU-22549 Add DateTimePatternGenerator fuzzer\n\nSee #2708",
+          "timestamp": "2023-11-29T14:45:21-08:00",
+          "tree_id": "32717b9001f415957dd8723f0681946ad8568594",
+          "url": "https://github.com/unicode-org/icu/commit/0bfa5f4c44ef3344982a23c1e1aa1bd6af6f8427"
+        },
+        "date": 1701298354771,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 236.3944734613901,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "committer": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "distinct": true,
+          "id": "2adf957de2d747b6e14cff8e0a5791c2fa484f40",
+          "message": "ICU-22314 Refactor GH CI jobs into workflows triggered by modified paths",
+          "timestamp": "2023-11-29T17:59:41-05:00",
+          "tree_id": "1ef2c5ffddff54534094eb0d65dc08683dc50ffb",
+          "url": "https://github.com/unicode-org/icu/commit/2adf957de2d747b6e14cff8e0a5791c2fa484f40"
+        },
+        "date": 1701299282007,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 260.1767873591724,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
