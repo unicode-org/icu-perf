@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1704992239102,
+  "lastUpdate": 1705134077499,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -15988,6 +15988,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 5.769128557337536,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "509405c9f2ee99a56a3fc77ba8de4799cec28d7c",
+          "message": "ICU-22626 Fix leakage when 2 '=' in PluralRules\n\nSee #2782",
+          "timestamp": "2024-01-12T09:36:29-08:00",
+          "tree_id": "ddfdfc694910b45a4719331b731180fd916366a0",
+          "url": "https://github.com/unicode-org/icu/commit/509405c9f2ee99a56a3fc77ba8de4799cec28d7c"
+        },
+        "date": 1705081876469,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 5.768406089532077,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "ab72ab1d4a3c3f9beeb7d92b0c7817ca93dfdb04",
+          "message": "ICU-22520 Replace char arrays with icu::CharString & icu::MemoryPool.",
+          "timestamp": "2024-01-13T17:05:58+09:00",
+          "tree_id": "371968f83db3ff8f1becc9ff5b5797046b90f0b7",
+          "url": "https://github.com/unicode-org/icu/commit/ab72ab1d4a3c3f9beeb7d92b0c7817ca93dfdb04"
+        },
+        "date": 1705134005905,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 5.78417075157074,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
