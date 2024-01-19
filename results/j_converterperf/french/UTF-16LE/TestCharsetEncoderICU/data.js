@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1705638532245,
+  "lastUpdate": 1705659887193,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -16408,6 +16408,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 5.774883461672133,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "3eb8923b9730efeae10a92f8054f63495fe8a95f",
+          "message": "ICU-22638 Use parseNumber to fix buffer-overflow\n\nSee #2795",
+          "timestamp": "2024-01-19T01:43:35-08:00",
+          "tree_id": "eae3867ff6963eb9947bc1f0897e722ef88616e8",
+          "url": "https://github.com/unicode-org/icu/commit/3eb8923b9730efeae10a92f8054f63495fe8a95f"
+        },
+        "date": 1705659040380,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 5.765276151647108,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "c8336085bb7489650c449f05c13be7b6a660fd89",
+          "message": "ICU-22637 Rewrite custom timezone parser\n\nSee #2792",
+          "timestamp": "2024-01-19T01:44:52-08:00",
+          "tree_id": "f26273c3c36ce63d5c80fabed5cea318955aa21f",
+          "url": "https://github.com/unicode-org/icu/commit/c8336085bb7489650c449f05c13be7b6a660fd89"
+        },
+        "date": 1705659815494,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 5.789852084457198,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
