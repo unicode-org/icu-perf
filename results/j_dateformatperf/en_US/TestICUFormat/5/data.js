@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1705714023297,
+  "lastUpdate": 1705895977758,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -16558,6 +16558,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUFormat",
             "value": 251.65985193093996,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "9167d6beaf4be16f2f88ec9997563d21d4251757",
+          "message": "ICU-21107 Update configure files from configure.ac using autoreconf.",
+          "timestamp": "2024-01-22T12:30:24+09:00",
+          "tree_id": "5199ff2a053426e21ec1340797831ad7a4213258",
+          "url": "https://github.com/unicode-org/icu/commit/9167d6beaf4be16f2f88ec9997563d21d4251757"
+        },
+        "date": 1705895212986,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 246.7969466952173,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "49a7a1e76d720a265daf420d4d271dd0d30cbc16",
+          "message": "ICU-22520 Update urename.h with ulocimp_getParent().\n\nThis was forgotten in commit 037449fff8db873afdd2e3c6ed5d24db604ffe64.",
+          "timestamp": "2024-01-22T12:30:37+09:00",
+          "tree_id": "21a2cde30084f1beb8471fc422d62ba35a9e0917",
+          "url": "https://github.com/unicode-org/icu/commit/49a7a1e76d720a265daf420d4d271dd0d30cbc16"
+        },
+        "date": 1705895905635,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 246.61799927343134,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
