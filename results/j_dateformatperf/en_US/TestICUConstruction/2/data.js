@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1708967108978,
+  "lastUpdate": 1708986170680,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -17728,6 +17728,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUConstruction",
             "value": 2005.457140157111,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "committer": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "distinct": true,
+          "id": "ea1c6da07fa345dd485408caee51703bc95c0454",
+          "message": "ICU-22677 update LICENSE and README.md and pom.xml\n\n- https://github.com/unicode-org/.github/issues/15\n- use Unicode-3.0 in pom instead of raw license link\n- https://github.com/unicode-org/.github/issues/15",
+          "timestamp": "2024-02-26T14:34:59-06:00",
+          "tree_id": "f428ed2e6edb51b10fcbfb60669bba6fa40e4b79",
+          "url": "https://github.com/unicode-org/icu/commit/ea1c6da07fa345dd485408caee51703bc95c0454"
+        },
+        "date": 1708980130417,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 1997.702651852732,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alta.liepa@gmail.com",
+            "name": "Rūdolfs Mazurs",
+            "username": "Mazurs"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "394341edba31196937036560c8f5a61736cd5636",
+          "message": "ICU-22646 Update collation test for Latvian locale\n\nThis test is also relevant to issues ICU-12765 ICU-13508 ICU-20532",
+          "timestamp": "2024-02-26T14:09:40-08:00",
+          "tree_id": "00d620e77dd2a3017b0eb0b5f62e154f1bc2a707",
+          "url": "https://github.com/unicode-org/icu/commit/394341edba31196937036560c8f5a61736cd5636"
+        },
+        "date": 1708986018127,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 2002.9138396153057,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1708967236190,
+  "lastUpdate": 1708985999238,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -17908,6 +17908,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFD_Text",
             "value": 4.328043298135148,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "committer": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "distinct": true,
+          "id": "6d15faab4806df96e6cba4a6bb0e9a2e67b4c630",
+          "message": "ICU-22677 update CONTRIBUTING.md\n\n- https://github.com/unicode-org/.github/issues/12",
+          "timestamp": "2024-02-26T11:44:35-06:00",
+          "tree_id": "de4512e32457c48a61848ad3c63ceb31c2f5cc13",
+          "url": "https://github.com/unicode-org/icu/commit/6d15faab4806df96e6cba4a6bb0e9a2e67b4c630"
+        },
+        "date": 1708969712477,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 4.3346050043081785,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alta.liepa@gmail.com",
+            "name": "Rūdolfs Mazurs",
+            "username": "Mazurs"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "394341edba31196937036560c8f5a61736cd5636",
+          "message": "ICU-22646 Update collation test for Latvian locale\n\nThis test is also relevant to issues ICU-12765 ICU-13508 ICU-20532",
+          "timestamp": "2024-02-26T14:09:40-08:00",
+          "tree_id": "00d620e77dd2a3017b0eb0b5f62e154f1bc2a707",
+          "url": "https://github.com/unicode-org/icu/commit/394341edba31196937036560c8f5a61736cd5636"
+        },
+        "date": 1708985919100,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 4.356440828019722,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
