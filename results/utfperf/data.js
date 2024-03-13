@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1710260822220,
+  "lastUpdate": 1710297593919,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -30154,6 +30154,90 @@ window.BENCHMARK_DATA = {
           {
             "name": "FromUTF8",
             "value": 2.1924,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "richard_gillam@apple.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "committer": {
+            "email": "62772518+richgillam@users.noreply.github.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "distinct": true,
+          "id": "1cedbbd90d7dc1aa11576991dd7c169138d6b236",
+          "message": "ICU-22534 Fixed a couple issues from the API-promotions PR that Frank found in code review.",
+          "timestamp": "2024-03-12T16:47:57-07:00",
+          "tree_id": "322b316783d7b7c12269b7c2379f45871e785549",
+          "url": "https://github.com/unicode-org/icu/commit/1cedbbd90d7dc1aa11576991dd7c169138d6b236"
+        },
+        "date": 1710296673292,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Roundtrip",
+            "value": 9.527,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "FromUnicode",
+            "value": 3.0547,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "FromUTF8",
+            "value": 2.1923,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "richard_gillam@apple.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "committer": {
+            "email": "62772518+richgillam@users.noreply.github.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "distinct": true,
+          "id": "00072801a51fce1014f86d47eeebdf80ada14ff3",
+          "message": "ICU-22687 Fix genren.pl not to skip C++ functions on Mac",
+          "timestamp": "2024-03-12T16:56:26-07:00",
+          "tree_id": "7435bf030ab6bd59cb74d70f0d1d0024a6750e55",
+          "url": "https://github.com/unicode-org/icu/commit/00072801a51fce1014f86d47eeebdf80ada14ff3"
+        },
+        "date": 1710297502489,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Roundtrip",
+            "value": 9.5039,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "FromUnicode",
+            "value": 3.0515,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "FromUTF8",
+            "value": 2.3485,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
