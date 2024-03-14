@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1710453843832,
+  "lastUpdate": 1710460265302,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -19228,6 +19228,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUFormat",
             "value": 253.58338559710742,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "committer": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "distinct": true,
+          "id": "104214aeae7c944070ff886eed787ac24287d334",
+          "message": "ICU-22532 Use previous Ubuntu version for ICU4C in GH Actions CI for now",
+          "timestamp": "2024-03-14T16:20:49-07:00",
+          "tree_id": "2fe1713b545f938b9613e074d8a2943b295ce169",
+          "url": "https://github.com/unicode-org/icu/commit/104214aeae7c944070ff886eed787ac24287d334"
+        },
+        "date": 1710459034014,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 256.4161684304427,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "de9910659dbfe7c5113c2dc1c93e989b8c1978b5",
+          "message": "ICU-22661 Limit the size of variants in Locale\n\nSee #2821",
+          "timestamp": "2024-03-14T16:23:51-07:00",
+          "tree_id": "fafc322e63a947dd377e983fc63b31becd8396f6",
+          "url": "https://github.com/unicode-org/icu/commit/de9910659dbfe7c5113c2dc1c93e989b8c1978b5"
+        },
+        "date": 1710460173641,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 247.57310870708898,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
