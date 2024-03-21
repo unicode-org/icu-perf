@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711033394069,
+  "lastUpdate": 1711043097053,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -40498,6 +40498,114 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 5651064.2084,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "028fa70c2950a8014f424c89c37a8137c10ee77b",
+          "message": "ICU-22701 Bugfix: Make test independent of the default locale.\n\nThe original intention behind this test case was to use the root locale,\nbut ures_getFunctionalEquivalent() is implemented by calling ures_open()\nwhich sets URES_OPEN_LOCALE_DEFAULT_ROOT which will cause the default\nlocale to be loaded before the root locale.\n\nTo avoid that, pick a locale other than the root locale for the test.",
+          "timestamp": "2024-03-21T09:16:05-07:00",
+          "tree_id": "2c4b8fea7ac2a6c44545d691950b1673abb42cfa",
+          "url": "https://github.com/unicode-org/icu/commit/028fa70c2950a8014f424c89c37a8137c10ee77b"
+        },
+        "date": 1711038578190,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 212.7633,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 21644220.1449,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 5281805.72,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 20444027.944,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 5784252.9474,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "distinct": true,
+          "id": "94305fc59bbd56ff46b54290a052767ffa964ac2",
+          "message": "ICU-22532 Bump the github-actions group with 9 updates\n\nSee #2916",
+          "timestamp": "2024-03-21T09:45:50-07:00",
+          "tree_id": "e55c87e9eefe67c071b22dab0a2e154a6467ee78",
+          "url": "https://github.com/unicode-org/icu/commit/94305fc59bbd56ff46b54290a052767ffa964ac2"
+        },
+        "date": 1711043000315,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 213.7577,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 22069104.4376,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 5290000.9468,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 21883780.8032,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 5804662.7045,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

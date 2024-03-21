@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711032810457,
+  "lastUpdate": 1711043604568,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -19588,6 +19588,96 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUFormat",
             "value": 227.32954916120838,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "028fa70c2950a8014f424c89c37a8137c10ee77b",
+          "message": "ICU-22701 Bugfix: Make test independent of the default locale.\n\nThe original intention behind this test case was to use the root locale,\nbut ures_getFunctionalEquivalent() is implemented by calling ures_open()\nwhich sets URES_OPEN_LOCALE_DEFAULT_ROOT which will cause the default\nlocale to be loaded before the root locale.\n\nTo avoid that, pick a locale other than the root locale for the test.",
+          "timestamp": "2024-03-21T09:16:05-07:00",
+          "tree_id": "2c4b8fea7ac2a6c44545d691950b1673abb42cfa",
+          "url": "https://github.com/unicode-org/icu/commit/028fa70c2950a8014f424c89c37a8137c10ee77b"
+        },
+        "date": 1711039256313,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 240.78687357189557,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "distinct": true,
+          "id": "94305fc59bbd56ff46b54290a052767ffa964ac2",
+          "message": "ICU-22532 Bump the github-actions group with 9 updates\n\nSee #2916",
+          "timestamp": "2024-03-21T09:45:50-07:00",
+          "tree_id": "e55c87e9eefe67c071b22dab0a2e154a6467ee78",
+          "url": "https://github.com/unicode-org/icu/commit/94305fc59bbd56ff46b54290a052767ffa964ac2"
+        },
+        "date": 1711041312398,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 227.49917059441117,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "fbc1f33e7e8afeb92ed7498fca1a1686d8b6b9c4",
+          "message": "ICU-22679 Clean up Calendar code.\n\n1. Remove redudant implementation of default system ceuntry by using\n   macro\n2. Fold long if / else block if one block return.",
+          "timestamp": "2024-03-21T09:50:10-07:00",
+          "tree_id": "ea6f9b0200fda44e1c66b628dcef83c19d5d7adf",
+          "url": "https://github.com/unicode-org/icu/commit/fbc1f33e7e8afeb92ed7498fca1a1686d8b6b9c4"
+        },
+        "date": 1711043499005,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 235.18893550468314,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
