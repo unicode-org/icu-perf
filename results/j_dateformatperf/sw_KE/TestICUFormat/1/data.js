@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711666549312,
+  "lastUpdate": 1711669285413,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -20368,6 +20368,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUFormat",
             "value": 258.9205439281262,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "0127e4f7607873c1f58533c56907c905e4e34ec7",
+          "message": "ICU-22534 BRS75 Remove fixed logKnownIssue for CLDR-17024\n\nCLDR-17024 is fixed in CLDR45 and the test now passed.\nRemove the logKnownIssue so it will test and report future breakage.",
+          "timestamp": "2024-03-28T16:11:27-07:00",
+          "tree_id": "cab5f8b8a6430ab5be34cbd5f4f819240b7db6de",
+          "url": "https://github.com/unicode-org/icu/commit/0127e4f7607873c1f58533c56907c905e4e34ec7"
+        },
+        "date": 1711668554291,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 250.64188041092152,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "b2539f44df8f89f51401b903168a48a1aa9d972d",
+          "message": "ICU-22534 BRS75 Remove fixed logKnownIssue\n\nCLDR17099 is fixed in CLDR44 and the test now passed. Remove\nthe logKnownIssue so it will test and report future breakage.",
+          "timestamp": "2024-03-28T16:11:34-07:00",
+          "tree_id": "2dbaf800762a669cc08aa70c695539952b1396cd",
+          "url": "https://github.com/unicode-org/icu/commit/b2539f44df8f89f51401b903168a48a1aa9d972d"
+        },
+        "date": 1711669180658,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 254.69914305736586,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
