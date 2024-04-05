@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1712071193473,
+  "lastUpdate": 1712332344365,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -21028,6 +21028,96 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 2.0273068834290076,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "distinct": true,
+          "id": "a86455825ab231bdad57acaf5ae633915ccc7527",
+          "message": "ICU-22721 Bump the github-actions group with 2 updates\n\nSee #2942",
+          "timestamp": "2024-04-04T21:26:56-04:00",
+          "tree_id": "8d0f92ba734fd2be2ec407ffca174fdc90981747",
+          "url": "https://github.com/unicode-org/icu/commit/a86455825ab231bdad57acaf5ae633915ccc7527"
+        },
+        "date": 1712281438970,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 1.4632766781423237,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "943b0ca31b38f5c7ba8d58c5f3d88d34c4ebff8d",
+          "message": "ICU-22722 Fix Readme CI badge link",
+          "timestamp": "2024-04-05T08:31:47-07:00",
+          "tree_id": "e96105ee5908f4e8984f7b83352335e647ff848b",
+          "url": "https://github.com/unicode-org/icu/commit/943b0ca31b38f5c7ba8d58c5f3d88d34c4ebff8d"
+        },
+        "date": 1712331638740,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 1.4785803416811365,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "distinct": true,
+          "id": "a86455825ab231bdad57acaf5ae633915ccc7527",
+          "message": "ICU-22721 Bump the github-actions group with 2 updates\n\nSee #2942",
+          "timestamp": "2024-04-04T21:26:56-04:00",
+          "tree_id": "8d0f92ba734fd2be2ec407ffca174fdc90981747",
+          "url": "https://github.com/unicode-org/icu/commit/a86455825ab231bdad57acaf5ae633915ccc7527"
+        },
+        "date": 1712332243109,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 1.6336520034100332,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
