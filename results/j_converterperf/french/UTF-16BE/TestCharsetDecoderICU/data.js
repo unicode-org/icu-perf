@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1715707106165,
+  "lastUpdate": 1715717841664,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -21778,6 +21778,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 3.737523552481395,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "committer": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "distinct": true,
+          "id": "084af5c2b6588cef38a169d65c9bac7f6820fe5f",
+          "message": "ICU-22740 Add -Wctad-maybe-unsupported to CI jobs that use -Wall -Wextra.\n\nThis modifies the following jobs:\n\nC: Linux Clang-16 WarningsAsErrors (Ubuntu 20.04)\nC: macOS(Latest) Clang WarningsAsErrors",
+          "timestamp": "2024-05-14T12:39:44-07:00",
+          "tree_id": "89ddcacd113a197614b24042eccf5312354fd8d8",
+          "url": "https://github.com/unicode-org/icu/commit/084af5c2b6588cef38a169d65c9bac7f6820fe5f"
+        },
+        "date": 1715716879825,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 3.741563461428827,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "committer": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "distinct": true,
+          "id": "e6ac2a292fac59032eb3ba11847a43bd5837c30c",
+          "message": "ICU-22753 Fix read-after-move in MF2\n\nIn StaticErrors::addError() and DynamicErrors::addError(),\ndon't read from `e` after moving out of it.",
+          "timestamp": "2024-05-14T12:40:06-07:00",
+          "tree_id": "dbccda0408e9cc3b85aeba6b58373101a1b0acc5",
+          "url": "https://github.com/unicode-org/icu/commit/e6ac2a292fac59032eb3ba11847a43bd5837c30c"
+        },
+        "date": 1715717724175,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 3.7380081161550587,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
