@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1718917639258,
+  "lastUpdate": 1718998390601,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -46329,6 +46329,114 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 2132737.4827,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "42d0bab7c3ce6716472a8642c79788ed0ffd38b9",
+          "message": "ICU-22800 Avoid inconsistent state inside Locale\n\nThere are some memory leak in Locale which is hard to figure out why.\nUse different variable to track memory allocation to avoid inconsistent\nstate while malloc fail",
+          "timestamp": "2024-06-21T11:49:11-07:00",
+          "tree_id": "68bc936973d9bf27d7d1a8f3e5d09b8b44998adf",
+          "url": "https://github.com/unicode-org/icu/commit/42d0bab7c3ce6716472a8642c79788ed0ffd38b9"
+        },
+        "date": 1718997242586,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 383.4763,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 12553852.6024,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 2162454.6252,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 11400440.9819,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 2143511.631,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "86add69c928141d69d8138da43012720b283dc53",
+          "message": "ICU-22716 Set timeout limit for uregex_match_fuzzer\n\nTo avoid unnecessary timeout.",
+          "timestamp": "2024-06-21T11:49:55-07:00",
+          "tree_id": "e5dd4f7e9ff5cc461204029e457964c2d6aeb85d",
+          "url": "https://github.com/unicode-org/icu/commit/86add69c928141d69d8138da43012720b283dc53"
+        },
+        "date": 1718998266476,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 384.231,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 12648616.425,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 2164139.3966,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 11517931.8925,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 2132516.4395,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
