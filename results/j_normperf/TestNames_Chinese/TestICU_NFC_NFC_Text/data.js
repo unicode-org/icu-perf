@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1724627109576,
+  "lastUpdate": 1724781697140,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -24537,6 +24537,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFC_NFC_Text",
             "value": 4.812312964832261,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "richard_gillam@apple.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "committer": {
+            "email": "62772518+richgillam@users.noreply.github.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "distinct": true,
+          "id": "967babdc5f19967bb8a5ce7c76fbb15a820b1b6d",
+          "message": "ICU-22669 Fix circular dependency in DateTimePatternGenerator::addICUPatterns().",
+          "timestamp": "2024-08-27T10:37:19-07:00",
+          "tree_id": "5293219cc4229dcca64b3266848256634b57cd7d",
+          "url": "https://github.com/unicode-org/icu/commit/967babdc5f19967bb8a5ce7c76fbb15a820b1b6d"
+        },
+        "date": 1724780663315,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 4.800991799867882,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "vital.had@gmail.com",
+            "name": "Sergey Fedorov",
+            "username": "barracuda156"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "a4ace3ace7f7209fcae86040db28431b53e1015a",
+          "message": "ICU-22807 Fix for missing __STDC_FORMAT_MACROS before inttypes.h\n\nCo-authored-by: Markus Scherer <markus.icu@gmail.com>",
+          "timestamp": "2024-08-27T10:52:14-07:00",
+          "tree_id": "c33bc275ce137d42bbe27b82f0bf3cd0f7196428",
+          "url": "https://github.com/unicode-org/icu/commit/a4ace3ace7f7209fcae86040db28431b53e1015a"
+        },
+        "date": 1724781550484,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 4.816187729823202,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
