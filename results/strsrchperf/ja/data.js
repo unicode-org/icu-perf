@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1725397966695,
+  "lastUpdate": 1725561412843,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -30489,6 +30489,78 @@ window.BENCHMARK_DATA = {
           {
             "name": "Test_ICU_Backward_Search",
             "value": 59.1246,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "964bdc54f766b81bd55ca9554e788a746c57ae09",
+          "message": "ICU-22881 Switch to using macOS instead of MacOSX in runConfigureICU.\n\nThe old names are kept as aliases, but not listed in the help messsage.",
+          "timestamp": "2024-09-05T19:37:32+02:00",
+          "tree_id": "7c5ead7bef23d3438bc28f9a3fe1e3b18e949bc3",
+          "url": "https://github.com/unicode-org/icu/commit/964bdc54f766b81bd55ca9554e788a746c57ae09"
+        },
+        "date": 1725559438689,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Test_ICU_Forward_Search",
+            "value": 26.5729,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "Test_ICU_Backward_Search",
+            "value": 59.1287,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "4ef58328d04633ad90fa89e7f7cbbd89e2d16b2e",
+          "message": "ICU-22716 Reduce the data size to test calendar fuzzer\n\nCalendar fuzzer test too many operations and cause timeout\nwhich does not suerface the real issue. Limit the test data size to 100\ninstead of 1000 instead.",
+          "timestamp": "2024-09-05T11:17:07-07:00",
+          "tree_id": "19af712133e36d79e615332468517a4a5c04660f",
+          "url": "https://github.com/unicode-org/icu/commit/4ef58328d04633ad90fa89e7f7cbbd89e2d16b2e"
+        },
+        "date": 1725561262307,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Test_ICU_Forward_Search",
+            "value": 26.0257,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "Test_ICU_Backward_Search",
+            "value": 58.904,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
