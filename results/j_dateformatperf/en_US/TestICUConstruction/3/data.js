@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726168371772,
+  "lastUpdate": 1726183156448,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -25587,6 +25587,96 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUConstruction",
             "value": 1977.8883938202562,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "70caba0027cbe381565db174184514c667a93b8a",
+          "message": "ICU-22716 Turn on message_formatter_fuzzer",
+          "timestamp": "2024-09-12T14:53:01-07:00",
+          "tree_id": "426ac9c577179d6052b4497733777cc97ac48368",
+          "url": "https://github.com/unicode-org/icu/commit/70caba0027cbe381565db174184514c667a93b8a"
+        },
+        "date": 1726179279825,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 1889.8799191579517,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "5447a230701c156383fa6c6887d8f0babf0fd34d",
+          "message": "ICU-22876 add U_SHOW_CPLUSPLUS_HEADER_API for C++ header-only APIs",
+          "timestamp": "2024-09-12T15:36:40-07:00",
+          "tree_id": "0fd0ba22589dbc3194b605322fe3b9ce45af0e93",
+          "url": "https://github.com/unicode-org/icu/commit/5447a230701c156383fa6c6887d8f0babf0fd34d"
+        },
+        "date": 1726181488091,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 2003.4420247007706,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "4433a94a577ab3d1f63d7d40d772f1a3d1e2f3c3",
+          "message": "ICU-22722 toTitle does not use UTR 21",
+          "timestamp": "2024-09-12T16:05:33-07:00",
+          "tree_id": "22c276f8e8afb1e9967f26ff4165bab5bae3b9b0",
+          "url": "https://github.com/unicode-org/icu/commit/4433a94a577ab3d1f63d7d40d772f1a3d1e2f3c3"
+        },
+        "date": 1726182998160,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 2015.12344173938,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
