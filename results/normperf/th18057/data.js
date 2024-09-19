@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726762095510,
+  "lastUpdate": 1726769791171,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -58017,6 +58017,126 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_Orig_Text",
             "value": 17.0237,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "33589083+rqu@users.noreply.github.com",
+            "name": "rqu",
+            "username": "rqu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "e3e74bdd7272b17073fdd66f767b7758e3bfa372",
+          "message": "ICU-22721 Fix trivial slip-up in ICU4J TimeZone.java",
+          "timestamp": "2024-09-19T10:17:49-07:00",
+          "tree_id": "271ebfe36b823f96e7da7da739ca1dc832f54a9d",
+          "url": "https://github.com/unicode-org/icu/commit/e3e74bdd7272b17073fdd66f767b7758e3bfa372"
+        },
+        "date": 1726767551747,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFD_Text",
+            "value": 16.9561,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 16.9476,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_Orig_Text",
+            "value": 16.9191,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 17.0623,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 17.0362,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_Orig_Text",
+            "value": 16.9703,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "55c58959233a229cf8d5647652b9cf6f29b587a7",
+          "message": "ICU-22793 Clang-Tidy: google-readability-casting\n\nhttps://releases.llvm.org/19.1.0/tools/clang/tools/extra/docs/clang-tidy/checks/google/readability-casting.html",
+          "timestamp": "2024-09-19T18:59:13+02:00",
+          "tree_id": "e7af7393b5d6aa0e340fd8df464e2b57c5ec3d09",
+          "url": "https://github.com/unicode-org/icu/commit/55c58959233a229cf8d5647652b9cf6f29b587a7"
+        },
+        "date": 1726769629826,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFD_Text",
+            "value": 16.9929,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 16.988,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_Orig_Text",
+            "value": 16.9607,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 16.8251,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 16.8217,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_Orig_Text",
+            "value": 16.8112,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

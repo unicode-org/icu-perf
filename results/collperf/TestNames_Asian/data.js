@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726761801722,
+  "lastUpdate": 1726771463507,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -52215,6 +52215,168 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 2082898.5847,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "33589083+rqu@users.noreply.github.com",
+            "name": "rqu",
+            "username": "rqu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "e3e74bdd7272b17073fdd66f767b7758e3bfa372",
+          "message": "ICU-22721 Fix trivial slip-up in ICU4J TimeZone.java",
+          "timestamp": "2024-09-19T10:17:49-07:00",
+          "tree_id": "271ebfe36b823f96e7da7da739ca1dc832f54a9d",
+          "url": "https://github.com/unicode-org/icu/commit/e3e74bdd7272b17073fdd66f767b7758e3bfa372"
+        },
+        "date": 1726767207067,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 210.9548,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 8911749.8707,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 2001651.1077,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 8181724.2242,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 2060256.0333,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "55c58959233a229cf8d5647652b9cf6f29b587a7",
+          "message": "ICU-22793 Clang-Tidy: google-readability-casting\n\nhttps://releases.llvm.org/19.1.0/tools/clang/tools/extra/docs/clang-tidy/checks/google/readability-casting.html",
+          "timestamp": "2024-09-19T18:59:13+02:00",
+          "tree_id": "e7af7393b5d6aa0e340fd8df464e2b57c5ec3d09",
+          "url": "https://github.com/unicode-org/icu/commit/55c58959233a229cf8d5647652b9cf6f29b587a7"
+        },
+        "date": 1726769266501,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 212.0595,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 8916290.8481,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 2008374.5599,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 8198784.393,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 2057047.0481,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pedberg@unicode.org",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "committer": {
+            "email": "42151464+pedberg-icu@users.noreply.github.com",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "distinct": true,
+          "id": "ac737dabcfc4d28e3a408161970a41dfab822024",
+          "message": "ICU-12865 Update API docs to reflect new features in ICU 54 and later :-)",
+          "timestamp": "2024-09-19T11:19:15-07:00",
+          "tree_id": "480e705f2c7959ff0eee9867d91990daabb57510",
+          "url": "https://github.com/unicode-org/icu/commit/ac737dabcfc4d28e3a408161970a41dfab822024"
+        },
+        "date": 1726771296108,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 213.2903,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 8912146.5172,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 1998446.138,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 8194890.4418,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 2058227.3531,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
