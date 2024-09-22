@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726861338966,
+  "lastUpdate": 1727042210199,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -76359,6 +76359,240 @@ window.BENCHMARK_DATA = {
           {
             "name": "pattern3",
             "value": 1578.1649,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "committer": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "distinct": true,
+          "id": "8f82facca870950fbd65b46ec33204b8ed0488e2",
+          "message": "ICU-22898 MF2 parser bug fixes\n\nICU4C: Escape curly braces when serializing and normalizing\nICU4C: Escape '|' in patterns\nICU4C: When normalizing input, escape optionally-escaped characters in patterns\nICU4C/ICU4J: Allow trailing whitespace after a match\nICU4C: Fix parser to iterate over code points, not code units\nAdd tests with old reserved syntax as syntax-error tests",
+          "timestamp": "2024-09-20T16:22:34-07:00",
+          "tree_id": "ac68cd15b25807b89ebdd5eede1a3b404405f52d",
+          "url": "https://github.com/unicode-org/icu/commit/8f82facca870950fbd65b46ec33204b8ed0488e2"
+        },
+        "date": 1726877082978,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "titlecase_letter_add",
+            "value": 78237.2266,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_contains",
+            "value": 167568.6884,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_iterator",
+            "value": 0.5419,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_add",
+            "value": 10.4403,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_contains",
+            "value": 6.3371,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_iterator",
+            "value": 0,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern1",
+            "value": 9180.6188,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern2",
+            "value": 34095.5113,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern3",
+            "value": 1560.4536,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "committer": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "distinct": true,
+          "id": "2f348f4c7a152688b26d215c23f2b2a5f0a824f3",
+          "message": "ICU-22902 Remove support for Unsupported, Private & Reserved constructs\n\nMatching PR #883 in the message-format-wg repo.\n\nAlso move spec tests for unsupported statements and expressions into new files\nto serve as syntax error tests.",
+          "timestamp": "2024-09-20T17:29:07-07:00",
+          "tree_id": "acc3d4f7922871e57cece6fd61009296d1052798",
+          "url": "https://github.com/unicode-org/icu/commit/2f348f4c7a152688b26d215c23f2b2a5f0a824f3"
+        },
+        "date": 1726880276867,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "titlecase_letter_add",
+            "value": 78245.5462,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_contains",
+            "value": 167573.041,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_iterator",
+            "value": 0.5421,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_add",
+            "value": 10.4363,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_contains",
+            "value": 6.3378,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_iterator",
+            "value": 0,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern1",
+            "value": 9249.6154,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern2",
+            "value": 34177.3174,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern3",
+            "value": 1571.5292,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "earlchew@amazon.com",
+            "name": "Earl Chew",
+            "username": "earlchew-aws"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "199bc827021ffdb43b6579d68e5eecf54c7f6f56",
+          "message": "ICU-22610 Use Requires.private and Libs.private\n\nTo prevent overlinking when publishing shared libraries,\nspecify internal dependencies using Requires.private and\nLibs.private.\n\nUse Libs.private in icu-uc.pc for libicudata.so, and\nRequires.private in icu-i18n.pc, icu-io.pc, and icu-lx.pc,\nso that ICU internal dependencies will not be bound\ninto clients.\n\nThe resulting *.pc files will produce the following\noutput for icu-i18n and icu-lx, provided pkgconf has\ncommit 78d53ea0 (2.2.0 or later) which de-duplicates\nmultiple -L options:\n\n    commit 78d53ea012dfbaf397bf8e6907efac5b51abac56\n    Author: Kai Pastor <dg0yt@darc.de>\n    Date:   Fri Feb 23 15:18:08 2024 +0100\n\n        Revise serials, traversal, flattening\n\n  ./configure --enable-shared ...\n\n    #\n    # icu-i18n\n    #\n\n    % pkgconf --libs  icu-i18n\n    -L/opt/local/lib -licui18n\n\n    % pkgconf --libs --static icu-i18n\n    -L/opt/local/lib -licui18n -licuuc -licudata -lpthread -lm\n\n    #\n    # icu-lx\n    #\n\n    % pkgconf  --libs icu-lx\n    -L/opt/local/lib -liculx\n\n    % pkgconf  --libs --static icu-lx\n    -L/opt/local/lib -liculx -L/usr/lib/x86_64-linux-gnu -licu-le-hb -lharfbuzz -lm -licuuc -licudata -lpthread -lm\n\n  ./configure --disable-shared --enable-static ...\n\n    #\n    # icu-i18n\n    #\n\n    % pkgconf --libs  icu-i18n\n    -L/opt/local/lib -licui18n -licuuc -licudata -lpthread -lm\n\n    % pkgconf  --libs --static icu-i18n\n    -L/opt/local/lib -licui18n -licuuc -licudata -lpthread -lm\n\n    #\n    # icu-lx\n    #\n\n    % pkgconf  --libs icu-lx\n    -L/opt/local/lib -liculx -L/usr/lib/x86_64-linux-gnu -licu-le-hb\n\n    % pkgconf  --libs --static icu-lx\n    -L/opt/local/lib -liculx -L/usr/lib/x86_64-linux-gnu -licu-le-hb -lharfbuzz -licuuc -licudata -lpthread -lm",
+          "timestamp": "2024-09-22T14:19:51-07:00",
+          "tree_id": "2a0aeeb5d7df72ebf493d11eef23fcf6b0ff5cd7",
+          "url": "https://github.com/unicode-org/icu/commit/199bc827021ffdb43b6579d68e5eecf54c7f6f56"
+        },
+        "date": 1727042038305,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "titlecase_letter_add",
+            "value": 78282.7347,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_contains",
+            "value": 167622.1064,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_iterator",
+            "value": 0.542,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_add",
+            "value": 10.65,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_contains",
+            "value": 6.3391,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_iterator",
+            "value": 0,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern1",
+            "value": 9182.8426,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern2",
+            "value": 34244.8589,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern3",
+            "value": 1569.77,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

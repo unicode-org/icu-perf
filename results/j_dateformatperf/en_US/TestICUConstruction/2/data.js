@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1726860235054,
+  "lastUpdate": 1727041356247,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -26847,6 +26847,126 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUConstruction",
             "value": 2053.7316941572312,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cjchapman@unicode.org",
+            "name": "Chris Chapman",
+            "username": "cjchapman"
+          },
+          "committer": {
+            "email": "cjchapman@apple.com",
+            "name": "Christopher Chapman",
+            "username": "cjchapman"
+          },
+          "distinct": true,
+          "id": "1c2a1c50b70be5bf34ece49b43165653c4aecb0a",
+          "message": "ICU-22896 updating tzdata to 2024b",
+          "timestamp": "2024-09-20T15:20:39-07:00",
+          "tree_id": "8f4ea1dd40aa62462f52ae97b419aa94265f7309",
+          "url": "https://github.com/unicode-org/icu/commit/1c2a1c50b70be5bf34ece49b43165653c4aecb0a"
+        },
+        "date": 1726872383582,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 1987.743565272974,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "committer": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "distinct": true,
+          "id": "8f82facca870950fbd65b46ec33204b8ed0488e2",
+          "message": "ICU-22898 MF2 parser bug fixes\n\nICU4C: Escape curly braces when serializing and normalizing\nICU4C: Escape '|' in patterns\nICU4C: When normalizing input, escape optionally-escaped characters in patterns\nICU4C/ICU4J: Allow trailing whitespace after a match\nICU4C: Fix parser to iterate over code points, not code units\nAdd tests with old reserved syntax as syntax-error tests",
+          "timestamp": "2024-09-20T16:22:34-07:00",
+          "tree_id": "ac68cd15b25807b89ebdd5eede1a3b404405f52d",
+          "url": "https://github.com/unicode-org/icu/commit/8f82facca870950fbd65b46ec33204b8ed0488e2"
+        },
+        "date": 1726876027747,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 1988.5492622984048,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "committer": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "distinct": true,
+          "id": "2f348f4c7a152688b26d215c23f2b2a5f0a824f3",
+          "message": "ICU-22902 Remove support for Unsupported, Private & Reserved constructs\n\nMatching PR #883 in the message-format-wg repo.\n\nAlso move spec tests for unsupported statements and expressions into new files\nto serve as syntax error tests.",
+          "timestamp": "2024-09-20T17:29:07-07:00",
+          "tree_id": "acc3d4f7922871e57cece6fd61009296d1052798",
+          "url": "https://github.com/unicode-org/icu/commit/2f348f4c7a152688b26d215c23f2b2a5f0a824f3"
+        },
+        "date": 1726879406883,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 1970.860123471005,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "earlchew@amazon.com",
+            "name": "Earl Chew",
+            "username": "earlchew-aws"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "199bc827021ffdb43b6579d68e5eecf54c7f6f56",
+          "message": "ICU-22610 Use Requires.private and Libs.private\n\nTo prevent overlinking when publishing shared libraries,\nspecify internal dependencies using Requires.private and\nLibs.private.\n\nUse Libs.private in icu-uc.pc for libicudata.so, and\nRequires.private in icu-i18n.pc, icu-io.pc, and icu-lx.pc,\nso that ICU internal dependencies will not be bound\ninto clients.\n\nThe resulting *.pc files will produce the following\noutput for icu-i18n and icu-lx, provided pkgconf has\ncommit 78d53ea0 (2.2.0 or later) which de-duplicates\nmultiple -L options:\n\n    commit 78d53ea012dfbaf397bf8e6907efac5b51abac56\n    Author: Kai Pastor <dg0yt@darc.de>\n    Date:   Fri Feb 23 15:18:08 2024 +0100\n\n        Revise serials, traversal, flattening\n\n  ./configure --enable-shared ...\n\n    #\n    # icu-i18n\n    #\n\n    % pkgconf --libs  icu-i18n\n    -L/opt/local/lib -licui18n\n\n    % pkgconf --libs --static icu-i18n\n    -L/opt/local/lib -licui18n -licuuc -licudata -lpthread -lm\n\n    #\n    # icu-lx\n    #\n\n    % pkgconf  --libs icu-lx\n    -L/opt/local/lib -liculx\n\n    % pkgconf  --libs --static icu-lx\n    -L/opt/local/lib -liculx -L/usr/lib/x86_64-linux-gnu -licu-le-hb -lharfbuzz -lm -licuuc -licudata -lpthread -lm\n\n  ./configure --disable-shared --enable-static ...\n\n    #\n    # icu-i18n\n    #\n\n    % pkgconf --libs  icu-i18n\n    -L/opt/local/lib -licui18n -licuuc -licudata -lpthread -lm\n\n    % pkgconf  --libs --static icu-i18n\n    -L/opt/local/lib -licui18n -licuuc -licudata -lpthread -lm\n\n    #\n    # icu-lx\n    #\n\n    % pkgconf  --libs icu-lx\n    -L/opt/local/lib -liculx -L/usr/lib/x86_64-linux-gnu -licu-le-hb\n\n    % pkgconf  --libs --static icu-lx\n    -L/opt/local/lib -liculx -L/usr/lib/x86_64-linux-gnu -licu-le-hb -lharfbuzz -licuuc -licudata -lpthread -lm",
+          "timestamp": "2024-09-22T14:19:51-07:00",
+          "tree_id": "2a0aeeb5d7df72ebf493d11eef23fcf6b0ff5cd7",
+          "url": "https://github.com/unicode-org/icu/commit/199bc827021ffdb43b6579d68e5eecf54c7f6f56"
+        },
+        "date": 1727041186233,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 2012.0675779537899,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
