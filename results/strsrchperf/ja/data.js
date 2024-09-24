@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727198141974,
+  "lastUpdate": 1727202026118,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -33333,6 +33333,78 @@ window.BENCHMARK_DATA = {
           {
             "name": "Test_ICU_Backward_Search",
             "value": 60.0526,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pedberg@unicode.org",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "committer": {
+            "email": "42151464+pedberg-icu@users.noreply.github.com",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "distinct": true,
+          "id": "ac737dabcfc4d28e3a408161970a41dfab822024",
+          "message": "ICU-12865 Update API docs to reflect new features in ICU 54 and later :-)",
+          "timestamp": "2024-09-19T11:19:15-07:00",
+          "tree_id": "480e705f2c7959ff0eee9867d91990daabb57510",
+          "url": "https://github.com/unicode-org/icu/commit/ac737dabcfc4d28e3a408161970a41dfab822024"
+        },
+        "date": 1727200104504,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Test_ICU_Forward_Search",
+            "value": 29.6964,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "Test_ICU_Backward_Search",
+            "value": 60.6609,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "0334d92394abd17006c9cc61d54822b06cbe92f8",
+          "message": "ICU-22721 simpler check for platforms that dont have char16_t",
+          "timestamp": "2024-09-24T10:56:14-07:00",
+          "tree_id": "d1408e826eaa081b414ebe0cd5eda9d1e3d7ac3d",
+          "url": "https://github.com/unicode-org/icu/commit/0334d92394abd17006c9cc61d54822b06cbe92f8"
+        },
+        "date": 1727201851644,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Test_ICU_Forward_Search",
+            "value": 25.8839,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "Test_ICU_Backward_Search",
+            "value": 58.8898,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
