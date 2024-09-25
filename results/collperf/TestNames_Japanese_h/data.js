@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1727292563278,
+  "lastUpdate": 1727298008345,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -54483,6 +54483,114 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 5419321.0177,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mfabian@redhat.com",
+            "name": "Mike FABIAN",
+            "username": "mike-fabian"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "67b5763557cf5c2b0e5e8943071bc9b133bacbff",
+          "message": "ICU-22912 fix coverity warning in gencnval.c\n\nSee: https://unicode-org.atlassian.net/browse/ICU-22912",
+          "timestamp": "2024-09-25T12:49:36-07:00",
+          "tree_id": "2c482a7fbfb19a1388c02a113e7fd2bbcc6172eb",
+          "url": "https://github.com/unicode-org/icu/commit/67b5763557cf5c2b0e5e8943071bc9b133bacbff"
+        },
+        "date": 1727295332459,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 216.1131,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 20683120.1049,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 5153316.1665,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 19361445.8322,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 5529448.3393,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "github@jdrake.com",
+            "name": "jeremyd2019",
+            "username": "jeremyd2019"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "ed68cff34e0d2827a9488e4fa772263227fc15c9",
+          "message": "ICU-22721 extend char16_t workaround to cygwin less than 3.5\n\nuchar.h was added in Cygwin version 3.5.0.  Unfortunately, the last version of Cygwin that supported i686 was 3.3.6, so it is still somewhat relevant to a subset of users.",
+          "timestamp": "2024-09-23T19:52:51-07:00",
+          "tree_id": "a1aa3c6717b100d5fe44681c5bd6ccd561ec30f5",
+          "url": "https://github.com/unicode-org/icu/commit/ed68cff34e0d2827a9488e4fa772263227fc15c9"
+        },
+        "date": 1727297834962,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 217.2242,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 20582134.2548,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 5262136.9811,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 19477174.6372,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 5570470.8099,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
