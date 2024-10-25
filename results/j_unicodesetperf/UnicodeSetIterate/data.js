@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1729801784421,
+  "lastUpdate": 1729813769632,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -28557,6 +28557,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "UnicodeSetIterate",
             "value": 0.919956892515739,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "698217ef630fb8f2a88f1bbeec778f9fc5bf4d84",
+          "message": "ICU-22922 ICU 76 final release\n\nSee #3252",
+          "timestamp": "2024-10-24T16:18:07-07:00",
+          "tree_id": "3a80c557541c4935af72ee7875c34803def56a89",
+          "url": "https://github.com/unicode-org/icu/commit/698217ef630fb8f2a88f1bbeec778f9fc5bf4d84"
+        },
+        "date": 1729812020270,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "UnicodeSetIterate",
+            "value": 0.9207675459151292,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "e29e86d62abf53f3695ed79e0ab99065cf0cdc80",
+          "message": "ICU-22951 Add documentation for --with-data-packaging=auto to the userguide.",
+          "timestamp": "2024-10-24T16:44:04-07:00",
+          "tree_id": "4bada4734ead2610ddd581f099909be49b82b97c",
+          "url": "https://github.com/unicode-org/icu/commit/e29e86d62abf53f3695ed79e0ab99065cf0cdc80"
+        },
+        "date": 1729813583325,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "UnicodeSetIterate",
+            "value": 0.9208229187285543,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
