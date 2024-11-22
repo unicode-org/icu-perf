@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1732230400551,
+  "lastUpdate": 1732299802962,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -29217,6 +29217,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFD_Text",
             "value": 3.1403361177567506,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "committer": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "distinct": true,
+          "id": "e000c5c3cc30104e6dbd74032ed71bbc32a5bfef",
+          "message": "ICU-22127 Remove obsolete WordBreakTest.txt known issues",
+          "timestamp": "2024-11-22T18:40:54+01:00",
+          "tree_id": "8a3a3efd52441553c2e9bfe259b1b6a12c9d3671",
+          "url": "https://github.com/unicode-org/icu/commit/e000c5c3cc30104e6dbd74032ed71bbc32a5bfef"
+        },
+        "date": 1732298190556,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 3.1621576358252574,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "424d6a3e8b993cb2a3d4450bb2449b4057726251",
+          "message": "ICU-22901 Update ulocimp_getSubtags() &co. to use std::string_view.",
+          "timestamp": "2024-11-22T19:05:03+01:00",
+          "tree_id": "02e501417daeecb40c29337d5a343a6f68fd9d82",
+          "url": "https://github.com/unicode-org/icu/commit/424d6a3e8b993cb2a3d4450bb2449b4057726251"
+        },
+        "date": 1732299607288,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 3.039184175094169,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
