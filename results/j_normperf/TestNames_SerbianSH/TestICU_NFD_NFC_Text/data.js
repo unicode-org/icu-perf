@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1735272336285,
+  "lastUpdate": 1735950239945,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -60026,6 +60026,126 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFC_Text",
             "value": 9.07378135329946,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mingaleev@google.com",
+            "name": "Almaz Mingaleev",
+            "username": "Yqwed"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "ed69e5336d0710141a3ca5ce566896753d87bbbf",
+          "message": "ICU-22992 madvise memory mapped files  on Android.",
+          "timestamp": "2025-01-03T15:00:51-08:00",
+          "tree_id": "65ce7dd9ea95b3d0980b441516a1ba4ceccdaa64",
+          "url": "https://github.com/unicode-org/icu/commit/ed69e5336d0710141a3ca5ce566896753d87bbbf"
+        },
+        "date": 1735946631147,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 8.937922758773048,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mingaleev@google.com",
+            "name": "Almaz Mingaleev",
+            "username": "Yqwed"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "ed69e5336d0710141a3ca5ce566896753d87bbbf",
+          "message": "ICU-22992 madvise memory mapped files  on Android.",
+          "timestamp": "2025-01-03T15:00:51-08:00",
+          "tree_id": "65ce7dd9ea95b3d0980b441516a1ba4ceccdaa64",
+          "url": "https://github.com/unicode-org/icu/commit/ed69e5336d0710141a3ca5ce566896753d87bbbf"
+        },
+        "date": 1735946737570,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 9.032932905890222,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "93ce388619357ce96cc832212ede80ae30d9e9a4",
+          "message": "ICU-23002 Fix int64_t overflow in NFRule::parseRuleDescriptor\n\nSee #3324",
+          "timestamp": "2025-01-03T15:48:24-08:00",
+          "tree_id": "b7e9beb39b12ea6594295fb0c95ade0e2f5391fc",
+          "url": "https://github.com/unicode-org/icu/commit/93ce388619357ce96cc832212ede80ae30d9e9a4"
+        },
+        "date": 1735950001163,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 9.391978666853953,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "93ce388619357ce96cc832212ede80ae30d9e9a4",
+          "message": "ICU-23002 Fix int64_t overflow in NFRule::parseRuleDescriptor\n\nSee #3324",
+          "timestamp": "2025-01-03T15:48:24-08:00",
+          "tree_id": "b7e9beb39b12ea6594295fb0c95ade0e2f5391fc",
+          "url": "https://github.com/unicode-org/icu/commit/93ce388619357ce96cc832212ede80ae30d9e9a4"
+        },
+        "date": 1735950036889,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 9.72358289651748,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
