@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1736375107145,
+  "lastUpdate": 1736476185669,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -65577,6 +65577,126 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_Orig_Text",
             "value": 11.7174,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "bd50f8be32d37f8bcac72fa2a20bdf3228c1e75c",
+          "message": "ICU-22991 Reduce unnecessary Grego calculation\n\nSee #3329",
+          "timestamp": "2025-01-08T17:04:00-08:00",
+          "tree_id": "70ee08409a9ddd0ab3af6c3871c6681869a50304",
+          "url": "https://github.com/unicode-org/icu/commit/bd50f8be32d37f8bcac72fa2a20bdf3228c1e75c"
+        },
+        "date": 1736385731553,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFD_Text",
+            "value": 13.7205,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 9.1652,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_Orig_Text",
+            "value": 9.1713,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 10.7059,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 11.6861,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_Orig_Text",
+            "value": 11.6793,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "committer": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "distinct": true,
+          "id": "f8aa68b0c1c9584633e7a61157185f1a2c275f58",
+          "message": "ICU-22940 MF2 ICU4C: Error checking improvements in parser\n\nImprove checking for OOM errors when allocating UnicodeSets,\nper post-merge comments on https://github.com/unicode-org/icu/pull/3236",
+          "timestamp": "2025-01-09T18:00:43-08:00",
+          "tree_id": "662fc065b6121e0851a29a92ae8a401bc1878851",
+          "url": "https://github.com/unicode-org/icu/commit/f8aa68b0c1c9584633e7a61157185f1a2c275f58"
+        },
+        "date": 1736475985050,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFD_Text",
+            "value": 13.7723,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 9.2997,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_Orig_Text",
+            "value": 9.2748,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 10.7456,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 11.7212,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_Orig_Text",
+            "value": 11.9571,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1736374429201,
+  "lastUpdate": 1736475497143,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -30327,6 +30327,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 0.008784435785956399,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "bd50f8be32d37f8bcac72fa2a20bdf3228c1e75c",
+          "message": "ICU-22991 Reduce unnecessary Grego calculation\n\nSee #3329",
+          "timestamp": "2025-01-08T17:04:00-08:00",
+          "tree_id": "70ee08409a9ddd0ab3af6c3871c6681869a50304",
+          "url": "https://github.com/unicode-org/icu/commit/bd50f8be32d37f8bcac72fa2a20bdf3228c1e75c"
+        },
+        "date": 1736385165574,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 0.009148117411963764,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "committer": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "distinct": true,
+          "id": "f8aa68b0c1c9584633e7a61157185f1a2c275f58",
+          "message": "ICU-22940 MF2 ICU4C: Error checking improvements in parser\n\nImprove checking for OOM errors when allocating UnicodeSets,\nper post-merge comments on https://github.com/unicode-org/icu/pull/3236",
+          "timestamp": "2025-01-09T18:00:43-08:00",
+          "tree_id": "662fc065b6121e0851a29a92ae8a401bc1878851",
+          "url": "https://github.com/unicode-org/icu/commit/f8aa68b0c1c9584633e7a61157185f1a2c275f58"
+        },
+        "date": 1736475297096,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 0.009175187455373228,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
