@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1737656475868,
+  "lastUpdate": 1737682234816,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -46491,6 +46491,90 @@ window.BENCHMARK_DATA = {
           {
             "name": "FromUTF8",
             "value": 1.93,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "younies.mahmoud@gmail.com",
+            "name": "Younies Mahmoud",
+            "username": "younies"
+          },
+          "committer": {
+            "email": "younies.mahmoud@gmail.com",
+            "name": "Younies Mahmoud",
+            "username": "younies"
+          },
+          "distinct": true,
+          "id": "242bf9655f8ba3edc3ebb134a6e92bdf0771c122",
+          "message": "ICU-22781 Add a test case for unit constant behaviour",
+          "timestamp": "2025-01-24T01:34:43+01:00",
+          "tree_id": "20149bf279eaa2a8e29d9df2b804e2ea88920c66",
+          "url": "https://github.com/unicode-org/icu/commit/242bf9655f8ba3edc3ebb134a6e92bdf0771c122"
+        },
+        "date": 1737680204483,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Roundtrip",
+            "value": 9.2943,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "FromUnicode",
+            "value": 3.0325,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "FromUTF8",
+            "value": 1.9333,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "younies.mahmoud@gmail.com",
+            "name": "Younies Mahmoud",
+            "username": "younies"
+          },
+          "committer": {
+            "email": "younies.mahmoud@gmail.com",
+            "name": "Younies Mahmoud",
+            "username": "younies"
+          },
+          "distinct": true,
+          "id": "ba4d4d3ac27f3d2e40f5b6a2a51ec93f8661fff2",
+          "message": "ICU-22781 Adding support for constant denominators (C++)\n\nSee #3337",
+          "timestamp": "2025-01-24T02:06:43+01:00",
+          "tree_id": "188d54ae5d36c6942c084a3b96d5d9fa3a8c5453",
+          "url": "https://github.com/unicode-org/icu/commit/ba4d4d3ac27f3d2e40f5b6a2a51ec93f8661fff2"
+        },
+        "date": 1737682018269,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Roundtrip",
+            "value": 9.2894,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "FromUnicode",
+            "value": 3.0255,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "FromUTF8",
+            "value": 1.9308,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
