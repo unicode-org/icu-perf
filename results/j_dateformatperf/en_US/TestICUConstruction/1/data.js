@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1737763524062,
+  "lastUpdate": 1737769076787,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -30837,6 +30837,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUConstruction",
             "value": 1904.7604605922706,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "younies.mahmoud@gmail.com",
+            "name": "Younies Mahmoud",
+            "username": "younies"
+          },
+          "committer": {
+            "email": "younies.mahmoud@gmail.com",
+            "name": "Younies Mahmoud",
+            "username": "younies"
+          },
+          "distinct": true,
+          "id": "d70b252cdc3c5df088ff8e44bc29e95ae28be570",
+          "message": "ICU-22781 Add support for converting units with constant denominators (C++)\n\nSee #3347",
+          "timestamp": "2025-01-25T01:45:49+01:00",
+          "tree_id": "be02ec10ece4b7d683584e07bc268ea4b1005032",
+          "url": "https://github.com/unicode-org/icu/commit/d70b252cdc3c5df088ff8e44bc29e95ae28be570"
+        },
+        "date": 1737766686981,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 1930.7970679080515,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "4fc1b7e7f6cff7a6eabecdfbfcaf3f8c10bd5ad1",
+          "message": "ICU-22991 Simplified Grego code\n\nUse timeToFields instead of dayToFields\n\nICU-22991 Revert back gregoimp interface change",
+          "timestamp": "2025-01-24T17:13:51-08:00",
+          "tree_id": "181211306b3f3146a4feaa64606b611006c45682",
+          "url": "https://github.com/unicode-org/icu/commit/4fc1b7e7f6cff7a6eabecdfbfcaf3f8c10bd5ad1"
+        },
+        "date": 1737768868395,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 1913.8906532874394,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
