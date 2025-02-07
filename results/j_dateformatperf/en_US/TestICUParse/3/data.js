@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1738963141761,
+  "lastUpdate": 1738969293730,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -31587,6 +31587,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUParse",
             "value": 845.8957089040927,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "yumaoka@users.noreply.github.com",
+            "name": "Yoshito Umaoka",
+            "username": "yumaoka"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "bbaa68419b5c79d81fd19fedb561362d07da4d3f",
+          "message": "ICU-22411 Fixed a ISO currency data file download problem in the currency update checking tool",
+          "timestamp": "2025-02-07T14:33:27-08:00",
+          "tree_id": "a7869c17182332b7650e2a1ddd6fa54f14d3aff2",
+          "url": "https://github.com/unicode-org/icu/commit/bbaa68419b5c79d81fd19fedb561362d07da4d3f"
+        },
+        "date": 1738967849995,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUParse",
+            "value": 872.1477010092381,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "CVlad.2006@gmail.com",
+            "name": "Vladyslav Yeremeichuk",
+            "username": "nightelf3"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "624a26030bc9e7a63bb058ad83baff531e8e0bc6",
+          "message": "ICU-22950 Do not initialize currency redundantly\n\nresolveCurrency() slows down simple number formatting requests like:\nfor (int i = 0; i < 9999; i++) u_snprintf_u(buff, 100, u\"%d\", i);\nSince we don't use currency here, we can skip its initialization.",
+          "timestamp": "2025-02-07T14:45:43-08:00",
+          "tree_id": "2c6700ac44f6ffaf095b08e1804447c0e6ec4be7",
+          "url": "https://github.com/unicode-org/icu/commit/624a26030bc9e7a63bb058ad83baff531e8e0bc6"
+        },
+        "date": 1738969058818,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUParse",
+            "value": 843.6785286447038,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
