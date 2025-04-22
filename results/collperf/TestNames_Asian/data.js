@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1744931827472,
+  "lastUpdate": 1745362691554,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -66255,6 +66255,114 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 1995937.1362,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "97c2c334d3483794e2c8552d291d1fa73483f9c5",
+          "message": "ICU-23102 Refactor Chinese Calendar to avoid save/restore",
+          "timestamp": "2025-04-22T15:04:12-07:00",
+          "tree_id": "12d834c3f95acb0ecd342e5c6b237ec2f74125ac",
+          "url": "https://github.com/unicode-org/icu/commit/97c2c334d3483794e2c8552d291d1fa73483f9c5"
+        },
+        "date": 1745360361418,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 212.7938,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 9022561.2213,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 1985798.9233,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 8246337.1581,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 2065326.9423,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "e3e815342cf6ddd305f481fddafbb23bda353b5b",
+          "message": "ICU-23102 Simplify Calendar code\n\nAvoid calling unnecessary computeGregorianFields()\nRefactor and reduced handleComputeFields in CECalendar",
+          "timestamp": "2025-04-22T15:26:37-07:00",
+          "tree_id": "50058e497874d038f7325b5b9c3c3dc7faf771b2",
+          "url": "https://github.com/unicode-org/icu/commit/e3e815342cf6ddd305f481fddafbb23bda353b5b"
+        },
+        "date": 1745362418419,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 220.6592,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 9411795.4013,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 2072575.9803,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 8564923.9606,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 2063173.363,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
