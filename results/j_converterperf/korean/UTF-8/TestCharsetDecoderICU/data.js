@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1747824821487,
+  "lastUpdate": 1747839649620,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -34377,6 +34377,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 2.050597100162361,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "shane@unicode.org",
+            "name": "Shane F. Carr",
+            "username": "sffc"
+          },
+          "committer": {
+            "email": "shane@unicode.org",
+            "name": "Shane F. Carr",
+            "username": "sffc"
+          },
+          "distinct": true,
+          "id": "8c9033aaaa91d3d8047e624dc9e5849055be8ae0",
+          "message": "ICU-23121 Fix GHA workflow for ICU4X, second try",
+          "timestamp": "2025-05-21T16:02:23+02:00",
+          "tree_id": "646f32733e9bf0a259bc884fe8aee6d162a97729",
+          "url": "https://github.com/unicode-org/icu/commit/8c9033aaaa91d3d8047e624dc9e5849055be8ae0"
+        },
+        "date": 1747837186622,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 2.052956604060048,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "shane@unicode.org",
+            "name": "Shane F. Carr",
+            "username": "sffc"
+          },
+          "committer": {
+            "email": "shane@unicode.org",
+            "name": "Shane F. Carr",
+            "username": "sffc"
+          },
+          "distinct": true,
+          "id": "7767b8c91c868ee6fbf1b84cd72a995f2b708ec2",
+          "message": "ICU-23121 Fix GHA workflow for ICU4X, third try",
+          "timestamp": "2025-05-21T16:24:22+02:00",
+          "tree_id": "361d6893ec1008a3b5aee33ef94393262fcca1fb",
+          "url": "https://github.com/unicode-org/icu/commit/7767b8c91c868ee6fbf1b84cd72a995f2b708ec2"
+        },
+        "date": 1747839385183,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 2.1682486732276876,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
