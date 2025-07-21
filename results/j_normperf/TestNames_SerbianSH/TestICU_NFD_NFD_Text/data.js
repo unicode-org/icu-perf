@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753100852315,
+  "lastUpdate": 1753129050992,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -36417,6 +36417,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFD_Text",
             "value": 2.577938746755337,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "574b64c2026edfcb70fc651038691aedee803b0b",
+          "message": "ICU-23136 Remove __declspec(dllexport) from class Locale on Windows.\n\nmore consistent U_COMMON_API/U_I18N_API not U_EXPORT",
+          "timestamp": "2025-07-21T13:02:32-07:00",
+          "tree_id": "c1e3b71677175c108e879c3cb4c06492b696fae2",
+          "url": "https://github.com/unicode-org/icu/commit/574b64c2026edfcb70fc651038691aedee803b0b"
+        },
+        "date": 1753128761349,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 3.780611697011219,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
