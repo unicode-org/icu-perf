@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753190326020,
+  "lastUpdate": 1753219241384,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -116277,6 +116277,96 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIsWhiteSpace",
             "value": 4.6116,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kaylinfinke@gmail.com",
+            "name": "Kaylin",
+            "username": "KaylinFinke"
+          },
+          "committer": {
+            "email": "62772518+richgillam@users.noreply.github.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "distinct": true,
+          "id": "3e94159e53070ddde9323aee1aef41f0b664faec",
+          "message": "ICU-23151 Fixed pkgdata crash with Clang-CL\n\nAdd config all 4 windows platforms instead of just ARM.\n\nStore off CPU Arch for use with writeObjectCode\n\nChange checkCpuArchitecture to accept uppercase option values. Preserve lowercase option values for compatibility with previous versions in case people are using these options.\n\nICU-23151 Removed browse data to fix msbuild error with Clang-CL\n\nRemoved browse information which isn't needed for modern Visual Studio.",
+          "timestamp": "2025-07-22T13:42:21-07:00",
+          "tree_id": "a3a8dbf0760442b3c710b7850c5881f171f62396",
+          "url": "https://github.com/unicode-org/icu/commit/3e94159e53070ddde9323aee1aef41f0b664faec"
+        },
+        "date": 1753218948279,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIsAlpha",
+            "value": 4.3061,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIsUpper",
+            "value": 4.2884,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIsLower",
+            "value": 4.3036,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIsDigit",
+            "value": 4.5994,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIsSpace",
+            "value": 5.2178,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIsAlphaNumeric",
+            "value": 4.5982,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIsPrint",
+            "value": 4.6007,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIsControl",
+            "value": 4.3032,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestToLower",
+            "value": 5.4768,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestToUpper",
+            "value": 5.5166,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIsWhiteSpace",
+            "value": 4.6135,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

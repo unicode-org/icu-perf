@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753190431436,
+  "lastUpdate": 1753219528030,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -123453,6 +123453,102 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestScan2",
             "value": 38.8539,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kaylinfinke@gmail.com",
+            "name": "Kaylin",
+            "username": "KaylinFinke"
+          },
+          "committer": {
+            "email": "62772518+richgillam@users.noreply.github.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "distinct": true,
+          "id": "3e94159e53070ddde9323aee1aef41f0b664faec",
+          "message": "ICU-23151 Fixed pkgdata crash with Clang-CL\n\nAdd config all 4 windows platforms instead of just ARM.\n\nStore off CPU Arch for use with writeObjectCode\n\nChange checkCpuArchitecture to accept uppercase option values. Preserve lowercase option values for compatibility with previous versions in case people are using these options.\n\nICU-23151 Removed browse data to fix msbuild error with Clang-CL\n\nRemoved browse information which isn't needed for modern Visual Studio.",
+          "timestamp": "2025-07-22T13:42:21-07:00",
+          "tree_id": "a3a8dbf0760442b3c710b7850c5881f171f62396",
+          "url": "https://github.com/unicode-org/icu/commit/3e94159e53070ddde9323aee1aef41f0b664faec"
+        },
+        "date": 1753219229958,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCtor",
+            "value": 19.0967,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCtor1",
+            "value": 21.2619,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCtor2",
+            "value": 24.9631,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCtor3",
+            "value": 27.9437,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestAssign",
+            "value": 38.2955,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestAssign1",
+            "value": 36.3089,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestAssign2",
+            "value": 26.9842,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestGetch",
+            "value": 16.0719,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCatenate",
+            "value": 85.916,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestScan",
+            "value": 21.6689,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestScan1",
+            "value": 37.1908,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestScan2",
+            "value": 38.9989,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
