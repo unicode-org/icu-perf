@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753217762924,
+  "lastUpdate": 1753226842986,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -36417,6 +36417,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUParse",
             "value": 306.87168765447444,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "7e11a6aa426f5eb24c0259f3ad209a0403d058dd",
+          "message": "ICU-12717 Errorprone stopped after 1000 warnings, fixed",
+          "timestamp": "2025-07-22T16:17:43-07:00",
+          "tree_id": "993ba394da654fdc38a706b8b53e262f64a3d012",
+          "url": "https://github.com/unicode-org/icu/commit/7e11a6aa426f5eb24c0259f3ad209a0403d058dd"
+        },
+        "date": 1753226548913,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUParse",
+            "value": 288.99562209943593,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
