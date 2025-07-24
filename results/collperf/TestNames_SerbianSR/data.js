@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753227861756,
+  "lastUpdate": 1753390439058,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -70197,6 +70197,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 16309309.6612,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "committer": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "distinct": true,
+          "id": "bb9900af47f88486b430159723e8c7f78ae5eb24",
+          "message": "ICU-23136 Remove template instantiations from MessageFormat-related classes\n\nMake individual members public rather than entire classes,\nso that private members with templated types don't need to be exported.",
+          "timestamp": "2025-07-24T13:18:57-07:00",
+          "tree_id": "f6ae6392a3b8594b5e74ae10ca3fb747c171dcd3",
+          "url": "https://github.com/unicode-org/icu/commit/bb9900af47f88486b430159723e8c7f78ae5eb24"
+        },
+        "date": 1753389920647,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 356.036,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 53071022.0337,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 15342653.9664,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 52126852.3141,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 16449183.7342,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

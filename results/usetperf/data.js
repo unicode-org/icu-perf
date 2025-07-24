@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753227663122,
+  "lastUpdate": 1753390317489,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -101241,6 +101241,84 @@ window.BENCHMARK_DATA = {
           {
             "name": "pattern3",
             "value": 1583.8391,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "committer": {
+            "email": "tjc@igalia.com",
+            "name": "Tim Chevalier",
+            "username": "catamorphism"
+          },
+          "distinct": true,
+          "id": "bb9900af47f88486b430159723e8c7f78ae5eb24",
+          "message": "ICU-23136 Remove template instantiations from MessageFormat-related classes\n\nMake individual members public rather than entire classes,\nso that private members with templated types don't need to be exported.",
+          "timestamp": "2025-07-24T13:18:57-07:00",
+          "tree_id": "f6ae6392a3b8594b5e74ae10ca3fb747c171dcd3",
+          "url": "https://github.com/unicode-org/icu/commit/bb9900af47f88486b430159723e8c7f78ae5eb24"
+        },
+        "date": 1753390015978,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "titlecase_letter_add",
+            "value": 78251.9349,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_contains",
+            "value": 167590.7172,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_iterator",
+            "value": 0.5621,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_add",
+            "value": 10.5393,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_contains",
+            "value": 6.3762,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_iterator",
+            "value": 0,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern1",
+            "value": 8428.3193,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern2",
+            "value": 31624.9547,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern3",
+            "value": 1474.1686,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
