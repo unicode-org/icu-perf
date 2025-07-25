@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753452205051,
+  "lastUpdate": 1753475846151,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -36537,6 +36537,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUConstruction",
             "value": 495.20288964048467,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "c5b4fe4f21610d629b1eaf493a9e110df2e431c6",
+          "message": "ICU-23004 add ...CodePoints default constructors",
+          "timestamp": "2025-07-25T13:22:57-07:00",
+          "tree_id": "3c25993db0de238010b6954a06a879913b466394",
+          "url": "https://github.com/unicode-org/icu/commit/c5b4fe4f21610d629b1eaf493a9e110df2e431c6"
+        },
+        "date": 1753475541916,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 505.9906702875068,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
