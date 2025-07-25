@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753389673644,
+  "lastUpdate": 1753452529913,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -36267,6 +36267,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 1.8061021781626736,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "3a46ac4fc81add201c661b406d7b671f8451e639",
+          "message": "ICU-23054 Fix all 'AlmostJavadoc' errorprone issues (for real this time)",
+          "timestamp": "2025-07-25T15:53:11+02:00",
+          "tree_id": "178ac40edcceea09c3a7061408ae1dde3e8af0da",
+          "url": "https://github.com/unicode-org/icu/commit/3a46ac4fc81add201c661b406d7b671f8451e639"
+        },
+        "date": 1753452229629,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 1.8052749693765417,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

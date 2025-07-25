@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753390009062,
+  "lastUpdate": 1753452655600,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -54849,6 +54849,48 @@ window.BENCHMARK_DATA = {
           {
             "name": "FromUTF8",
             "value": 2.3028,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "3a46ac4fc81add201c661b406d7b671f8451e639",
+          "message": "ICU-23054 Fix all 'AlmostJavadoc' errorprone issues (for real this time)",
+          "timestamp": "2025-07-25T15:53:11+02:00",
+          "tree_id": "178ac40edcceea09c3a7061408ae1dde3e8af0da",
+          "url": "https://github.com/unicode-org/icu/commit/3a46ac4fc81add201c661b406d7b671f8451e639"
+        },
+        "date": 1753452362985,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Roundtrip",
+            "value": 9.5566,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "FromUnicode",
+            "value": 3.0539,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "FromUTF8",
+            "value": 2.2974,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
