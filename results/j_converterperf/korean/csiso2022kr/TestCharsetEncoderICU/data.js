@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753476627032,
+  "lastUpdate": 1753907322758,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -36507,6 +36507,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 18.795149039736593,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "committer": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "distinct": true,
+          "id": "2d73b936e7cefbdf779b8c450c4a9b6a359ec6b2",
+          "message": "ICU-23170 commit-checker: workaround for jira api issue",
+          "timestamp": "2025-07-30T15:19:15-05:00",
+          "tree_id": "0124851eec97ffed6ddb3a4db9396446bcc4e8a9",
+          "url": "https://github.com/unicode-org/icu/commit/2d73b936e7cefbdf779b8c450c4a9b6a359ec6b2"
+        },
+        "date": 1753907025049,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 18.141300152537863,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

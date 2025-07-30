@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753476512759,
+  "lastUpdate": 1753907225688,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -73136,6 +73136,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFC_Text",
             "value": 3.746899266242216,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "committer": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "distinct": true,
+          "id": "2d73b936e7cefbdf779b8c450c4a9b6a359ec6b2",
+          "message": "ICU-23170 commit-checker: workaround for jira api issue",
+          "timestamp": "2025-07-30T15:19:15-05:00",
+          "tree_id": "0124851eec97ffed6ddb3a4db9396446bcc4e8a9",
+          "url": "https://github.com/unicode-org/icu/commit/2d73b936e7cefbdf779b8c450c4a9b6a359ec6b2"
+        },
+        "date": 1753906929374,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 3.76521319266461,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "committer": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "distinct": true,
+          "id": "2d73b936e7cefbdf779b8c450c4a9b6a359ec6b2",
+          "message": "ICU-23170 commit-checker: workaround for jira api issue",
+          "timestamp": "2025-07-30T15:19:15-05:00",
+          "tree_id": "0124851eec97ffed6ddb3a4db9396446bcc4e8a9",
+          "url": "https://github.com/unicode-org/icu/commit/2d73b936e7cefbdf779b8c450c4a9b6a359ec6b2"
+        },
+        "date": 1753906927660,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 3.7427638529089373,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
