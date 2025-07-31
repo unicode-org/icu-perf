@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753907608973,
+  "lastUpdate": 1753915821976,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -36507,6 +36507,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 0.34770608227082017,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "eburkov@rvision.ru",
+            "name": "Burkov Egor",
+            "username": "wooffie"
+          },
+          "committer": {
+            "email": "62772518+richgillam@users.noreply.github.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "distinct": true,
+          "id": "313b9dbe5ae69795ee00fcd0b6e8f5d47afd4413",
+          "message": "ICU-23075 Add nullptr check for localtime call at writesrc.cpp",
+          "timestamp": "2025-07-30T15:23:47-07:00",
+          "tree_id": "6dd3df7dbac79f07d34fff997d962cb8cad6e580",
+          "url": "https://github.com/unicode-org/icu/commit/313b9dbe5ae69795ee00fcd0b6e8f5d47afd4413"
+        },
+        "date": 1753915520566,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 0.3471404492203649,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
