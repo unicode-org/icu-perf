@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753915651354,
+  "lastUpdate": 1754310196775,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -36537,6 +36537,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 1.053583265594942,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "fad198a26c67346e96f4bbdc1236de59aba6eebe",
+          "message": "ICU-23136 Remove explicit template instantiations for public classes.\n\nBy removing the use of __declspec(dllexport) for private members the\nneed for explicit template instantiations to be able to export these\nmembers disappears.",
+          "timestamp": "2025-08-04T14:01:46+02:00",
+          "tree_id": "f45de965764de85485f1f6bd6ccd6e97bbdf8135",
+          "url": "https://github.com/unicode-org/icu/commit/fad198a26c67346e96f4bbdc1236de59aba6eebe"
+        },
+        "date": 1754309893610,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 1.0577901485602619,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
