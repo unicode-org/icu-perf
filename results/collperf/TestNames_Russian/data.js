@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754419931148,
+  "lastUpdate": 1754423425010,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -70737,6 +70737,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 125470.1111,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "5c95e37c6aaafa598ab28021fbdee89cbfe709db",
+          "message": "ICU-23136 Remove explicit template instantiations for common classes.\n\nBy removing the use of __declspec(dllexport) for private members the\nneed for explicit template instantiations to be able to export these\nmembers disappears.",
+          "timestamp": "2025-08-05T21:16:03+02:00",
+          "tree_id": "89cdf921441a7cc61d64a3e313c1aea01c678e6f",
+          "url": "https://github.com/unicode-org/icu/commit/5c95e37c6aaafa598ab28021fbdee89cbfe709db"
+        },
+        "date": 1754423116748,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 545.4263,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 606289.5857,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 88245.0682,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 543223.4467,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 126253.7323,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
