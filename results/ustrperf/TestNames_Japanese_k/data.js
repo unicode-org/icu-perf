@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754326272023,
+  "lastUpdate": 1754354032718,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -124317,6 +124317,102 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestScan2",
             "value": 39.1768,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "andy.heninger@gmail.com",
+            "name": "Andy Heninger",
+            "username": "aheninger"
+          },
+          "committer": {
+            "email": "andy.heninger@gmail.com",
+            "name": "Andy Heninger",
+            "username": "aheninger"
+          },
+          "distinct": true,
+          "id": "07cc9d9e0e6a1ae2876db4c23dabc6eeaa2ee2fb",
+          "message": "ICU-23142 In i18n/regexcst.h fix the header guard\n\nCorrect the bad header guard in the file regexcst.h, which contains\nthe state table used for parsing regular expressions.\n\nBecause regexcst.h is a generated file, the fix needs to be made in the\ngeneration script, regexcst.pl, and the file regenerated.\n\nRegeneration has, unforunately, produced large diffs because much of the\ngenerated content depends on the order of enumeration of hashes in the script,\nwhich has always been undetermined, and with recent versions of Perl, is\ndeliberately randomized.\n\nIn the end, this PR makes the following changes to the generation script:\n- Produce the correct header guard.\n- Enumerate hashes in sorted order, to avoid large diffs in the future.\n- Use nullptr instead of 0 (a change previously made directly in the generated file)\n- Update messages and names that incorrectly referred to RBBI rather than regex",
+          "timestamp": "2025-08-04T16:52:25-07:00",
+          "tree_id": "761bc3db88cb2538c2da1b89297f86e7103ca32a",
+          "url": "https://github.com/unicode-org/icu/commit/07cc9d9e0e6a1ae2876db4c23dabc6eeaa2ee2fb"
+        },
+        "date": 1754353726608,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCtor",
+            "value": 19.1032,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCtor1",
+            "value": 21.2693,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCtor2",
+            "value": 24.6949,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCtor3",
+            "value": 28.0829,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestAssign",
+            "value": 38.5799,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestAssign1",
+            "value": 36.3496,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestAssign2",
+            "value": 27.0916,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestGetch",
+            "value": 16.0575,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCatenate",
+            "value": 86.0106,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestScan",
+            "value": 21.6745,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestScan1",
+            "value": 37.2025,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestScan2",
+            "value": 39.2224,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

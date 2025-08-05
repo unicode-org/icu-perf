@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754325814907,
+  "lastUpdate": 1754353446270,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -78237,6 +78237,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_Orig_Text",
             "value": 7.1883,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "andy.heninger@gmail.com",
+            "name": "Andy Heninger",
+            "username": "aheninger"
+          },
+          "committer": {
+            "email": "andy.heninger@gmail.com",
+            "name": "Andy Heninger",
+            "username": "aheninger"
+          },
+          "distinct": true,
+          "id": "07cc9d9e0e6a1ae2876db4c23dabc6eeaa2ee2fb",
+          "message": "ICU-23142 In i18n/regexcst.h fix the header guard\n\nCorrect the bad header guard in the file regexcst.h, which contains\nthe state table used for parsing regular expressions.\n\nBecause regexcst.h is a generated file, the fix needs to be made in the\ngeneration script, regexcst.pl, and the file regenerated.\n\nRegeneration has, unforunately, produced large diffs because much of the\ngenerated content depends on the order of enumeration of hashes in the script,\nwhich has always been undetermined, and with recent versions of Perl, is\ndeliberately randomized.\n\nIn the end, this PR makes the following changes to the generation script:\n- Produce the correct header guard.\n- Enumerate hashes in sorted order, to avoid large diffs in the future.\n- Use nullptr instead of 0 (a change previously made directly in the generated file)\n- Update messages and names that incorrectly referred to RBBI rather than regex",
+          "timestamp": "2025-08-04T16:52:25-07:00",
+          "tree_id": "761bc3db88cb2538c2da1b89297f86e7103ca32a",
+          "url": "https://github.com/unicode-org/icu/commit/07cc9d9e0e6a1ae2876db4c23dabc6eeaa2ee2fb"
+        },
+        "date": 1754353144420,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFD_Text",
+            "value": 6.0147,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 4.8206,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_Orig_Text",
+            "value": 4.9627,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 5.1297,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 5.3243,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_Orig_Text",
+            "value": 7.2109,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
