@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754353103477,
+  "lastUpdate": 1754418841528,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -36837,6 +36837,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 0.007061932674337475,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "04ee38fdee56241f153a147d2b8b52b0b5ab4912",
+          "message": "ICU-23148 Separate deploy to Sonatype in a profile\n\nThe central-publishing-maven-plugin disables the regular maven-deploy-plugin,\nand that prevents publishing snapshots to GitHub.",
+          "timestamp": "2025-08-05T11:07:42-07:00",
+          "tree_id": "8319119ac879a62eb1ea4b242c62591de1079419",
+          "url": "https://github.com/unicode-org/icu/commit/04ee38fdee56241f153a147d2b8b52b0b5ab4912"
+        },
+        "date": 1754418535658,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 0.007367469539439424,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754353407794,
+  "lastUpdate": 1754419163454,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -70791,6 +70791,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 16421695.2781,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "04ee38fdee56241f153a147d2b8b52b0b5ab4912",
+          "message": "ICU-23148 Separate deploy to Sonatype in a profile\n\nThe central-publishing-maven-plugin disables the regular maven-deploy-plugin,\nand that prevents publishing snapshots to GitHub.",
+          "timestamp": "2025-08-05T11:07:42-07:00",
+          "tree_id": "8319119ac879a62eb1ea4b242c62591de1079419",
+          "url": "https://github.com/unicode-org/icu/commit/04ee38fdee56241f153a147d2b8b52b0b5ab4912"
+        },
+        "date": 1754418857173,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 314.9829,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 35797349.0443,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 14940706.7876,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 36114594.293,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 16567778.0974,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
