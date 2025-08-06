@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754422825091,
+  "lastUpdate": 1754486031840,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -36417,6 +36417,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 3.8537905783001434,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "ed8bd83faff7a3f100022b62200e7a19f6691933",
+          "message": "ICU-23136 Remove explicit template instantiations for i18n classes.\n\nBy removing the use of __declspec(dllexport) for private members the\nneed for explicit template instantiations to be able to export these\nmembers disappears.",
+          "timestamp": "2025-08-06T14:48:48+02:00",
+          "tree_id": "d7a6dbb9a97c762373c08af2f18f957d3394e31a",
+          "url": "https://github.com/unicode-org/icu/commit/ed8bd83faff7a3f100022b62200e7a19f6691933"
+        },
+        "date": 1754485725704,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 4.035108047651964,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
