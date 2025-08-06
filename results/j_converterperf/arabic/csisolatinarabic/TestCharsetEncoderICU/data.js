@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754485969964,
+  "lastUpdate": 1754515890744,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -36657,6 +36657,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 2.0450586256552885,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "andy.heninger@gmail.com",
+            "name": "Andy Heninger",
+            "username": "aheninger"
+          },
+          "committer": {
+            "email": "andy.heninger@gmail.com",
+            "name": "Andy Heninger",
+            "username": "aheninger"
+          },
+          "distinct": true,
+          "id": "a369e26e96f969ff17083a88723c0d3162aeb6bb",
+          "message": "ICU-23142 Fix header guard in regexcmp.h\n\nAlso fix a comment in regexcst.txt that incorrectly refered an rbbi\nimplementation function rather than the corresponding regex function.",
+          "timestamp": "2025-08-06T14:05:59-07:00",
+          "tree_id": "4be6ef116968d0ad013b9523e150c6e6f52849f7",
+          "url": "https://github.com/unicode-org/icu/commit/a369e26e96f969ff17083a88723c0d3162aeb6bb"
+        },
+        "date": 1754515584273,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 2.1285205972241017,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754486351675,
+  "lastUpdate": 1754516296342,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -70737,6 +70737,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 5601833.9786,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "andy.heninger@gmail.com",
+            "name": "Andy Heninger",
+            "username": "aheninger"
+          },
+          "committer": {
+            "email": "andy.heninger@gmail.com",
+            "name": "Andy Heninger",
+            "username": "aheninger"
+          },
+          "distinct": true,
+          "id": "a369e26e96f969ff17083a88723c0d3162aeb6bb",
+          "message": "ICU-23142 Fix header guard in regexcmp.h\n\nAlso fix a comment in regexcst.txt that incorrectly refered an rbbi\nimplementation function rather than the corresponding regex function.",
+          "timestamp": "2025-08-06T14:05:59-07:00",
+          "tree_id": "4be6ef116968d0ad013b9523e150c6e6f52849f7",
+          "url": "https://github.com/unicode-org/icu/commit/a369e26e96f969ff17083a88723c0d3162aeb6bb"
+        },
+        "date": 1754515978004,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 231.9182,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 21023070.9619,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 5264314.5775,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 19673935.3685,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 5645501.8228,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
