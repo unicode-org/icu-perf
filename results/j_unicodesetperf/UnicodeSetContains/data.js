@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754514803537,
+  "lastUpdate": 1754592486691,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37017,6 +37017,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "UnicodeSetContains",
             "value": 2.030323468004747,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "0e20d64b5963f1e31b751d367869385e037be71f",
+          "message": "ICU-23139 Fix number parsing is very lenient even in strict mode",
+          "timestamp": "2025-08-07T11:23:11-07:00",
+          "tree_id": "fd55e12c498da43c4b1f24d0519d0053c248e04f",
+          "url": "https://github.com/unicode-org/icu/commit/0e20d64b5963f1e31b751d367869385e037be71f"
+        },
+        "date": 1754591452082,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "UnicodeSetContains",
+            "value": 2.0299337464995975,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "00c199baed07a50eecd411fab0899bf96a7edfce",
+          "message": "ICU-20392 Split the Locale payload into nested and heap allocated.\n\nAll the most commonly used Locale objects have very little payload, most\nof them don't use any extensions, don't use a language tag longer than 3\ncharacters and don't use more than a single variant.\n\nThere's room for all that data in a simple 32 byte large payload object,\nwhich can be nested directly in the Locale object.\n\nAny payload larger than that can instead be heap allocated as needed, in\norder to save storage for the most commonly used objects while retaining\nthe ability to create arbitrarily large and complex Locale objects.\n\nThis reduces the storage requirements for all Locale objects.\n\nFor nested payloads, this reduction is from 224 bytes to 48 bytes.\n\nFor payloads that need to be heap allocated, the reduction depends on\nseveral factors, but for most cases there's some reduction. There are\nalso cases where this refactoring actually increases the storage used,\nbecause CharString allocates more storage than necessary. There are a\nnumber of ways in which this could be improved upon, such as optimizing\nCharString to not allocate more than necessary when copying a string of\nknown length, not allocating any empty CharString objects or possibly\nreplacing CharString with a new class for fixed length strings.\n\nThe public API remains unchanged but the operations which can lead to\nU_MEMORY_ALLOCATION_ERROR change.",
+          "timestamp": "2025-08-07T20:07:07+02:00",
+          "tree_id": "66e81de75cf3ddf847250ceeb9024518803dc736",
+          "url": "https://github.com/unicode-org/icu/commit/00c199baed07a50eecd411fab0899bf96a7edfce"
+        },
+        "date": 1754592182381,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "UnicodeSetContains",
+            "value": 2.031237583023824,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

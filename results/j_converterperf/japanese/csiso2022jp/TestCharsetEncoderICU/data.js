@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754515881731,
+  "lastUpdate": 1754593586442,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -36537,6 +36537,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 27.41737596074326,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "00c199baed07a50eecd411fab0899bf96a7edfce",
+          "message": "ICU-20392 Split the Locale payload into nested and heap allocated.\n\nAll the most commonly used Locale objects have very little payload, most\nof them don't use any extensions, don't use a language tag longer than 3\ncharacters and don't use more than a single variant.\n\nThere's room for all that data in a simple 32 byte large payload object,\nwhich can be nested directly in the Locale object.\n\nAny payload larger than that can instead be heap allocated as needed, in\norder to save storage for the most commonly used objects while retaining\nthe ability to create arbitrarily large and complex Locale objects.\n\nThis reduces the storage requirements for all Locale objects.\n\nFor nested payloads, this reduction is from 224 bytes to 48 bytes.\n\nFor payloads that need to be heap allocated, the reduction depends on\nseveral factors, but for most cases there's some reduction. There are\nalso cases where this refactoring actually increases the storage used,\nbecause CharString allocates more storage than necessary. There are a\nnumber of ways in which this could be improved upon, such as optimizing\nCharString to not allocate more than necessary when copying a string of\nknown length, not allocating any empty CharString objects or possibly\nreplacing CharString with a new class for fixed length strings.\n\nThe public API remains unchanged but the operations which can lead to\nU_MEMORY_ALLOCATION_ERROR change.",
+          "timestamp": "2025-08-07T20:07:07+02:00",
+          "tree_id": "66e81de75cf3ddf847250ceeb9024518803dc736",
+          "url": "https://github.com/unicode-org/icu/commit/00c199baed07a50eecd411fab0899bf96a7edfce"
+        },
+        "date": 1754593147555,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 30.208869784146582,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
