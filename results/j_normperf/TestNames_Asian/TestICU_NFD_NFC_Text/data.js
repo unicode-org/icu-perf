@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755268126311,
+  "lastUpdate": 1755284715892,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -73976,6 +73976,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFC_Text",
             "value": 11.747945128911175,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "09304dc62a706b095da577cd3996be3777eb9768",
+          "message": "ICU-20392 Replace use of CharString with FixedString in Locale::Heap.\n\nThis avoids allocating any more storage than strictly needed, reducing\nthe size of all Locale objects that need to be heap allocated.",
+          "timestamp": "2025-08-15T20:31:44+02:00",
+          "tree_id": "a69b4cacd59e525f29d21b023d5b1fabd8aa933f",
+          "url": "https://github.com/unicode-org/icu/commit/09304dc62a706b095da577cd3996be3777eb9768"
+        },
+        "date": 1755283366328,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 11.963178544448445,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "09304dc62a706b095da577cd3996be3777eb9768",
+          "message": "ICU-20392 Replace use of CharString with FixedString in Locale::Heap.\n\nThis avoids allocating any more storage than strictly needed, reducing\nthe size of all Locale objects that need to be heap allocated.",
+          "timestamp": "2025-08-15T20:31:44+02:00",
+          "tree_id": "a69b4cacd59e525f29d21b023d5b1fabd8aa933f",
+          "url": "https://github.com/unicode-org/icu/commit/09304dc62a706b095da577cd3996be3777eb9768"
+        },
+        "date": 1755284404927,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 11.892742942137213,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

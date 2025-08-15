@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755268901255,
+  "lastUpdate": 1755285121345,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -71169,6 +71169,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 16726668.3919,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "09304dc62a706b095da577cd3996be3777eb9768",
+          "message": "ICU-20392 Replace use of CharString with FixedString in Locale::Heap.\n\nThis avoids allocating any more storage than strictly needed, reducing\nthe size of all Locale objects that need to be heap allocated.",
+          "timestamp": "2025-08-15T20:31:44+02:00",
+          "tree_id": "a69b4cacd59e525f29d21b023d5b1fabd8aa933f",
+          "url": "https://github.com/unicode-org/icu/commit/09304dc62a706b095da577cd3996be3777eb9768"
+        },
+        "date": 1755284811603,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 362.3195,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 52123337.3218,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 15696916.883,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 51677343.5805,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 16387420.6872,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
