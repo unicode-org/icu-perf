@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754967647184,
+  "lastUpdate": 1755268064481,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -73796,6 +73796,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFC_Text",
             "value": 9.10153183561488,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "666368a9074786f0ffde6dd0972082e19185b024",
+          "message": "ICU-23136 Remove __declspec(dllexport) for ICU-23005 on Windows.\n\nThese classes will be updated to use Locale instead of CharString\n(which won't work if their private members are exported).",
+          "timestamp": "2025-08-15T16:05:09+02:00",
+          "tree_id": "9964bce8142b7c61ca4b77feb75291a2e02ea7fa",
+          "url": "https://github.com/unicode-org/icu/commit/666368a9074786f0ffde6dd0972082e19185b024"
+        },
+        "date": 1755267572366,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 8.992322314342042,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "666368a9074786f0ffde6dd0972082e19185b024",
+          "message": "ICU-23136 Remove __declspec(dllexport) for ICU-23005 on Windows.\n\nThese classes will be updated to use Locale instead of CharString\n(which won't work if their private members are exported).",
+          "timestamp": "2025-08-15T16:05:09+02:00",
+          "tree_id": "9964bce8142b7c61ca4b77feb75291a2e02ea7fa",
+          "url": "https://github.com/unicode-org/icu/commit/666368a9074786f0ffde6dd0972082e19185b024"
+        },
+        "date": 1755267755571,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 8.503257136918696,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
