@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755285578592,
+  "lastUpdate": 1755546572125,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -102723,6 +102723,84 @@ window.BENCHMARK_DATA = {
           {
             "name": "pattern3",
             "value": 1468.4047,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "225c262655e6c8a12af0802da940e54cf3367aaf",
+          "message": "ICU-23178 Always set to bogus if allocation fails when modifying Locale.\n\nIf any memory allocation error occurs while a Locale object is being\nmodified this leaves the object in an unpredictable state (in contrast\nto other kinds of errors, like illegal argument errors, where the same\ninput always leaves the object in the same state). When this happens,\nthe safest path forward is therefore to set the object to bogus.",
+          "timestamp": "2025-08-18T21:13:22+02:00",
+          "tree_id": "8ed1322ffe9fc8338261c7a730cbef1f9065cf31",
+          "url": "https://github.com/unicode-org/icu/commit/225c262655e6c8a12af0802da940e54cf3367aaf"
+        },
+        "date": 1755546261161,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "titlecase_letter_add",
+            "value": 78252.6688,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_contains",
+            "value": 178766.7424,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_iterator",
+            "value": 0.5421,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_add",
+            "value": 10.7623,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_contains",
+            "value": 6.8015,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_iterator",
+            "value": 0,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern1",
+            "value": 8669.2435,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern2",
+            "value": 36919.2181,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern3",
+            "value": 1469.3203,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755284096243,
+  "lastUpdate": 1755545987880,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37137,6 +37137,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUConstruction",
             "value": 1938.8814166553404,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "225c262655e6c8a12af0802da940e54cf3367aaf",
+          "message": "ICU-23178 Always set to bogus if allocation fails when modifying Locale.\n\nIf any memory allocation error occurs while a Locale object is being\nmodified this leaves the object in an unpredictable state (in contrast\nto other kinds of errors, like illegal argument errors, where the same\ninput always leaves the object in the same state). When this happens,\nthe safest path forward is therefore to set the object to bogus.",
+          "timestamp": "2025-08-18T21:13:22+02:00",
+          "tree_id": "8ed1322ffe9fc8338261c7a730cbef1f9065cf31",
+          "url": "https://github.com/unicode-org/icu/commit/225c262655e6c8a12af0802da940e54cf3367aaf"
+        },
+        "date": 1755545283397,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 1947.9068710181662,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755285330817,
+  "lastUpdate": 1755546526319,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -78957,6 +78957,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_Orig_Text",
             "value": 28.1114,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "225c262655e6c8a12af0802da940e54cf3367aaf",
+          "message": "ICU-23178 Always set to bogus if allocation fails when modifying Locale.\n\nIf any memory allocation error occurs while a Locale object is being\nmodified this leaves the object in an unpredictable state (in contrast\nto other kinds of errors, like illegal argument errors, where the same\ninput always leaves the object in the same state). When this happens,\nthe safest path forward is therefore to set the object to bogus.",
+          "timestamp": "2025-08-18T21:13:22+02:00",
+          "tree_id": "8ed1322ffe9fc8338261c7a730cbef1f9065cf31",
+          "url": "https://github.com/unicode-org/icu/commit/225c262655e6c8a12af0802da940e54cf3367aaf"
+        },
+        "date": 1755546214374,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFD_Text",
+            "value": 10.2382,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 15.7321,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_Orig_Text",
+            "value": 15.834,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 9.0734,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 26.2751,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_Orig_Text",
+            "value": 26.086,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

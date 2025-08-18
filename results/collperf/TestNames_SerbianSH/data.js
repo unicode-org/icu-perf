@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755284983037,
+  "lastUpdate": 1755546534613,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -71385,6 +71385,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 16481544.057,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "225c262655e6c8a12af0802da940e54cf3367aaf",
+          "message": "ICU-23178 Always set to bogus if allocation fails when modifying Locale.\n\nIf any memory allocation error occurs while a Locale object is being\nmodified this leaves the object in an unpredictable state (in contrast\nto other kinds of errors, like illegal argument errors, where the same\ninput always leaves the object in the same state). When this happens,\nthe safest path forward is therefore to set the object to bogus.",
+          "timestamp": "2025-08-18T21:13:22+02:00",
+          "tree_id": "8ed1322ffe9fc8338261c7a730cbef1f9065cf31",
+          "url": "https://github.com/unicode-org/icu/commit/225c262655e6c8a12af0802da940e54cf3367aaf"
+        },
+        "date": 1755546224296,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 317.2364,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 34477483.9761,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 14742745.8589,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 34653928.5448,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 16524208.7351,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
