@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755546121964,
+  "lastUpdate": 1755557522600,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -36987,6 +36987,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 0.4661590529657427,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "committer": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "distinct": true,
+          "id": "3ff550b0e6330ba28c28e4d34ef0fb526f9bbd31",
+          "message": "ICU-23179 Test various edge cases with $ in the absence of variables",
+          "timestamp": "2025-08-19T00:21:26+02:00",
+          "tree_id": "da4b8cf6e7a48f5c71305eb22d447ba1e5f75ea6",
+          "url": "https://github.com/unicode-org/icu/commit/3ff550b0e6330ba28c28e4d34ef0fb526f9bbd31"
+        },
+        "date": 1755557221430,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 0.4638335717579664,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
