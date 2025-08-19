@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755557576707,
+  "lastUpdate": 1755625889689,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -74036,6 +74036,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFC_Text",
             "value": 8.469902332316254,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pedberg@unicode.org",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "committer": {
+            "email": "42151464+pedberg-icu@users.noreply.github.com",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "distinct": true,
+          "id": "c48bbed353b97c57b1ead37d971b352b4b789d49",
+          "message": "ICU-23172 part 2: Make EraRules work if era code sequence starts at >0, has holes (#3593)\n\n- Use single trimmed array of startDates starting at first valid era (minEra), with tentativeEras removed if includeTentativeEras false.",
+          "timestamp": "2025-08-19T10:36:38-07:00",
+          "tree_id": "a333cfcc2f32455bbedfc5dbd88f569b23dae1cc",
+          "url": "https://github.com/unicode-org/icu/commit/c48bbed353b97c57b1ead37d971b352b4b789d49"
+        },
+        "date": 1755625490045,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 9.985957708069394,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pedberg@unicode.org",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "committer": {
+            "email": "42151464+pedberg-icu@users.noreply.github.com",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "distinct": true,
+          "id": "c48bbed353b97c57b1ead37d971b352b4b789d49",
+          "message": "ICU-23172 part 2: Make EraRules work if era code sequence starts at >0, has holes (#3593)\n\n- Use single trimmed array of startDates starting at first valid era (minEra), with tentativeEras removed if includeTentativeEras false.",
+          "timestamp": "2025-08-19T10:36:38-07:00",
+          "tree_id": "a333cfcc2f32455bbedfc5dbd88f569b23dae1cc",
+          "url": "https://github.com/unicode-org/icu/commit/c48bbed353b97c57b1ead37d971b352b4b789d49"
+        },
+        "date": 1755625587327,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 8.572422534681056,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
