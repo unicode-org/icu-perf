@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755640239773,
+  "lastUpdate": 1755706020540,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -79197,6 +79197,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_Orig_Text",
             "value": 26.2302,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "06f6ec0f2285ba1c299d9fd56a8d2b3161c5f556",
+          "message": "ICU-20392 Simplify code by removing Locale::initBaseName().\n\nWhatever the purpose of this helper function originally was,\nsubsequent refactorings have now made it obsolete.\n\nIt requires both less code and less processing to assign baseName\ntogether with the other data fields, instead of starting over and\nsearching for the '@' character once again and possibly having to\nmove payload from Nest to Heap.",
+          "timestamp": "2025-08-20T17:29:48+02:00",
+          "tree_id": "400c9b14ab53c3c39c9d71a3696ff7ccf7e48c30",
+          "url": "https://github.com/unicode-org/icu/commit/06f6ec0f2285ba1c299d9fd56a8d2b3161c5f556"
+        },
+        "date": 1755705706928,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFD_Text",
+            "value": 9.8514,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 16.069,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_Orig_Text",
+            "value": 16.0207,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 8.9375,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 26.1768,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_Orig_Text",
+            "value": 26.1319,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
