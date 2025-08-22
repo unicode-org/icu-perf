@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755869663580,
+  "lastUpdate": 1755873297166,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37557,6 +37557,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFD_Text",
             "value": 3.7718726677636516,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "dd6c002279b19f3de5e0fc7f9d786865716bd3db",
+          "message": "ICU-23192 Replace use of CharString with FixedString in MemoryPool.",
+          "timestamp": "2025-08-22T16:16:47+02:00",
+          "tree_id": "878ca36c23ef34a2f65867f50aff75074d25a3cc",
+          "url": "https://github.com/unicode-org/icu/commit/dd6c002279b19f3de5e0fc7f9d786865716bd3db"
+        },
+        "date": 1755872995376,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 3.7831904726593373,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
