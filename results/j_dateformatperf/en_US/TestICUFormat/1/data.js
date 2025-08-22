@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755873495973,
+  "lastUpdate": 1755892958571,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37227,6 +37227,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUFormat",
             "value": 214.10245709785934,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "ae4a34559f174c6b5830706466ed4c36c948ead8",
+          "message": "ICU-23181 add Hntl as a new alias/compound script code",
+          "timestamp": "2025-08-22T12:43:00-07:00",
+          "tree_id": "202be7b1780bf67eb1123d14ddfdaea92dfd85d6",
+          "url": "https://github.com/unicode-org/icu/commit/ae4a34559f174c6b5830706466ed4c36c948ead8"
+        },
+        "date": 1755892654185,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 251.10375616784157,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
