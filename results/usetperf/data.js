@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756228102485,
+  "lastUpdate": 1756231817341,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -103503,6 +103503,84 @@ window.BENCHMARK_DATA = {
           {
             "name": "pattern3",
             "value": 1489.0197,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "bfbea979f7c8953ef57da33a5aa99cda3348c72b",
+          "message": "ICU-23005 Replace use of CharString with Locale to simplify the code.\n\nThis brings a lot of the code that uses LocaleBased back to how it was\nbefore the refactoring of ICU-23000, accessing the validLocale and\nactualLocale fields directly instead of through LocaleBased helper\nfunctions that now no longer are necessary.\n\nThis also makes it possible to remove the U_LOCALE_BASED() macro and\nLocaleBased then ends up becoming a trivial class that now contains\nnothing more than two static helper functions.",
+          "timestamp": "2025-08-26T19:36:01+02:00",
+          "tree_id": "82de5c6088824a5c3047747c7377c0fc7f271890",
+          "url": "https://github.com/unicode-org/icu/commit/bfbea979f7c8953ef57da33a5aa99cda3348c72b"
+        },
+        "date": 1756231513577,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "titlecase_letter_add",
+            "value": 78239.0109,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_contains",
+            "value": 178713.5394,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_iterator",
+            "value": 0.5418,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_add",
+            "value": 10.7637,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_contains",
+            "value": 6.8012,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_iterator",
+            "value": 0,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern1",
+            "value": 8575.7483,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern2",
+            "value": 31945.3575,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern3",
+            "value": 1452.8269,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756227947550,
+  "lastUpdate": 1756231949032,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -71763,6 +71763,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 16350947.1907,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "bfbea979f7c8953ef57da33a5aa99cda3348c72b",
+          "message": "ICU-23005 Replace use of CharString with Locale to simplify the code.\n\nThis brings a lot of the code that uses LocaleBased back to how it was\nbefore the refactoring of ICU-23000, accessing the validLocale and\nactualLocale fields directly instead of through LocaleBased helper\nfunctions that now no longer are necessary.\n\nThis also makes it possible to remove the U_LOCALE_BASED() macro and\nLocaleBased then ends up becoming a trivial class that now contains\nnothing more than two static helper functions.",
+          "timestamp": "2025-08-26T19:36:01+02:00",
+          "tree_id": "82de5c6088824a5c3047747c7377c0fc7f271890",
+          "url": "https://github.com/unicode-org/icu/commit/bfbea979f7c8953ef57da33a5aa99cda3348c72b"
+        },
+        "date": 1756231643766,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 361.7574,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 51667383.7389,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 15605413.9137,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 52008306.4383,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 16305869.3967,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
