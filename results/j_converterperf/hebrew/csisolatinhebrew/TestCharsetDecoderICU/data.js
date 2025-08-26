@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755893165240,
+  "lastUpdate": 1756227308913,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -36957,6 +36957,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 0.0063225101152977504,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "f362ced23008f240b755ede2d79ed689253bfcb1",
+          "message": "ICU-23167 Change Ethiopian Amete Alem epoch\n\nSee #3602",
+          "timestamp": "2025-08-26T09:34:10-07:00",
+          "tree_id": "2e4ed2fd4a3c0d3868df47fa1c9711d83b0929af",
+          "url": "https://github.com/unicode-org/icu/commit/f362ced23008f240b755ede2d79ed689253bfcb1"
+        },
+        "date": 1756227002704,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 0.006498701260302455,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
