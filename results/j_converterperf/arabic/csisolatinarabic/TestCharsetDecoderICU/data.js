@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756231133167,
+  "lastUpdate": 1756327060869,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37347,6 +37347,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 0.010296922405260535,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pedberg@unicode.org",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "committer": {
+            "email": "131725218+DraganBesevic@users.noreply.github.com",
+            "name": "DraganBesevic",
+            "username": "DraganBesevic"
+          },
+          "distinct": true,
+          "id": "8d75ca147a80bff6cad4d3ecb20574ac7683fc17",
+          "message": "ICU-23056 Integrate CLDR 48 release alpha0, part 5, fix some memory leaks due to logKnownIssue test skips",
+          "timestamp": "2025-08-27T13:13:57-07:00",
+          "tree_id": "5e1ce7b0bd067e3ee72025672fd649fe5279db55",
+          "url": "https://github.com/unicode-org/icu/commit/8d75ca147a80bff6cad4d3ecb20574ac7683fc17"
+        },
+        "date": 1756326759457,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 0.010285450654425854,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
