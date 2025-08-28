@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756327788277,
+  "lastUpdate": 1756338429087,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37467,6 +37467,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUConstruction",
             "value": 1911.2690428383005,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pedberg@unicode.org",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "committer": {
+            "email": "42151464+pedberg-icu@users.noreply.github.com",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "distinct": true,
+          "id": "6952822744672c5a2bce1f1dcedd3c650cafd962",
+          "message": "ICU-23196 Add 7 new CLDR 48 locales to ICU",
+          "timestamp": "2025-08-27T16:21:34-07:00",
+          "tree_id": "8b9d66e8e7f1accbeea2a7a6e888592157467657",
+          "url": "https://github.com/unicode-org/icu/commit/6952822744672c5a2bce1f1dcedd3c650cafd962"
+        },
+        "date": 1756338122569,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 1820.8186830942545,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
