@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756406114930,
+  "lastUpdate": 1756417191767,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37437,6 +37437,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUParse",
             "value": 289.0114794802575,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "800d9358fde3eb15eea49cce8feb19ffd050f6b3",
+          "message": "ICU-23199 Using 'C' in skeleton throws for some locales",
+          "timestamp": "2025-08-28T14:26:42-07:00",
+          "tree_id": "5c42a4b8c0039de4008a08902e2d1a3fe9961af0",
+          "url": "https://github.com/unicode-org/icu/commit/800d9358fde3eb15eea49cce8feb19ffd050f6b3"
+        },
+        "date": 1756416885072,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUParse",
+            "value": 290.93799242005434,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
