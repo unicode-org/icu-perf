@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756422950252,
+  "lastUpdate": 1756483324197,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37647,6 +37647,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 0.006753234407060735,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "bc02d7b8dedc5c0be745041a0fc96bab418dcd18",
+          "message": "ICU-23054 Add missing typecasts.",
+          "timestamp": "2025-08-29T17:33:15+02:00",
+          "tree_id": "140c8ab0bd1c3b13fad4b50e9dbb709f038298b1",
+          "url": "https://github.com/unicode-org/icu/commit/bc02d7b8dedc5c0be745041a0fc96bab418dcd18"
+        },
+        "date": 1756483019053,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 0.007218412500424029,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
