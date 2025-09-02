@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756841171473,
+  "lastUpdate": 1756849269268,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -72087,6 +72087,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 12620336.1642,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "39111ab37a289713314c2cf1867221c28ed269b7",
+          "message": "ICU-20392 Replace std::variant<> with a custom union to save 8 bytes.\n\nThere are no size guarantees for std::variant<> (the implementation in\nLLVM's libc++ will currently add at least 4 bytes for the discriminator,\nfor example) so replacing it with a customized data structure instead\ngives the control required to make Locale objects 8 bytes smaller.",
+          "timestamp": "2025-09-02T23:05:13+02:00",
+          "tree_id": "208548206caa3fe9ee1d6014963e0cb9592896c2",
+          "url": "https://github.com/unicode-org/icu/commit/39111ab37a289713314c2cf1867221c28ed269b7"
+        },
+        "date": 1756848962590,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 224.3589,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 55767514.7324,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 12589910.7833,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 51635609.7327,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 12522846.0018,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

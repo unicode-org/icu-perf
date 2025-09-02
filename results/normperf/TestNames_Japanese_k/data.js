@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756841722034,
+  "lastUpdate": 1756849629708,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -80157,6 +80157,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_Orig_Text",
             "value": 11.9059,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "39111ab37a289713314c2cf1867221c28ed269b7",
+          "message": "ICU-20392 Replace std::variant<> with a custom union to save 8 bytes.\n\nThere are no size guarantees for std::variant<> (the implementation in\nLLVM's libc++ will currently add at least 4 bytes for the discriminator,\nfor example) so replacing it with a customized data structure instead\ngives the control required to make Locale objects 8 bytes smaller.",
+          "timestamp": "2025-09-02T23:05:13+02:00",
+          "tree_id": "208548206caa3fe9ee1d6014963e0cb9592896c2",
+          "url": "https://github.com/unicode-org/icu/commit/39111ab37a289713314c2cf1867221c28ed269b7"
+        },
+        "date": 1756849321123,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFD_Text",
+            "value": 12.4398,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 8.9977,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_Orig_Text",
+            "value": 8.9737,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 10.8434,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 11.7418,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_Orig_Text",
+            "value": 11.7256,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
