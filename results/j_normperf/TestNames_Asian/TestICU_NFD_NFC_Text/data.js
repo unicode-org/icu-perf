@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756482559435,
+  "lastUpdate": 1756839543308,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -75056,6 +75056,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFC_Text",
             "value": 10.74437678428642,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pedberg@unicode.org",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "committer": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "distinct": true,
+          "id": "48f492f01e8e60f2f34142291791d4675eb6c851",
+          "message": "ICU-23056 Integrate CLDR 48 alpha1 to ICU main, part 4: remove obsolete logKnownIssues, add logKnownIssues for exhaustive",
+          "timestamp": "2025-09-02T13:39:23-05:00",
+          "tree_id": "8b5f2b30f57c01f65bd95aa20b1f1c56e39c0e59",
+          "url": "https://github.com/unicode-org/icu/commit/48f492f01e8e60f2f34142291791d4675eb6c851"
+        },
+        "date": 1756839241045,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 12.027882348522025,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pedberg@unicode.org",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "committer": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "distinct": true,
+          "id": "48f492f01e8e60f2f34142291791d4675eb6c851",
+          "message": "ICU-23056 Integrate CLDR 48 alpha1 to ICU main, part 4: remove obsolete logKnownIssues, add logKnownIssues for exhaustive",
+          "timestamp": "2025-09-02T13:39:23-05:00",
+          "tree_id": "8b5f2b30f57c01f65bd95aa20b1f1c56e39c0e59",
+          "url": "https://github.com/unicode-org/icu/commit/48f492f01e8e60f2f34142291791d4675eb6c851"
+        },
+        "date": 1756839234679,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 11.008632960244826,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

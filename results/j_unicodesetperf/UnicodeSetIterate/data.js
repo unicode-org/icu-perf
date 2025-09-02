@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756482328482,
+  "lastUpdate": 1756839159679,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37647,6 +37647,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "UnicodeSetIterate",
             "value": 0.7026690792439053,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "9d1333270c0f5d7f8ecbde09ad64f820ee5db9b0",
+          "message": "ICU-23201 Annotate C code with U_FALLTHROUGH.",
+          "timestamp": "2025-09-02T20:28:09+02:00",
+          "tree_id": "da85da9ca51bccf751698c2ea6ac2b806154d82f",
+          "url": "https://github.com/unicode-org/icu/commit/9d1333270c0f5d7f8ecbde09ad64f820ee5db9b0"
+        },
+        "date": 1756837831145,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "UnicodeSetIterate",
+            "value": 0.7026822845709915,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pedberg@unicode.org",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "committer": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "distinct": true,
+          "id": "48f492f01e8e60f2f34142291791d4675eb6c851",
+          "message": "ICU-23056 Integrate CLDR 48 alpha1 to ICU main, part 4: remove obsolete logKnownIssues, add logKnownIssues for exhaustive",
+          "timestamp": "2025-09-02T13:39:23-05:00",
+          "tree_id": "8b5f2b30f57c01f65bd95aa20b1f1c56e39c0e59",
+          "url": "https://github.com/unicode-org/icu/commit/48f492f01e8e60f2f34142291791d4675eb6c851"
+        },
+        "date": 1756838852475,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "UnicodeSetIterate",
+            "value": 0.7027960880430876,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

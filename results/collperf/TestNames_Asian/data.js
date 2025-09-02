@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756483633947,
+  "lastUpdate": 1756840981270,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -72195,6 +72195,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 2053175.9842,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pedberg@unicode.org",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "committer": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "distinct": true,
+          "id": "48f492f01e8e60f2f34142291791d4675eb6c851",
+          "message": "ICU-23056 Integrate CLDR 48 alpha1 to ICU main, part 4: remove obsolete logKnownIssues, add logKnownIssues for exhaustive",
+          "timestamp": "2025-09-02T13:39:23-05:00",
+          "tree_id": "8b5f2b30f57c01f65bd95aa20b1f1c56e39c0e59",
+          "url": "https://github.com/unicode-org/icu/commit/48f492f01e8e60f2f34142291791d4675eb6c851"
+        },
+        "date": 1756840673712,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 216.3211,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 8705794.078,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 2027863.126,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 8043426.6852,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 2059376.8934,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
