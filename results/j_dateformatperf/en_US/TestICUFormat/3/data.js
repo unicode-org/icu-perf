@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756851673161,
+  "lastUpdate": 1756925387833,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37347,6 +37347,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUFormat",
             "value": 215.47979563335733,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "a5a090ebedbfcc33237fcccf6f8f724a8e9cdb1c",
+          "message": "ICU-23184 Fix RuleBasedNumberFormat to return error\nwhile the rule is wrong.",
+          "timestamp": "2025-09-03T11:27:31-07:00",
+          "tree_id": "5ac72e2bd759554fe39cfd3705f02caeb1e2b10d",
+          "url": "https://github.com/unicode-org/icu/commit/a5a090ebedbfcc33237fcccf6f8f724a8e9cdb1c"
+        },
+        "date": 1756925079597,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 212.16489239136618,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
