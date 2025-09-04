@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756925504391,
+  "lastUpdate": 1756944798041,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37527,6 +37527,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 3.4460344141542634,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "committer": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "distinct": true,
+          "id": "47aaf4a9df43b6e61ac5953a7debf4be7d4af6ec",
+          "message": "ICU-23189 Fix the GCC C++23 build",
+          "timestamp": "2025-09-04T01:46:16+02:00",
+          "tree_id": "a979844f084e6e90fa3fdb1228cd8bcdb887342d",
+          "url": "https://github.com/unicode-org/icu/commit/47aaf4a9df43b6e61ac5953a7debf4be7d4af6ec"
+        },
+        "date": 1756944490918,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 2.9252582927881754,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
