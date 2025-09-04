@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756991111319,
+  "lastUpdate": 1756996006548,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -72465,6 +72465,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 1313651.6248,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "fc532188d1f242a060d547ebf3264356145aa8d3",
+          "message": "ICU-20392 Let the compiler do its job by simplifying Locale::Nest.\n\nThere's no need to define constructors, destructors and operators that\njust do the same thing as the compiler generated default ones do.",
+          "timestamp": "2025-09-04T15:28:37+02:00",
+          "tree_id": "778a1155d582913e26428fa64e243c0910c3aa2d",
+          "url": "https://github.com/unicode-org/icu/commit/fc532188d1f242a060d547ebf3264356145aa8d3"
+        },
+        "date": 1756995699860,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 277.3338,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 2940400.375,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 1331913.5012,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 2726431.5831,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 1332846.4082,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

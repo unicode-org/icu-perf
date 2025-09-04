@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756989728201,
+  "lastUpdate": 1756994340368,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -75476,6 +75476,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFC_Text",
             "value": 3.7612079041385513,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "fc532188d1f242a060d547ebf3264356145aa8d3",
+          "message": "ICU-20392 Let the compiler do its job by simplifying Locale::Nest.\n\nThere's no need to define constructors, destructors and operators that\njust do the same thing as the compiler generated default ones do.",
+          "timestamp": "2025-09-04T15:28:37+02:00",
+          "tree_id": "778a1155d582913e26428fa64e243c0910c3aa2d",
+          "url": "https://github.com/unicode-org/icu/commit/fc532188d1f242a060d547ebf3264356145aa8d3"
+        },
+        "date": 1756993609665,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 3.753135645131808,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "fc532188d1f242a060d547ebf3264356145aa8d3",
+          "message": "ICU-20392 Let the compiler do its job by simplifying Locale::Nest.\n\nThere's no need to define constructors, destructors and operators that\njust do the same thing as the compiler generated default ones do.",
+          "timestamp": "2025-09-04T15:28:37+02:00",
+          "tree_id": "778a1155d582913e26428fa64e243c0910c3aa2d",
+          "url": "https://github.com/unicode-org/icu/commit/fc532188d1f242a060d547ebf3264356145aa8d3"
+        },
+        "date": 1756994030647,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 3.7424430057401366,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
