@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756944798041,
+  "lastUpdate": 1756990313333,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37557,6 +37557,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 2.9252582927881754,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "3b69586eb738bd286885d1e064c5eaf33e60c600",
+          "message": "ICU-23192 Replace use of CharString with FixedString for data members.",
+          "timestamp": "2025-09-04T14:19:59+02:00",
+          "tree_id": "8b5963b9ce158ba8e63f02028d43360301e82ca1",
+          "url": "https://github.com/unicode-org/icu/commit/3b69586eb738bd286885d1e064c5eaf33e60c600"
+        },
+        "date": 1756990006256,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 2.8949245337088105,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

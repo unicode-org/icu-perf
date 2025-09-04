@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756945623006,
+  "lastUpdate": 1756990799919,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -45969,6 +45969,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "Test_ICU_Backward_Search",
             "value": 58.0588,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "3b69586eb738bd286885d1e064c5eaf33e60c600",
+          "message": "ICU-23192 Replace use of CharString with FixedString for data members.",
+          "timestamp": "2025-09-04T14:19:59+02:00",
+          "tree_id": "8b5963b9ce158ba8e63f02028d43360301e82ca1",
+          "url": "https://github.com/unicode-org/icu/commit/3b69586eb738bd286885d1e064c5eaf33e60c600"
+        },
+        "date": 1756990488569,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Test_ICU_Forward_Search",
+            "value": 26.2046,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "Test_ICU_Backward_Search",
+            "value": 58.9671,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
