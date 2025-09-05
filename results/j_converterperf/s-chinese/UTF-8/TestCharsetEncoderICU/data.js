@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757065402121,
+  "lastUpdate": 1757091349133,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37737,6 +37737,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 2.670609432084869,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "committer": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "distinct": true,
+          "id": "cb0bf121a0dee22931d6595e3678f64f59582633",
+          "message": "ICU-23054 Fix -Wcharacter-conversion",
+          "timestamp": "2025-09-05T18:21:24+02:00",
+          "tree_id": "1c2cceac40179b9f0b967e8137e5a591ad856e08",
+          "url": "https://github.com/unicode-org/icu/commit/cb0bf121a0dee22931d6595e3678f64f59582633"
+        },
+        "date": 1757090428892,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 2.6710946888745877,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
