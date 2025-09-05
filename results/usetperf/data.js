@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757012341903,
+  "lastUpdate": 1757065921750,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -104673,6 +104673,84 @@ window.BENCHMARK_DATA = {
           {
             "name": "pattern3",
             "value": 1471.2276,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "3b2d89486f6eb8d54d6feed6320e49dd207777be",
+          "message": "ICU-20392 Refactor struct Heap to store less data on the heap.\n\nThe language, script, region fields all fit within the payload, using\nstorage that currently is filled only with padding, so by moving them\nthere the amount of data that needs to be allocated on the heap is\nreduced to the arbitrary length fields.",
+          "timestamp": "2025-09-05T11:08:56+02:00",
+          "tree_id": "f3239b568c3f5247390c30b7195103eb183c1060",
+          "url": "https://github.com/unicode-org/icu/commit/3b2d89486f6eb8d54d6feed6320e49dd207777be"
+        },
+        "date": 1757065619742,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "titlecase_letter_add",
+            "value": 78227.7549,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_contains",
+            "value": 178752.8328,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_iterator",
+            "value": 0.5419,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_add",
+            "value": 10.7655,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_contains",
+            "value": 6.8013,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_iterator",
+            "value": 0,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern1",
+            "value": 8826.6385,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern2",
+            "value": 33094.5169,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern3",
+            "value": 1502.3926,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

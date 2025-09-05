@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757010774893,
+  "lastUpdate": 1757064558545,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37737,6 +37737,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUFormat",
             "value": 262.18916675595597,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "3b2d89486f6eb8d54d6feed6320e49dd207777be",
+          "message": "ICU-20392 Refactor struct Heap to store less data on the heap.\n\nThe language, script, region fields all fit within the payload, using\nstorage that currently is filled only with padding, so by moving them\nthere the amount of data that needs to be allocated on the heap is\nreduced to the arbitrary length fields.",
+          "timestamp": "2025-09-05T11:08:56+02:00",
+          "tree_id": "f3239b568c3f5247390c30b7195103eb183c1060",
+          "url": "https://github.com/unicode-org/icu/commit/3b2d89486f6eb8d54d6feed6320e49dd207777be"
+        },
+        "date": 1757064248982,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 239.52761214293056,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
