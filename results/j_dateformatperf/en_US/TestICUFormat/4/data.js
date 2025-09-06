@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757114731801,
+  "lastUpdate": 1757134693683,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37647,6 +37647,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUFormat",
             "value": 215.65262320459797,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pedberg@unicode.org",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "committer": {
+            "email": "42151464+pedberg-icu@users.noreply.github.com",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "distinct": true,
+          "id": "d805423d52468b829e65190168c48daf27f297da",
+          "message": "ICU-23197 rework J DateFormatSymbols eraNames loading as in C (#3634)\n\n- Also remove related logKnownIssue test skips, update tests for Meiji era start",
+          "timestamp": "2025-09-05T21:50:08-07:00",
+          "tree_id": "50b77d1162fa0bf9ce5b46bdd9ff313042534187",
+          "url": "https://github.com/unicode-org/icu/commit/d805423d52468b829e65190168c48daf27f297da"
+        },
+        "date": 1757134391727,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 226.3827087981489,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

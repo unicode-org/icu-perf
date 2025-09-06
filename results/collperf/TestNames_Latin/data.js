@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757115887492,
+  "lastUpdate": 1757135479375,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -72735,6 +72735,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 1277002.4154,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pedberg@unicode.org",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "committer": {
+            "email": "42151464+pedberg-icu@users.noreply.github.com",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "distinct": true,
+          "id": "d805423d52468b829e65190168c48daf27f297da",
+          "message": "ICU-23197 rework J DateFormatSymbols eraNames loading as in C (#3634)\n\n- Also remove related logKnownIssue test skips, update tests for Meiji era start",
+          "timestamp": "2025-09-05T21:50:08-07:00",
+          "tree_id": "50b77d1162fa0bf9ce5b46bdd9ff313042534187",
+          "url": "https://github.com/unicode-org/icu/commit/d805423d52468b829e65190168c48daf27f297da"
+        },
+        "date": 1757135168827,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 276.6332,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 3003600.2558,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 1322533.3881,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 2788021.0825,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 1283098.6886,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
