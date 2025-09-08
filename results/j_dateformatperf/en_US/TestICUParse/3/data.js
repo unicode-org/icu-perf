@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757134726212,
+  "lastUpdate": 1757347773677,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37857,6 +37857,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUParse",
             "value": 896.4614037241249,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "robertbastian@unicode.org",
+            "name": "Robert Bastian",
+            "username": "robertbastian"
+          },
+          "committer": {
+            "email": "4706271+robertbastian@users.noreply.github.com",
+            "name": "Robert Bastian",
+            "username": "robertbastian"
+          },
+          "distinct": true,
+          "id": "793cecd092cf54a31115e3e6fd04ec0f290ac0dc",
+          "message": "ICU-11052 Remove logKnownIssue",
+          "timestamp": "2025-09-08T17:48:07+02:00",
+          "tree_id": "9ea49d5eaaf995922c9fd17699ccf0f8d01d816e",
+          "url": "https://github.com/unicode-org/icu/commit/793cecd092cf54a31115e3e6fd04ec0f290ac0dc"
+        },
+        "date": 1757347459954,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUParse",
+            "value": 911.4540862791894,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
