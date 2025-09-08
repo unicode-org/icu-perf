@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757348505396,
+  "lastUpdate": 1757370244501,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37677,6 +37677,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUParse",
             "value": 138.6157629386351,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "dcca6c1145584a852d5353b36982cf82e723d035",
+          "message": "ICU-23167 Change Chinese and Dangi calendar epoch to 1AD\n\nSee #3610",
+          "timestamp": "2025-09-08T15:10:14-07:00",
+          "tree_id": "6967730f4da36f7420937587047546729c8a0a38",
+          "url": "https://github.com/unicode-org/icu/commit/dcca6c1145584a852d5353b36982cf82e723d035"
+        },
+        "date": 1757369932625,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUParse",
+            "value": 135.25392190419356,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
