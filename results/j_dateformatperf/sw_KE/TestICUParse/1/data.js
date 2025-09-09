@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757370569314,
+  "lastUpdate": 1757375544430,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -38037,6 +38037,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUParse",
             "value": 372.677440939283,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "d65dbde7e4e7264f29d4ce2b522ae174afaf4f85",
+          "message": "ICU-23206 Support formatting for DayOfWeek and Month",
+          "timestamp": "2025-09-08T16:44:54-07:00",
+          "tree_id": "5ce954027724fe03cc3dd00d6535bbcb0434a41e",
+          "url": "https://github.com/unicode-org/icu/commit/d65dbde7e4e7264f29d4ce2b522ae174afaf4f85"
+        },
+        "date": 1757375235922,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUParse",
+            "value": 374.8906788771044,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
