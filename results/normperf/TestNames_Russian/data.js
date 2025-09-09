@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757446078635,
+  "lastUpdate": 1757457727838,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -80997,6 +80997,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_Orig_Text",
             "value": 6.7808,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "bf13ba19d5d253095a6c8ef5c4197db09326b059",
+          "message": "ICU-23054 Hide prints behind debug flags. Clean imports.",
+          "timestamp": "2025-09-09T15:19:16-07:00",
+          "tree_id": "db9c9f9399af81cc2465dbc5c105c10466bd229d",
+          "url": "https://github.com/unicode-org/icu/commit/bf13ba19d5d253095a6c8ef5c4197db09326b059"
+        },
+        "date": 1757457413765,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFD_Text",
+            "value": 5.7119,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 4.8306,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_Orig_Text",
+            "value": 5.026,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 5.0133,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 5.1401,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_Orig_Text",
+            "value": 6.7507,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757446434130,
+  "lastUpdate": 1757458397807,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -129021,6 +129021,102 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestScan2",
             "value": 38.9882,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "bf13ba19d5d253095a6c8ef5c4197db09326b059",
+          "message": "ICU-23054 Hide prints behind debug flags. Clean imports.",
+          "timestamp": "2025-09-09T15:19:16-07:00",
+          "tree_id": "db9c9f9399af81cc2465dbc5c105c10466bd229d",
+          "url": "https://github.com/unicode-org/icu/commit/bf13ba19d5d253095a6c8ef5c4197db09326b059"
+        },
+        "date": 1757458077233,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCtor",
+            "value": 19.4951,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCtor1",
+            "value": 20.4213,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCtor2",
+            "value": 24.1339,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCtor3",
+            "value": 30.5731,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestAssign",
+            "value": 42.4066,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestAssign1",
+            "value": 37.2853,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestAssign2",
+            "value": 28.7886,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestGetch",
+            "value": 16.9586,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCatenate",
+            "value": 96.472,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestScan",
+            "value": 22.0889,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestScan1",
+            "value": 37.573,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestScan2",
+            "value": 38.9065,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

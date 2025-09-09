@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757446002783,
+  "lastUpdate": 1757457668366,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -73059,6 +73059,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 16177003.1698,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "bf13ba19d5d253095a6c8ef5c4197db09326b059",
+          "message": "ICU-23054 Hide prints behind debug flags. Clean imports.",
+          "timestamp": "2025-09-09T15:19:16-07:00",
+          "tree_id": "db9c9f9399af81cc2465dbc5c105c10466bd229d",
+          "url": "https://github.com/unicode-org/icu/commit/bf13ba19d5d253095a6c8ef5c4197db09326b059"
+        },
+        "date": 1757457352418,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 363.3492,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 51949895.9184,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 14945602.5651,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 50816696.6813,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 16091099.638,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

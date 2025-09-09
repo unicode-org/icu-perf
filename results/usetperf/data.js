@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757446092100,
+  "lastUpdate": 1757457817998,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -105375,6 +105375,84 @@ window.BENCHMARK_DATA = {
           {
             "name": "pattern3",
             "value": 1528.3372,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "bf13ba19d5d253095a6c8ef5c4197db09326b059",
+          "message": "ICU-23054 Hide prints behind debug flags. Clean imports.",
+          "timestamp": "2025-09-09T15:19:16-07:00",
+          "tree_id": "db9c9f9399af81cc2465dbc5c105c10466bd229d",
+          "url": "https://github.com/unicode-org/icu/commit/bf13ba19d5d253095a6c8ef5c4197db09326b059"
+        },
+        "date": 1757457503826,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "titlecase_letter_add",
+            "value": 78274.4194,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_contains",
+            "value": 178856.8178,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_iterator",
+            "value": 0.542,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_add",
+            "value": 10.7643,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_contains",
+            "value": 6.8035,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_iterator",
+            "value": 0,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern1",
+            "value": 8811.6661,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern2",
+            "value": 32980.5761,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern3",
+            "value": 1515.6881,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
