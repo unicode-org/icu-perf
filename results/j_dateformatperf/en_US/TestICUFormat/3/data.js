@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757595022786,
+  "lastUpdate": 1757627247798,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -37857,6 +37857,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUFormat",
             "value": 214.38826496598875,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "84711187d122cf6f7a9573714e8dc5c7f84e8c6a",
+          "message": "ICU-23054 Remove imports of java.lang",
+          "timestamp": "2025-09-11T14:38:13-07:00",
+          "tree_id": "5afc2ba9c8bf0b9569f6bc5e0f7be362c881e24f",
+          "url": "https://github.com/unicode-org/icu/commit/84711187d122cf6f7a9573714e8dc5c7f84e8c6a"
+        },
+        "date": 1757626935692,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 254.8983866832895,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
