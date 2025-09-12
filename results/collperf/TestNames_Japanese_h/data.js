@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757699594412,
+  "lastUpdate": 1757711853083,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -73653,6 +73653,114 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 5498271.3799,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "richard_gillam@apple.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "committer": {
+            "email": "62772518+richgillam@users.noreply.github.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "distinct": true,
+          "id": "b3e057273db4aa2d19759cf85afb39d76f57f4d4",
+          "message": "ICU-23056 Fixed genren.pl to include the correct header-guard changes and reverted my earlier fix for urename.h.",
+          "timestamp": "2025-09-12T12:56:02-07:00",
+          "tree_id": "9795f9adacf12d0dc9325689c40d7a41d114a0c9",
+          "url": "https://github.com/unicode-org/icu/commit/b3e057273db4aa2d19759cf85afb39d76f57f4d4"
+        },
+        "date": 1757708408054,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 216.3741,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 20855087.0419,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 5189142.1422,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 19762275.5118,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 5454812.4249,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "62772518+richgillam@users.noreply.github.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "distinct": true,
+          "id": "02d6ed985941ad761f3d0a2b2736c0b339412d91",
+          "message": "ICU-23056 headertest: use header-specific .cpp filename\n\nto help with debugging",
+          "timestamp": "2025-09-12T13:46:12-07:00",
+          "tree_id": "7f735aa0b000e562a6a06372e2244acb46c6a25f",
+          "url": "https://github.com/unicode-org/icu/commit/02d6ed985941ad761f3d0a2b2736c0b339412d91"
+        },
+        "date": 1757711551183,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 201.2117,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 19133564.1279,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 4895853.1926,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 18403736.5564,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 5046997.7871,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
