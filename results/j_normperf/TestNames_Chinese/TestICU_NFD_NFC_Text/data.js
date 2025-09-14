@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757720084882,
+  "lastUpdate": 1757816678963,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -76736,6 +76736,246 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFC_Text",
             "value": 3.7848627203218315,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "committer": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "distinct": true,
+          "id": "0f50ec2245e1639ee97665c52308c7565ee46044",
+          "message": "ICU-23056 Fix ICU4J public API release status tags for Segmenter files",
+          "timestamp": "2025-09-12T17:48:09-07:00",
+          "tree_id": "5f986803be9b04c121f66fd7ad153521fd06a067",
+          "url": "https://github.com/unicode-org/icu/commit/0f50ec2245e1639ee97665c52308c7565ee46044"
+        },
+        "date": 1757724662649,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 3.768945160008309,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "committer": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "distinct": true,
+          "id": "0f50ec2245e1639ee97665c52308c7565ee46044",
+          "message": "ICU-23056 Fix ICU4J public API release status tags for Segmenter files",
+          "timestamp": "2025-09-12T17:48:09-07:00",
+          "tree_id": "5f986803be9b04c121f66fd7ad153521fd06a067",
+          "url": "https://github.com/unicode-org/icu/commit/0f50ec2245e1639ee97665c52308c7565ee46044"
+        },
+        "date": 1757725181486,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 3.7339279811450807,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ccornelius@google.com",
+            "name": "Craig Cornelius",
+            "username": "sven-oly"
+          },
+          "committer": {
+            "email": "cwcornelius@gmail.com",
+            "name": "Craig Cornelius",
+            "username": "sven-oly"
+          },
+          "distinct": true,
+          "id": "ff876ca7017411913432ef9e6c8a17616de11311",
+          "message": "ICU-23056 Update instructions from JDK8 to JDK11\n\nSee #3654",
+          "timestamp": "2025-09-12T18:14:09-07:00",
+          "tree_id": "3f1702cbabc38e94eb86284d364511bcf4cce3fd",
+          "url": "https://github.com/unicode-org/icu/commit/ff876ca7017411913432ef9e6c8a17616de11311"
+        },
+        "date": 1757726202228,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 3.7525505834517134,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ccornelius@google.com",
+            "name": "Craig Cornelius",
+            "username": "sven-oly"
+          },
+          "committer": {
+            "email": "cwcornelius@gmail.com",
+            "name": "Craig Cornelius",
+            "username": "sven-oly"
+          },
+          "distinct": true,
+          "id": "ff876ca7017411913432ef9e6c8a17616de11311",
+          "message": "ICU-23056 Update instructions from JDK8 to JDK11\n\nSee #3654",
+          "timestamp": "2025-09-12T18:14:09-07:00",
+          "tree_id": "3f1702cbabc38e94eb86284d364511bcf4cce3fd",
+          "url": "https://github.com/unicode-org/icu/commit/ff876ca7017411913432ef9e6c8a17616de11311"
+        },
+        "date": 1757726318629,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 3.7342071842633433,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cwcornelius@gmail.com",
+            "name": "sven-oly",
+            "username": "sven-oly"
+          },
+          "committer": {
+            "email": "cwcornelius@gmail.com",
+            "name": "Craig Cornelius",
+            "username": "sven-oly"
+          },
+          "distinct": true,
+          "id": "2b13d37d4cd23c9e9b5ff7dd0160b03cc62093bc",
+          "message": "ICU-23056 Add version info for MF2\n\nSee #3653",
+          "timestamp": "2025-09-12T18:47:01-07:00",
+          "tree_id": "56da590a59fed4e6cc0a226f356366ef66be5ff7",
+          "url": "https://github.com/unicode-org/icu/commit/2b13d37d4cd23c9e9b5ff7dd0160b03cc62093bc"
+        },
+        "date": 1757728192441,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 3.7442845733198307,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cwcornelius@gmail.com",
+            "name": "sven-oly",
+            "username": "sven-oly"
+          },
+          "committer": {
+            "email": "cwcornelius@gmail.com",
+            "name": "Craig Cornelius",
+            "username": "sven-oly"
+          },
+          "distinct": true,
+          "id": "2b13d37d4cd23c9e9b5ff7dd0160b03cc62093bc",
+          "message": "ICU-23056 Add version info for MF2\n\nSee #3653",
+          "timestamp": "2025-09-12T18:47:01-07:00",
+          "tree_id": "56da590a59fed4e6cc0a226f356366ef66be5ff7",
+          "url": "https://github.com/unicode-org/icu/commit/2b13d37d4cd23c9e9b5ff7dd0160b03cc62093bc"
+        },
+        "date": 1757728321744,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 3.750850604329133,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "y.umaoka@gmail.com",
+            "name": "Yoshito Umaoka",
+            "username": "yumaoka"
+          },
+          "committer": {
+            "email": "yumaoka@users.noreply.github.com",
+            "name": "Yoshito Umaoka",
+            "username": "yumaoka"
+          },
+          "distinct": true,
+          "id": "8e7643827d215489b25a3a017867b43a01bda108",
+          "message": "ICU-23183 Merging fix done for CLDR-18985 and more logKnownIssues for…\n\nSee #3650",
+          "timestamp": "2025-09-13T21:59:51-04:00",
+          "tree_id": "602fe41573439ac012a6fa20dcc4de0b005fc0e1",
+          "url": "https://github.com/unicode-org/icu/commit/8e7643827d215489b25a3a017867b43a01bda108"
+        },
+        "date": 1757816142794,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 3.755002582774296,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "y.umaoka@gmail.com",
+            "name": "Yoshito Umaoka",
+            "username": "yumaoka"
+          },
+          "committer": {
+            "email": "yumaoka@users.noreply.github.com",
+            "name": "Yoshito Umaoka",
+            "username": "yumaoka"
+          },
+          "distinct": true,
+          "id": "8e7643827d215489b25a3a017867b43a01bda108",
+          "message": "ICU-23183 Merging fix done for CLDR-18985 and more logKnownIssues for…\n\nSee #3650",
+          "timestamp": "2025-09-13T21:59:51-04:00",
+          "tree_id": "602fe41573439ac012a6fa20dcc4de0b005fc0e1",
+          "url": "https://github.com/unicode-org/icu/commit/8e7643827d215489b25a3a017867b43a01bda108"
+        },
+        "date": 1757816360975,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 3.7788529587484727,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
