@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757816502718,
+  "lastUpdate": 1757824267598,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -38367,6 +38367,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFC_Orig_Text",
             "value": 4.2603163160751985,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "y.umaoka@gmail.com",
+            "name": "Yoshito Umaoka",
+            "username": "yumaoka"
+          },
+          "committer": {
+            "email": "yumaoka@users.noreply.github.com",
+            "name": "Yoshito Umaoka",
+            "username": "yumaoka"
+          },
+          "distinct": true,
+          "id": "e1a4ee73beef15d32c30fbf54d0aed7ad3d7fdf2",
+          "message": "ICU-23056 BRS78 Update currency numeric codes",
+          "timestamp": "2025-09-14T00:13:39-04:00",
+          "tree_id": "d1699361bc72b1b10fbeb2e912dc0872b8994e8c",
+          "url": "https://github.com/unicode-org/icu/commit/e1a4ee73beef15d32c30fbf54d0aed7ad3d7fdf2"
+        },
+        "date": 1757823948584,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_Orig_Text",
+            "value": 4.30215517956867,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
