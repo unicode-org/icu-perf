@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757947209876,
+  "lastUpdate": 1757959975511,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -106623,6 +106623,84 @@ window.BENCHMARK_DATA = {
           {
             "name": "pattern3",
             "value": 1510.5486,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "committer": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "distinct": true,
+          "id": "ed27dc7e4eaaec57f7813eba5ecf49ec19ddd009",
+          "message": "ICU-23056 cldr-48-alpha2\n\nSee #3643\r\n\r\ncldr-48-alpha2d\r\n\r\n- CLDR commit 23e250bdfdd7b23f5e1fe3c681abf94546aedb1d\r\n- CLDR staging commit 23e250bdfdd7b23f5e1fe3c681abf94546aedb1d\r\n- update tests\r\n- J: update DateIntervalFormatTest to report multiple failures at once",
+          "timestamp": "2025-09-15T12:38:16-05:00",
+          "tree_id": "4ca4fdaf2ff2a5e4e25b7d1c9b56d995b936d410",
+          "url": "https://github.com/unicode-org/icu/commit/ed27dc7e4eaaec57f7813eba5ecf49ec19ddd009"
+        },
+        "date": 1757959654721,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "titlecase_letter_add",
+            "value": 78225.0638,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_contains",
+            "value": 178755.6314,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_iterator",
+            "value": 0.5422,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_add",
+            "value": 10.7666,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_contains",
+            "value": 6.8008,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_iterator",
+            "value": 0,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern1",
+            "value": 8841.0269,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern2",
+            "value": 33240.1752,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern3",
+            "value": 1516.1861,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
