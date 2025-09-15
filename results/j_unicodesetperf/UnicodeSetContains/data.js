@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757945418177,
+  "lastUpdate": 1757954919062,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -38697,6 +38697,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "UnicodeSetContains",
             "value": 2.035835553630765,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "b052101c72570a5844353df4b9b375896aa68039",
+          "message": "ICU-23056 Bring collationtest.txt in sync between IU4C and ICU4J",
+          "timestamp": "2025-09-11T15:37:50-07:00",
+          "tree_id": "e71a04448e99efb0c6a6a1dd732c2f3ad8c7d3b5",
+          "url": "https://github.com/unicode-org/icu/commit/b052101c72570a5844353df4b9b375896aa68039"
+        },
+        "date": 1757954601154,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "UnicodeSetContains",
+            "value": 2.034778755252101,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
