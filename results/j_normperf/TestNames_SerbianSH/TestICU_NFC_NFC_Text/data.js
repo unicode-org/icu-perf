@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757977088839,
+  "lastUpdate": 1757982120672,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -38547,6 +38547,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFC_NFC_Text",
             "value": 1.5540107725894317,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "1cc931cee1f058da77c91d27e0322a566031ec11",
+          "message": "ICU-23056 fix two doc tags",
+          "timestamp": "2025-09-15T17:04:29-07:00",
+          "tree_id": "152f4cfb05c3aefc2228ac06b7e4fb910f539d01",
+          "url": "https://github.com/unicode-org/icu/commit/1cc931cee1f058da77c91d27e0322a566031ec11"
+        },
+        "date": 1757981242347,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 1.4981244173759567,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "f692d3c0267cb467f110da8b24213f87d210632c",
+          "message": "ICU-23056 Use Locale in Directionality.of",
+          "timestamp": "2025-09-15T17:13:23-07:00",
+          "tree_id": "c4ca3f9a99e604a24baf85050703b06eadb2d2c9",
+          "url": "https://github.com/unicode-org/icu/commit/f692d3c0267cb467f110da8b24213f87d210632c"
+        },
+        "date": 1757981805324,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 1.5650891982768844,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
