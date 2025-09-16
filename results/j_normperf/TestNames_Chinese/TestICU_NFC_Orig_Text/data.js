@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758048774475,
+  "lastUpdate": 1758058794225,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -38787,6 +38787,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFC_Orig_Text",
             "value": 4.939485917336429,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "6e138e1162afdad1834f9243e150af0586dc72a1",
+          "message": "ICU-23054 some Eclipse cleanup, mostly adding Override",
+          "timestamp": "2025-09-16T14:24:52-07:00",
+          "tree_id": "1139e5535b176620e8a7873fb75f46cf35bed3f1",
+          "url": "https://github.com/unicode-org/icu/commit/6e138e1162afdad1834f9243e150af0586dc72a1"
+        },
+        "date": 1758058466288,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_Orig_Text",
+            "value": 4.935131407257419,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758049106184,
+  "lastUpdate": 1758059003789,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -38877,6 +38877,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 0.4389485338319856,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "6e138e1162afdad1834f9243e150af0586dc72a1",
+          "message": "ICU-23054 some Eclipse cleanup, mostly adding Override",
+          "timestamp": "2025-09-16T14:24:52-07:00",
+          "tree_id": "1139e5535b176620e8a7873fb75f46cf35bed3f1",
+          "url": "https://github.com/unicode-org/icu/commit/6e138e1162afdad1834f9243e150af0586dc72a1"
+        },
+        "date": 1758058674128,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 0.43905181593321113,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
