@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757982621614,
+  "lastUpdate": 1758025521790,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -38637,6 +38637,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 0.006109443053386401,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "1cc931cee1f058da77c91d27e0322a566031ec11",
+          "message": "ICU-23056 fix two doc tags",
+          "timestamp": "2025-09-15T17:04:29-07:00",
+          "tree_id": "152f4cfb05c3aefc2228ac06b7e4fb910f539d01",
+          "url": "https://github.com/unicode-org/icu/commit/1cc931cee1f058da77c91d27e0322a566031ec11"
+        },
+        "date": 1758025204818,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 0.005854491028484334,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
