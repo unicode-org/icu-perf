@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758059516426,
+  "lastUpdate": 1758106931724,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -74517,6 +74517,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 1275442.559,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "committer": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "distinct": true,
+          "id": "43afd6f2f44b507153091de0e370f840997d9af0",
+          "message": "ICU-23214 generate brkitr/root.txt lstm from data\n\n- update cldr-icu.md\n- see TODOs in ICU-23215",
+          "timestamp": "2025-09-16T13:35:58-05:00",
+          "tree_id": "8162f1a68970941d51a9f711f9b3f9a0211a76b2",
+          "url": "https://github.com/unicode-org/icu/commit/43afd6f2f44b507153091de0e370f840997d9af0"
+        },
+        "date": 1758106602309,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 276.9738,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 3027199.228,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 1313588.7354,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 2780856.6221,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 1272804.3141,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
