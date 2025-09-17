@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758058950457,
+  "lastUpdate": 1758111283401,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -38937,6 +38937,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_Orig_Text",
             "value": 9.3106837986217,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "a6e29e4192a366ad58d6e940451e670b08d61548",
+          "message": "ICU-23202 MF2 to LDML 48: Unify Formatter and Selector interfaces into one",
+          "timestamp": "2025-09-09T11:00:28-07:00",
+          "tree_id": "35ccfe340850ff36012a3c24766fb834809b8f09",
+          "url": "https://github.com/unicode-org/icu/commit/a6e29e4192a366ad58d6e940451e670b08d61548"
+        },
+        "date": 1758110961090,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_Orig_Text",
+            "value": 9.42641101282876,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
