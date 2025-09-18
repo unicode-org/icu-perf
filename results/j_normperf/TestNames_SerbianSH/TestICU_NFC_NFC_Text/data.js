@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758111123514,
+  "lastUpdate": 1758154984863,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -38847,6 +38847,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFC_NFC_Text",
             "value": 1.6001723176868021,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pedberg@unicode.org",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "committer": {
+            "email": "42151464+pedberg-icu@users.noreply.github.com",
+            "name": "Peter Edberg",
+            "username": "pedberg-icu"
+          },
+          "distinct": true,
+          "id": "e5407e14f447f456de6163f91bda020cf22ec00a",
+          "message": "ICU-23220 Add CLDR-ICU integration note about running CompareResolved",
+          "timestamp": "2025-09-17T17:12:54-07:00",
+          "tree_id": "c90df74ea5ccd622fc686d176696750bc76d4373",
+          "url": "https://github.com/unicode-org/icu/commit/e5407e14f447f456de6163f91bda020cf22ec00a"
+        },
+        "date": 1758154660687,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 1.5057248185741905,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
