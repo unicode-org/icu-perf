@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758294110873,
+  "lastUpdate": 1758320069293,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -38907,6 +38907,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 0.570200054285202,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "committer": {
+            "email": "srl295@gmail.com",
+            "name": "Steven R. Loomis",
+            "username": "srl295"
+          },
+          "distinct": true,
+          "id": "1ff7da6d536a3fda80add9d02da44392210809ca",
+          "message": "ICU-23170 commit-checker first cut at fix",
+          "timestamp": "2025-09-19T16:57:50-05:00",
+          "tree_id": "312182d20cfaf7a8bc5635b2a11b8666579e2bc2",
+          "url": "https://github.com/unicode-org/icu/commit/1ff7da6d536a3fda80add9d02da44392210809ca"
+        },
+        "date": 1758319730361,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 0.5627967893938558,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
