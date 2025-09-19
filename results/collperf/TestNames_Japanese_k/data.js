@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758290117442,
+  "lastUpdate": 1758294184952,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -74733,6 +74733,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 5555702.8119,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "younies.mahmoud@gmail.com",
+            "name": "younies",
+            "username": "younies"
+          },
+          "committer": {
+            "email": "younies.mahmoud@gmail.com",
+            "name": "Younies Mahmoud",
+            "username": "younies"
+          },
+          "distinct": true,
+          "id": "59c70daf9e1405aa323082d680e428dec30869ed",
+          "message": "ICU-23045 Remove known issue logging for unit identifiers related\n\n# Description:\n\nThis issue has been fixed in this PR: , and introducing the following issue:",
+          "timestamp": "2025-09-18T18:11:01+02:00",
+          "tree_id": "268fc404e7561ec6b602b368d6d839dad801fed6",
+          "url": "https://github.com/unicode-org/icu/commit/59c70daf9e1405aa323082d680e428dec30869ed"
+        },
+        "date": 1758293850903,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 233.5339,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 21982514.3856,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 5275702.2785,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 20428639.5179,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 5490388.9141,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

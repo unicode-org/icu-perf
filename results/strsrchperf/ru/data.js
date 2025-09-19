@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758289310761,
+  "lastUpdate": 1758294013583,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -47517,6 +47517,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "Test_ICU_Backward_Search",
             "value": 52.1946,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "younies.mahmoud@gmail.com",
+            "name": "younies",
+            "username": "younies"
+          },
+          "committer": {
+            "email": "younies.mahmoud@gmail.com",
+            "name": "Younies Mahmoud",
+            "username": "younies"
+          },
+          "distinct": true,
+          "id": "59c70daf9e1405aa323082d680e428dec30869ed",
+          "message": "ICU-23045 Remove known issue logging for unit identifiers related\n\n# Description:\n\nThis issue has been fixed in this PR: , and introducing the following issue:",
+          "timestamp": "2025-09-18T18:11:01+02:00",
+          "tree_id": "268fc404e7561ec6b602b368d6d839dad801fed6",
+          "url": "https://github.com/unicode-org/icu/commit/59c70daf9e1405aa323082d680e428dec30869ed"
+        },
+        "date": 1758293684682,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Test_ICU_Forward_Search",
+            "value": 23.7458,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "Test_ICU_Backward_Search",
+            "value": 52.1216,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
