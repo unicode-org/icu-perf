@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758214513705,
+  "lastUpdate": 1758289917399,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -74841,6 +74841,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 2056709.1675,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "5a4e9604ff71dd228aa4e2b4cf255fc4dc00fc40",
+          "message": "ICU-23221 Bugfix: Use a mutex to lock KnownIssues::fTable.\n\nThis will make it safe to access this std::map from parallel threads.",
+          "timestamp": "2025-09-18T09:04:01-07:00",
+          "tree_id": "b09835a047fc8aaf79c12a9dc813643836390c10",
+          "url": "https://github.com/unicode-org/icu/commit/5a4e9604ff71dd228aa4e2b4cf255fc4dc00fc40"
+        },
+        "date": 1758289587011,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 389.9631,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 12972753.0789,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 2074316.9802,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 11831244.857,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 2050388.1449,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
