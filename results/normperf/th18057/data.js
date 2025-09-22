@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758321011473,
+  "lastUpdate": 1758543040854,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -82857,6 +82857,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_Orig_Text",
             "value": 13.7629,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "younies.mahmoud@gmail.com",
+            "name": "younies",
+            "username": "younies"
+          },
+          "committer": {
+            "email": "younies.mahmoud@gmail.com",
+            "name": "Younies Mahmoud",
+            "username": "younies"
+          },
+          "distinct": true,
+          "id": "e862a5ffe5ae0bc6c58e9406de917a9bb3577b1d",
+          "message": "ICU-23105 Update NumberFormatterApiTest/formatUnitsAliases to fail when the units are not parsable\n\n- Refactor test cases to use unique_ptr for MeasureUnit in C++ and adjust constructor in Java.\n- Introduce logging for known issues related to unit aliases to ensure compatibility with callers.\n- Update expected formats for unit aliases in both C++ and Java test files.",
+          "timestamp": "2025-09-19T23:51:52+02:00",
+          "tree_id": "aad7985de4f6678b7a1fe00dad5cd35935d5f6b6",
+          "url": "https://github.com/unicode-org/icu/commit/e862a5ffe5ae0bc6c58e9406de917a9bb3577b1d"
+        },
+        "date": 1758542707905,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFD_Text",
+            "value": 13.9568,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 13.9113,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_Orig_Text",
+            "value": 13.8763,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 13.749,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 13.8134,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_Orig_Text",
+            "value": 13.7814,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
