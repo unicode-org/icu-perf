@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758543421305,
+  "lastUpdate": 1758578135650,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -75219,6 +75219,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 5489582.9071,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cwcornelius@gmail.com",
+            "name": "sven-oly",
+            "username": "sven-oly"
+          },
+          "committer": {
+            "email": "cwcornelius@gmail.com",
+            "name": "Craig Cornelius",
+            "username": "sven-oly"
+          },
+          "distinct": true,
+          "id": "697f6d234a3113d7ce68a0f3de41e46850f664ce",
+          "message": "ICU-23056 ICU4C APIChangeReport (frontloading)",
+          "timestamp": "2025-09-22T14:20:17-07:00",
+          "tree_id": "78638d800c48a782b1bf3805b3b8a00d5fc284e3",
+          "url": "https://github.com/unicode-org/icu/commit/697f6d234a3113d7ce68a0f3de41e46850f664ce"
+        },
+        "date": 1758577798301,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 218.9147,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 22909919.0112,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 5368647.3561,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 21477952.4576,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 5562517.0089,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
