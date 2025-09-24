@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758583107753,
+  "lastUpdate": 1758733621028,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -38997,6 +38997,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 0.4760600923263987,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "678a05c6b4998a1b789bfba92c2de3ad9894d0a5",
+          "message": "ICU-23038 update collation unsafe-backward set",
+          "timestamp": "2025-09-24T09:20:30-07:00",
+          "tree_id": "c9dacc5328311c53ea735cda28987fbcdd594d9f",
+          "url": "https://github.com/unicode-org/icu/commit/678a05c6b4998a1b789bfba92c2de3ad9894d0a5"
+        },
+        "date": 1758733290926,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 0.4761733585737529,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
