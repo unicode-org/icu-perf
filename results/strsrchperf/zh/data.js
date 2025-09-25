@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758825554718,
+  "lastUpdate": 1758833243587,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -48165,6 +48165,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "Test_ICU_Backward_Search",
             "value": 52.3015,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "younies.mahmoud@gmail.com",
+            "name": "younies",
+            "username": "younies"
+          },
+          "committer": {
+            "email": "younies.mahmoud@gmail.com",
+            "name": "Younies Mahmoud",
+            "username": "younies"
+          },
+          "distinct": true,
+          "id": "8f60d0596a110efca01e0d654aaa0e956848ca7f",
+          "message": "ICU-23222 Enhance unit alias handling\n\nSee #3675",
+          "timestamp": "2025-09-25T22:13:22+02:00",
+          "tree_id": "36142e0e768e2b9018d77d122c6a3d91c0bb85ca",
+          "url": "https://github.com/unicode-org/icu/commit/8f60d0596a110efca01e0d654aaa0e956848ca7f"
+        },
+        "date": 1758832905696,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Test_ICU_Forward_Search",
+            "value": 23.5957,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "Test_ICU_Backward_Search",
+            "value": 51.1563,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
