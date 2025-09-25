@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758794517440,
+  "lastUpdate": 1758808260483,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -47877,6 +47877,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "Test_ICU_Backward_Search",
             "value": 51.3285,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "fredrik@roubert.name",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "distinct": true,
+          "id": "31f02d404a864df5c553182820b5a99842d26911",
+          "message": "ICU-23055 Update outdated sourceforge.net URLs.",
+          "timestamp": "2025-09-25T14:58:46+02:00",
+          "tree_id": "0f7e82062a3ddd1874452d13ab08adf3ddb00963",
+          "url": "https://github.com/unicode-org/icu/commit/31f02d404a864df5c553182820b5a99842d26911"
+        },
+        "date": 1758807196063,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Test_ICU_Forward_Search",
+            "value": 21.2192,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "Test_ICU_Backward_Search",
+            "value": 45.6933,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
