@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758892776629,
+  "lastUpdate": 1758897529038,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -39687,6 +39687,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFC_NFC_Text",
             "value": 4.239725889157025,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "9f9f6675ff79f6dec0af6840bc9ea31f341140aa",
+          "message": "ICU-23056 Add JDK 25 to the test matrix",
+          "timestamp": "2025-09-25T10:47:17-07:00",
+          "tree_id": "9e34cdbe5df6e09b05a3908620bdd44c6a70234d",
+          "url": "https://github.com/unicode-org/icu/commit/9f9f6675ff79f6dec0af6840bc9ea31f341140aa"
+        },
+        "date": 1758897188173,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 4.307490570756098,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

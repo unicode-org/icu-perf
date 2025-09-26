@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758893176504,
+  "lastUpdate": 1758897430781,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -39297,6 +39297,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 2.2808877135773566,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "9f9f6675ff79f6dec0af6840bc9ea31f341140aa",
+          "message": "ICU-23056 Add JDK 25 to the test matrix",
+          "timestamp": "2025-09-25T10:47:17-07:00",
+          "tree_id": "9e34cdbe5df6e09b05a3908620bdd44c6a70234d",
+          "url": "https://github.com/unicode-org/icu/commit/9f9f6675ff79f6dec0af6840bc9ea31f341140aa"
+        },
+        "date": 1758896805203,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 2.153765901765955,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
