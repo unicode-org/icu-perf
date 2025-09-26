@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758921470249,
+  "lastUpdate": 1758925157229,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -79586,6 +79586,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFC_Text",
             "value": 9.073433473709319,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "0525ee9ecaf26c92b34328555c87bf1821d52f10",
+          "message": "ICU-23056 BRS78rc Add ICU4J API signature file",
+          "timestamp": "2025-09-26T15:08:42-07:00",
+          "tree_id": "7ba08f8b6fd7b4982586cfdd57f4758e941c2be8",
+          "url": "https://github.com/unicode-org/icu/commit/0525ee9ecaf26c92b34328555c87bf1821d52f10"
+        },
+        "date": 1758924777305,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 8.584487102909199,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "0525ee9ecaf26c92b34328555c87bf1821d52f10",
+          "message": "ICU-23056 BRS78rc Add ICU4J API signature file",
+          "timestamp": "2025-09-26T15:08:42-07:00",
+          "tree_id": "7ba08f8b6fd7b4982586cfdd57f4758e941c2be8",
+          "url": "https://github.com/unicode-org/icu/commit/0525ee9ecaf26c92b34328555c87bf1821d52f10"
+        },
+        "date": 1758924806059,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 9.203883645452713,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

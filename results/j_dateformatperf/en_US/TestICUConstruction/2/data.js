@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758921488197,
+  "lastUpdate": 1758925057870,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -39927,6 +39927,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUConstruction",
             "value": 1909.0348886918432,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "0525ee9ecaf26c92b34328555c87bf1821d52f10",
+          "message": "ICU-23056 BRS78rc Add ICU4J API signature file",
+          "timestamp": "2025-09-26T15:08:42-07:00",
+          "tree_id": "7ba08f8b6fd7b4982586cfdd57f4758e941c2be8",
+          "url": "https://github.com/unicode-org/icu/commit/0525ee9ecaf26c92b34328555c87bf1821d52f10"
+        },
+        "date": 1758924708573,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 1952.3209540799141,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
