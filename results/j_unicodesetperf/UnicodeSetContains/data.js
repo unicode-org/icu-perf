@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758897019849,
+  "lastUpdate": 1758902750589,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -39867,6 +39867,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "UnicodeSetContains",
             "value": 2.0323623104684416,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "richard_gillam@apple.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "committer": {
+            "email": "62772518+richgillam@users.noreply.github.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "distinct": true,
+          "id": "76a06f2f03630a9e4a677f8ce4e4a7d36b425aa8",
+          "message": "ICU-23159 Changed parseUCARules() in the genrb tool to use a CharString object for its filename manipulation.",
+          "timestamp": "2025-09-25T16:27:38-07:00",
+          "tree_id": "2d5d6bed6424a5fb275556f56b1e00e09c6cc464",
+          "url": "https://github.com/unicode-org/icu/commit/76a06f2f03630a9e4a677f8ce4e4a7d36b425aa8"
+        },
+        "date": 1758902415310,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "UnicodeSetContains",
+            "value": 2.0374095891758834,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

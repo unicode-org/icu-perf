@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1758898120421,
+  "lastUpdate": 1758903601781,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -75813,6 +75813,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 5480324.4876,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "richard_gillam@apple.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "committer": {
+            "email": "62772518+richgillam@users.noreply.github.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "distinct": true,
+          "id": "76a06f2f03630a9e4a677f8ce4e4a7d36b425aa8",
+          "message": "ICU-23159 Changed parseUCARules() in the genrb tool to use a CharString object for its filename manipulation.",
+          "timestamp": "2025-09-25T16:27:38-07:00",
+          "tree_id": "2d5d6bed6424a5fb275556f56b1e00e09c6cc464",
+          "url": "https://github.com/unicode-org/icu/commit/76a06f2f03630a9e4a677f8ce4e4a7d36b425aa8"
+        },
+        "date": 1758903264014,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 219.6146,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 20937187.1867,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 5356579.1324,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 19685906.3043,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 5435877.0805,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
