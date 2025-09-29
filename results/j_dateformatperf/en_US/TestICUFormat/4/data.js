@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759147944300,
+  "lastUpdate": 1759151868145,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -39657,6 +39657,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUFormat",
             "value": 210.4976032888963,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "committer": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "distinct": true,
+          "id": "e6c9beeefaa9b533719700e9fb95d747ef3c6e7e",
+          "message": "ICU-23055 Update docs for BRS commit checker instructions",
+          "timestamp": "2025-09-25T11:10:14-07:00",
+          "tree_id": "060c5e1c95abe0e8f62a12130f6065481df41208",
+          "url": "https://github.com/unicode-org/icu/commit/e6c9beeefaa9b533719700e9fb95d747ef3c6e7e"
+        },
+        "date": 1759151531930,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 217.16825360373304,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
