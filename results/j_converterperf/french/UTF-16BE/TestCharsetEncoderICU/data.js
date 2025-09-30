@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759186513650,
+  "lastUpdate": 1759232777254,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -39867,6 +39867,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 4.097483664329815,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "richard_gillam@apple.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "committer": {
+            "email": "62772518+richgillam@users.noreply.github.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "distinct": true,
+          "id": "17f471a312193198d3c77975766b01a3a4f77766",
+          "message": "ICU-22684 Removed @internal from all definitions that are already declared private.",
+          "timestamp": "2025-09-26T10:10:48-07:00",
+          "tree_id": "43ea62cbd825c38bb71ddbb4bbdcd13d122383ff",
+          "url": "https://github.com/unicode-org/icu/commit/17f471a312193198d3c77975766b01a3a4f77766"
+        },
+        "date": 1759232441013,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 4.131691298706131,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
