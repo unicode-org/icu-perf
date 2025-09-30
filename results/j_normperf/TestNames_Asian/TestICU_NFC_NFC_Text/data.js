@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759232152647,
+  "lastUpdate": 1759271410367,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -40107,6 +40107,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFC_NFC_Text",
             "value": 3.114599261521028,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "younies.mahmoud@gmail.com",
+            "name": "Younies Mahmoud",
+            "username": "younies"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "4f78176dcc116f5f8b246542dbd845abade2c80c",
+          "message": "ICU-23056 Update known issue log for volume units in Arabic locale\n\nSee #3702",
+          "timestamp": "2025-09-30T15:02:44-07:00",
+          "tree_id": "a94d0ae2905c89d359f42e8d0de45ec4ac04d19c",
+          "url": "https://github.com/unicode-org/icu/commit/4f78176dcc116f5f8b246542dbd845abade2c80c"
+        },
+        "date": 1759271066965,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 3.154809170752365,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
