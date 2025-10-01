@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759271706669,
+  "lastUpdate": 1759279196771,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -40257,6 +40257,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 0.007041993193407896,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "richard_gillam@apple.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "committer": {
+            "email": "62772518+richgillam@users.noreply.github.com",
+            "name": "Rich Gillam",
+            "username": "richgillam"
+          },
+          "distinct": true,
+          "id": "24ebdccde39af10d8564fb7d50ad7f11a26e86b9",
+          "message": "ICU-23056 Updated urename.h with one new function signature.",
+          "timestamp": "2025-09-30T17:10:54-07:00",
+          "tree_id": "6c51a7379a3ec027a4e273b0a8092b8684b69ac6",
+          "url": "https://github.com/unicode-org/icu/commit/24ebdccde39af10d8564fb7d50ad7f11a26e86b9"
+        },
+        "date": 1759278856485,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 0.007037725770796273,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
