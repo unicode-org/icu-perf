@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759440257471,
+  "lastUpdate": 1759453008281,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -77163,6 +77163,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 5334095.4262,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ccornelius@google.com",
+            "name": "Craig Cornelius",
+            "username": "sven-oly"
+          },
+          "committer": {
+            "email": "cwcornelius@gmail.com",
+            "name": "Craig Cornelius",
+            "username": "sven-oly"
+          },
+          "distinct": true,
+          "id": "ca3c5a712a74a4e566fbed0fc78a9e7b8d164718",
+          "message": "ICU-23056 Update \"scrub issues\" miscellaneous.md\n\nThis describes the new script for finding issues marked \"done\" but that that haven't had comments updated in test code.",
+          "timestamp": "2025-10-02T17:30:56-07:00",
+          "tree_id": "352a39810b350661be67765e162d912d07f4c827",
+          "url": "https://github.com/unicode-org/icu/commit/ca3c5a712a74a4e566fbed0fc78a9e7b8d164718"
+        },
+        "date": 1759452658748,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 210.3232,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 21193675.2172,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 5309310.1786,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 20029281.2045,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 5339961.289,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

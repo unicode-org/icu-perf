@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759439661104,
+  "lastUpdate": 1759452607064,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -40197,6 +40197,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 2.278167368225883,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ccornelius@google.com",
+            "name": "Craig Cornelius",
+            "username": "sven-oly"
+          },
+          "committer": {
+            "email": "cwcornelius@gmail.com",
+            "name": "Craig Cornelius",
+            "username": "sven-oly"
+          },
+          "distinct": true,
+          "id": "ca3c5a712a74a4e566fbed0fc78a9e7b8d164718",
+          "message": "ICU-23056 Update \"scrub issues\" miscellaneous.md\n\nThis describes the new script for finding issues marked \"done\" but that that haven't had comments updated in test code.",
+          "timestamp": "2025-10-02T17:30:56-07:00",
+          "tree_id": "352a39810b350661be67765e162d912d07f4c827",
+          "url": "https://github.com/unicode-org/icu/commit/ca3c5a712a74a4e566fbed0fc78a9e7b8d164718"
+        },
+        "date": 1759452254344,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 2.2439870972491867,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
