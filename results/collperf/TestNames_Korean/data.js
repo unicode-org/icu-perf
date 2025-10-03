@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759453003233,
+  "lastUpdate": 1759518248927,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -76893,6 +76893,114 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 12553159.8609,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cwcornelius@gmail.com",
+            "name": "sven-oly",
+            "username": "sven-oly"
+          },
+          "committer": {
+            "email": "cwcornelius@gmail.com",
+            "name": "Craig Cornelius",
+            "username": "sven-oly"
+          },
+          "distinct": true,
+          "id": "4728e5a27e824e0667adab8df2dc0a7b208789a5",
+          "message": "ICU-23056 Update documentation on BRS \"Scrub issues\"\n\nSee #3712",
+          "timestamp": "2025-10-03T10:09:18-07:00",
+          "tree_id": "5285d2a1a423c37f1c6fc531d9bfef8d81622787",
+          "url": "https://github.com/unicode-org/icu/commit/4728e5a27e824e0667adab8df2dc0a7b208789a5"
+        },
+        "date": 1759512696672,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 213.1115,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 56036032.9874,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 12457967.1078,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 54083125.1578,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 12873252.2329,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "cd53e184b1d5fed67ffc88e3c74ae9d81abf84d5",
+          "message": "ICU-23056 some ICU 78 download page updates\n\nSee #3711",
+          "timestamp": "2025-10-03T11:34:56-07:00",
+          "tree_id": "b5bccf664c9bbb3e93a385247c55cb65b8a1ecd5",
+          "url": "https://github.com/unicode-org/icu/commit/cd53e184b1d5fed67ffc88e3c74ae9d81abf84d5"
+        },
+        "date": 1759517541492,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 212.3244,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 54685514.0518,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 12190277.6638,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 50890247.4736,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 12620916.6143,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

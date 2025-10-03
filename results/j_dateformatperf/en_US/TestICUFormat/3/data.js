@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759452425657,
+  "lastUpdate": 1759517094415,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -40047,6 +40047,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUFormat",
             "value": 234.43416265910653,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cwcornelius@gmail.com",
+            "name": "sven-oly",
+            "username": "sven-oly"
+          },
+          "committer": {
+            "email": "cwcornelius@gmail.com",
+            "name": "Craig Cornelius",
+            "username": "sven-oly"
+          },
+          "distinct": true,
+          "id": "4728e5a27e824e0667adab8df2dc0a7b208789a5",
+          "message": "ICU-23056 Update documentation on BRS \"Scrub issues\"\n\nSee #3712",
+          "timestamp": "2025-10-03T10:09:18-07:00",
+          "tree_id": "5285d2a1a423c37f1c6fc531d9bfef8d81622787",
+          "url": "https://github.com/unicode-org/icu/commit/4728e5a27e824e0667adab8df2dc0a7b208789a5"
+        },
+        "date": 1759511539949,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 221.95785462925218,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "cd53e184b1d5fed67ffc88e3c74ae9d81abf84d5",
+          "message": "ICU-23056 some ICU 78 download page updates\n\nSee #3711",
+          "timestamp": "2025-10-03T11:34:56-07:00",
+          "tree_id": "b5bccf664c9bbb3e93a385247c55cb65b8a1ecd5",
+          "url": "https://github.com/unicode-org/icu/commit/cd53e184b1d5fed67ffc88e3c74ae9d81abf84d5"
+        },
+        "date": 1759516754267,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 219.76355322660734,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
