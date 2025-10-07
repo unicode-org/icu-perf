@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759851430728,
+  "lastUpdate": 1759855259542,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -40407,6 +40407,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 0.007810172885695006,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "committer": {
+            "email": "131725218+DraganBesevic@users.noreply.github.com",
+            "name": "DraganBesevic",
+            "username": "DraganBesevic"
+          },
+          "distinct": true,
+          "id": "adaa760e79353ece2141a2e1cbdfbd2f66ec651a",
+          "message": "ICU-23056 Reinsert logKnownIssue for Pacific/Apia",
+          "timestamp": "2025-10-02T16:54:37-07:00",
+          "tree_id": "ff848ece68b1994822e6dbf83a2db0c68837e180",
+          "url": "https://github.com/unicode-org/icu/commit/adaa760e79353ece2141a2e1cbdfbd2f66ec651a"
+        },
+        "date": 1759854904299,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 0.007803354584575829,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
