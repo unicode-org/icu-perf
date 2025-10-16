@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759862945898,
+  "lastUpdate": 1760646523683,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -60561,6 +60561,48 @@ window.BENCHMARK_DATA = {
           {
             "name": "FromUTF8",
             "value": 2.3135,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "892d4498b9b70f36c42c0b6c87244b9dca89ca62",
+          "message": "ICU-23231 Update oss-fuzz badge link for new oss-fuzz dashboard",
+          "timestamp": "2025-10-16T12:42:30-07:00",
+          "tree_id": "95cd1d7a4aa37f6a54f54cfd9b615221a4cc0c1d",
+          "url": "https://github.com/unicode-org/icu/commit/892d4498b9b70f36c42c0b6c87244b9dca89ca62"
+        },
+        "date": 1760644695003,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Roundtrip",
+            "value": 9.5706,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "FromUnicode",
+            "value": 3.0661,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "FromUTF8",
+            "value": 2.3114,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
