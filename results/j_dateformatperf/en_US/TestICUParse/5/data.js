@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761930262682,
+  "lastUpdate": 1761938483905,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -40677,6 +40677,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUParse",
             "value": 359.0493354289647,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "673038beae65eaad87ed921bc2123ca8d1b0c2a2",
+          "message": "ICU-23249 ICU 79rc BRS: front-load update version to 79.0.1",
+          "timestamp": "2025-10-31T12:01:26-07:00",
+          "tree_id": "d005d1d40802f38445cf3141d8c936ca1622a381",
+          "url": "https://github.com/unicode-org/icu/commit/673038beae65eaad87ed921bc2123ca8d1b0c2a2"
+        },
+        "date": 1761938114869,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUParse",
+            "value": 369.79135427517696,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
