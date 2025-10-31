@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761865076182,
+  "lastUpdate": 1761881145288,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -40797,6 +40797,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 0.43706848272577603,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "06df637fdb3357079038572bd1508763b389b7e3",
+          "message": "ICU-23249 merge maint/maint-78 to main (#3756)",
+          "timestamp": "2025-10-30T19:54:47-07:00",
+          "tree_id": "7c5740e0a0a3d7526ac319f6aca3e1cdf03bbb32",
+          "url": "https://github.com/unicode-org/icu/commit/06df637fdb3357079038572bd1508763b389b7e3"
+        },
+        "date": 1761880771427,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 0.43701256606019556,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
