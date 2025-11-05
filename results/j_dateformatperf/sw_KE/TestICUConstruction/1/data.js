@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761938783727,
+  "lastUpdate": 1762299724465,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -40707,6 +40707,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUConstruction",
             "value": 2986.464297686591,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "committer": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "distinct": true,
+          "id": "9407fad66d51a399941556d0fb6161fbdf0a4707",
+          "message": "ICU-23091 Apply source formatter to all Java files in codebase",
+          "timestamp": "2025-11-04T15:18:52-08:00",
+          "tree_id": "991d590019f142deb675ff244757ea6313c5039f",
+          "url": "https://github.com/unicode-org/icu/commit/9407fad66d51a399941556d0fb6161fbdf0a4707"
+        },
+        "date": 1762299354659,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 3004.28024329804,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
