@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1762474065720,
+  "lastUpdate": 1762487539194,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -86697,6 +86697,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_Orig_Text",
             "value": 27.5513,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "0cc965c49b9c8766a55b1bc3abd019f90edd9783",
+          "message": "ICU-23247 Tell MSan that we know that this memory is OK to access here.\n\nNewer versions of MSan with MSAN_OPTIONS=poison_in_dtor=1 will otherwise\nerroneously consider this memory to be no longer readable.",
+          "timestamp": "2025-11-06T19:13:58-08:00",
+          "tree_id": "d1254da4ea1e52a6fc340e53c7ca0ff095c64537",
+          "url": "https://github.com/unicode-org/icu/commit/0cc965c49b9c8766a55b1bc3abd019f90edd9783"
+        },
+        "date": 1762487163542,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFD_Text",
+            "value": 11.2264,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 16.6673,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_Orig_Text",
+            "value": 16.64,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 8.9573,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 27.6296,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_Orig_Text",
+            "value": 27.6002,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

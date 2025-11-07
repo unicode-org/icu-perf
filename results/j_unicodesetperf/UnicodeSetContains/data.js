@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1762472601865,
+  "lastUpdate": 1762485977233,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -41397,6 +41397,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "UnicodeSetContains",
             "value": 1.8552007414431442,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "0cc965c49b9c8766a55b1bc3abd019f90edd9783",
+          "message": "ICU-23247 Tell MSan that we know that this memory is OK to access here.\n\nNewer versions of MSan with MSAN_OPTIONS=poison_in_dtor=1 will otherwise\nerroneously consider this memory to be no longer readable.",
+          "timestamp": "2025-11-06T19:13:58-08:00",
+          "tree_id": "d1254da4ea1e52a6fc340e53c7ca0ff095c64537",
+          "url": "https://github.com/unicode-org/icu/commit/0cc965c49b9c8766a55b1bc3abd019f90edd9783"
+        },
+        "date": 1762485601796,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "UnicodeSetContains",
+            "value": 2.031560325236554,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
