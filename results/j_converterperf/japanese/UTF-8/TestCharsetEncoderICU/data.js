@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1762498525305,
+  "lastUpdate": 1762554721097,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -40947,6 +40947,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 2.39658023791209,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "1600341dfd33d975a3b0a9495e0fdd1bf09555a7",
+          "message": "ICU-23261 Bugfix: Correctly propagate errors to the caller.",
+          "timestamp": "2025-11-07T13:58:39-08:00",
+          "tree_id": "6033e2f2b8b183a483bf965e6315a80a7c2fda7d",
+          "url": "https://github.com/unicode-org/icu/commit/1600341dfd33d975a3b0a9495e0fdd1bf09555a7"
+        },
+        "date": 1762554298598,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 2.6378091215358577,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

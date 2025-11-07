@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1762486997413,
+  "lastUpdate": 1762554852646,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -49929,6 +49929,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "Test_ICU_Backward_Search",
             "value": 49.8595,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "1600341dfd33d975a3b0a9495e0fdd1bf09555a7",
+          "message": "ICU-23261 Bugfix: Correctly propagate errors to the caller.",
+          "timestamp": "2025-11-07T13:58:39-08:00",
+          "tree_id": "6033e2f2b8b183a483bf965e6315a80a7c2fda7d",
+          "url": "https://github.com/unicode-org/icu/commit/1600341dfd33d975a3b0a9495e0fdd1bf09555a7"
+        },
+        "date": 1762554474069,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Test_ICU_Forward_Search",
+            "value": 23.8499,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "Test_ICU_Backward_Search",
+            "value": 50.1064,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
