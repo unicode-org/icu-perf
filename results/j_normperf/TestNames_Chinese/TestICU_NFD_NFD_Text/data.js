@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1762554015957,
+  "lastUpdate": 1762567268178,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -41547,6 +41547,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFD_Text",
             "value": 4.072749286479195,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@chromium.org",
+            "name": "Frank Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "6ccd8adc39a6d0ee9372cc1c44e0b2109eaffd86",
+          "message": "ICU-23256 Fix floating exception while divided by 0\n\nSee #3769",
+          "timestamp": "2025-11-07T17:31:23-08:00",
+          "tree_id": "c9976170b62b33a5dde81983fb2afafc893891b9",
+          "url": "https://github.com/unicode-org/icu/commit/6ccd8adc39a6d0ee9372cc1c44e0b2109eaffd86"
+        },
+        "date": 1762566904718,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 3.7268910489086684,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
