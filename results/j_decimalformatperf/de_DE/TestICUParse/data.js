@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1763670774716,
+  "lastUpdate": 1763783563298,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -41427,6 +41427,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUParse",
             "value": 305.9197042847781,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "grhoten@users.noreply.github.com",
+            "name": "George Rhoten",
+            "username": "grhoten"
+          },
+          "committer": {
+            "email": "grhoten@users.noreply.github.com",
+            "name": "George Rhoten",
+            "username": "grhoten"
+          },
+          "distinct": true,
+          "id": "2a888f795d57647e587d178ae40c5bbeb000fcac",
+          "message": "ICU-23253 Add Link Time Optimization to release flags",
+          "timestamp": "2025-11-21T19:37:02-08:00",
+          "tree_id": "4c1906c79c99d93a19343314b6f58e8c2c62c7f9",
+          "url": "https://github.com/unicode-org/icu/commit/2a888f795d57647e587d178ae40c5bbeb000fcac"
+        },
+        "date": 1763783197950,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUParse",
+            "value": 329.7166103254786,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
