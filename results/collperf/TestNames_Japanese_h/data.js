@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1763784656522,
+  "lastUpdate": 1764021729591,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -79053,6 +79053,114 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 5343252.4007,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "8c13877b11f56e37462e4bb05780f83a1f3d00cf",
+          "message": "ICU-23049 Re-enable UWP in CI\n\nARM 32 not supported in newer SDKs.\n`Build.Windows.UWP.ProjectConfiguration.props` now does what\n`Build.Windows.ProjectConfiguration.props` was already doing.\n\nI think that in an ideal world the uwp projects / properties\nshould be a lot more similar to the non-uwp ones.",
+          "timestamp": "2025-11-24T12:04:30-08:00",
+          "tree_id": "7218db7b8f58d1500c5c70d4d7f35f10812b91f2",
+          "url": "https://github.com/unicode-org/icu/commit/8c13877b11f56e37462e4bb05780f83a1f3d00cf"
+        },
+        "date": 1764017475699,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 214.2316,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 21158221.4274,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 5221899.2887,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 19857884.5177,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 5375954.553,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "7ed3f0cf05c23f4bae7cc832a7b8afbacc1a89f4",
+          "message": "ICU-23247 Move variable declaration to avoid unused variable.",
+          "timestamp": "2025-11-24T13:17:12-08:00",
+          "tree_id": "1d4e3a49f8582f32c7579316cecb6e974bb15abf",
+          "url": "https://github.com/unicode-org/icu/commit/7ed3f0cf05c23f4bae7cc832a7b8afbacc1a89f4"
+        },
+        "date": 1764021360037,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 213.688,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 20962311.4402,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 5221621.8005,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 19804795.9286,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 5372767.7133,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
