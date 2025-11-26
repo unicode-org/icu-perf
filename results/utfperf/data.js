@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1764021229034,
+  "lastUpdate": 1764141533669,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -61695,6 +61695,48 @@ window.BENCHMARK_DATA = {
           {
             "name": "FromUTF8",
             "value": 2.126,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "grhoten@users.noreply.github.com",
+            "name": "George Rhoten",
+            "username": "grhoten"
+          },
+          "committer": {
+            "email": "grhoten@users.noreply.github.com",
+            "name": "George Rhoten",
+            "username": "grhoten"
+          },
+          "distinct": true,
+          "id": "9f1c57412afbedb180941a3739c5a460beff24f4",
+          "message": "ICU-23254 Remove C++ static initialization",
+          "timestamp": "2025-11-25T22:48:03-08:00",
+          "tree_id": "7a37fd674aba0ef6eeb88f44fa2dde25123be873",
+          "url": "https://github.com/unicode-org/icu/commit/9f1c57412afbedb180941a3739c5a460beff24f4"
+        },
+        "date": 1764141160994,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Roundtrip",
+            "value": 9.3103,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "FromUnicode",
+            "value": 3.0193,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "FromUTF8",
+            "value": 1.9387,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
