@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1764888664203,
+  "lastUpdate": 1764959802885,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -79323,6 +79323,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 2139624.3026,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "e945059cbf47e2ef7898472281c59b1c63d37607",
+          "message": "ICU-23247 Annotate test functions that aren't handled well by UBSan.\n\nUBSan is a bit too strict about what pointer types are considered to be\n\"the same\" and will report \"call to function through pointer to\nincorrect function type\" false positives for these functions,\ndespite there not being anything actually wrong with the types.",
+          "timestamp": "2025-12-05T09:57:26-08:00",
+          "tree_id": "c4934eba829f6e43e5c15b87b683c6b20f52fa73",
+          "url": "https://github.com/unicode-org/icu/commit/e945059cbf47e2ef7898472281c59b1c63d37607"
+        },
+        "date": 1764959412616,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 153.7101,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 8722484.2204,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 2181212.3242,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 7801062.5309,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 2091436.3484,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

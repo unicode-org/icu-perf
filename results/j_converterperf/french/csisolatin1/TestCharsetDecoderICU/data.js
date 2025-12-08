@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1764887538051,
+  "lastUpdate": 1764959239659,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -41457,6 +41457,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetDecoderICU",
             "value": 0.4664344079903592,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "e945059cbf47e2ef7898472281c59b1c63d37607",
+          "message": "ICU-23247 Annotate test functions that aren't handled well by UBSan.\n\nUBSan is a bit too strict about what pointer types are considered to be\n\"the same\" and will report \"call to function through pointer to\nincorrect function type\" false positives for these functions,\ndespite there not being anything actually wrong with the types.",
+          "timestamp": "2025-12-05T09:57:26-08:00",
+          "tree_id": "c4934eba829f6e43e5c15b87b683c6b20f52fa73",
+          "url": "https://github.com/unicode-org/icu/commit/e945059cbf47e2ef7898472281c59b1c63d37607"
+        },
+        "date": 1764958849432,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetDecoderICU",
+            "value": 0.4629550414736995,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
