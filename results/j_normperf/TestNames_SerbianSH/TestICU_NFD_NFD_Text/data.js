@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1764958640079,
+  "lastUpdate": 1765240350208,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -41727,6 +41727,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFD_Text",
             "value": 2.919550848442861,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "committer": {
+            "email": "ftang@google.com",
+            "name": "Frank Yung-Fong Tang",
+            "username": "FrankYFTang"
+          },
+          "distinct": true,
+          "id": "22ce6a45d0a94f063e4ea71c5cb06b40560177e1",
+          "message": "ICU-23280 Use uint64_t instead of int64_t to avoid overflow\n\nSee #3789",
+          "timestamp": "2025-12-08T16:10:29-08:00",
+          "tree_id": "111b992bd8bdfb2345fa4a887fc07e8817469a20",
+          "url": "https://github.com/unicode-org/icu/commit/22ce6a45d0a94f063e4ea71c5cb06b40560177e1"
+        },
+        "date": 1765239962657,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 2.9541087976914184,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
