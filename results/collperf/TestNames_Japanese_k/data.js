@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765451736912,
+  "lastUpdate": 1765472721826,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -79215,6 +79215,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 5526895.6856,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "c.maurer@gmx.at",
+            "name": "Christian Maurer",
+            "username": "chrisse74"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "11dfebc043d40409ea84cb177fa1545c87819ffd",
+          "message": "ICU-23276 Increase toolutil's STRING_STORE_SIZE",
+          "timestamp": "2025-12-11T08:30:30-08:00",
+          "tree_id": "db0d53c95d8f78fb25300d7eb094fc875d7572fe",
+          "url": "https://github.com/unicode-org/icu/commit/11dfebc043d40409ea84cb177fa1545c87819ffd"
+        },
+        "date": 1765472327730,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 241.7246,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 20898674.9252,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 5345988.5166,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 19760828.3272,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 5546087.6951,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

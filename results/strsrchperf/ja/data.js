@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765451331303,
+  "lastUpdate": 1765472509221,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -50649,6 +50649,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "Test_ICU_Backward_Search",
             "value": 55.5382,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "c.maurer@gmx.at",
+            "name": "Christian Maurer",
+            "username": "chrisse74"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "11dfebc043d40409ea84cb177fa1545c87819ffd",
+          "message": "ICU-23276 Increase toolutil's STRING_STORE_SIZE",
+          "timestamp": "2025-12-11T08:30:30-08:00",
+          "tree_id": "db0d53c95d8f78fb25300d7eb094fc875d7572fe",
+          "url": "https://github.com/unicode-org/icu/commit/11dfebc043d40409ea84cb177fa1545c87819ffd"
+        },
+        "date": 1765472115333,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Test_ICU_Forward_Search",
+            "value": 26.8481,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "Test_ICU_Backward_Search",
+            "value": 55.7419,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

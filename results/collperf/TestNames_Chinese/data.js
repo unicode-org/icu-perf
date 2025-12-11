@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765451758631,
+  "lastUpdate": 1765472817076,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -79593,6 +79593,60 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 2122123.2926,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "c.maurer@gmx.at",
+            "name": "Christian Maurer",
+            "username": "chrisse74"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "11dfebc043d40409ea84cb177fa1545c87819ffd",
+          "message": "ICU-23276 Increase toolutil's STRING_STORE_SIZE",
+          "timestamp": "2025-12-11T08:30:30-08:00",
+          "tree_id": "db0d53c95d8f78fb25300d7eb094fc875d7572fe",
+          "url": "https://github.com/unicode-org/icu/commit/11dfebc043d40409ea84cb177fa1545c87819ffd"
+        },
+        "date": 1765472357125,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 145.6109,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 8038707.1015,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 2025927.0444,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 7228050.2169,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 2122297.6085,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
