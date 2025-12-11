@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765472667382,
+  "lastUpdate": 1765490205647,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -62031,6 +62031,48 @@ window.BENCHMARK_DATA = {
           {
             "name": "FromUTF8",
             "value": 1.9182,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "distinct": true,
+          "id": "4c1e137a278b54a02cc458d0e68a01a86ca23d71",
+          "message": "ICU-23247 Bump the github-actions group with 2 updates\n\nSee #3785",
+          "timestamp": "2025-12-11T13:02:01-08:00",
+          "tree_id": "8295c4efe0cc6fe3049f57587acccfe1c1f2a0d2",
+          "url": "https://github.com/unicode-org/icu/commit/4c1e137a278b54a02cc458d0e68a01a86ca23d71"
+        },
+        "date": 1765488996140,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "Roundtrip",
+            "value": 10.1275,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "FromUnicode",
+            "value": 3.8353,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "FromUTF8",
+            "value": 1.9248,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
