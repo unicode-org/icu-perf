@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765490163970,
+  "lastUpdate": 1765559746608,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -140061,6 +140061,102 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestScan2",
             "value": 38.8762,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "022b44e6046d999990ace24add179c9d2a9ed5ee",
+          "message": "ICU-23293 Remove attribute 'dllexport' from deleted functions.\n\nhttps://groups.google.com/a/unicode.org/g/icu-support/c/61hEq3foH7o",
+          "timestamp": "2025-12-12T08:18:45-08:00",
+          "tree_id": "7d7ba1cb6bd505bd48b4f0f49b00b1495886c0b4",
+          "url": "https://github.com/unicode-org/icu/commit/022b44e6046d999990ace24add179c9d2a9ed5ee"
+        },
+        "date": 1765559286724,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCtor",
+            "value": 31.162,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCtor1",
+            "value": 33.0922,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCtor2",
+            "value": 34.7511,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCtor3",
+            "value": 36.6072,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestAssign",
+            "value": 59.6497,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestAssign1",
+            "value": 42.3662,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestAssign2",
+            "value": 49.968,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestGetch",
+            "value": 27.4665,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCatenate",
+            "value": 82.4434,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestScan",
+            "value": 33.481,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestScan1",
+            "value": 45.2499,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestScan2",
+            "value": 47.8054,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

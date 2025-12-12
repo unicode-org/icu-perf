@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765489705962,
+  "lastUpdate": 1765559324179,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -114501,6 +114501,84 @@ window.BENCHMARK_DATA = {
           {
             "name": "pattern3",
             "value": 2151.4274,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "022b44e6046d999990ace24add179c9d2a9ed5ee",
+          "message": "ICU-23293 Remove attribute 'dllexport' from deleted functions.\n\nhttps://groups.google.com/a/unicode.org/g/icu-support/c/61hEq3foH7o",
+          "timestamp": "2025-12-12T08:18:45-08:00",
+          "tree_id": "7d7ba1cb6bd505bd48b4f0f49b00b1495886c0b4",
+          "url": "https://github.com/unicode-org/icu/commit/022b44e6046d999990ace24add179c9d2a9ed5ee"
+        },
+        "date": 1765558931849,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "titlecase_letter_add",
+            "value": 78264.5676,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_contains",
+            "value": 178753.558,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_iterator",
+            "value": 0.5319,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_add",
+            "value": 10.7633,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_contains",
+            "value": 6.8028,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_iterator",
+            "value": 0,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern1",
+            "value": 12730.6156,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern2",
+            "value": 45123.4948,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern3",
+            "value": 2099.8103,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765489894381,
+  "lastUpdate": 1765559457037,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -131757,6 +131757,96 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIsWhiteSpace",
             "value": 4.6119,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "022b44e6046d999990ace24add179c9d2a9ed5ee",
+          "message": "ICU-23293 Remove attribute 'dllexport' from deleted functions.\n\nhttps://groups.google.com/a/unicode.org/g/icu-support/c/61hEq3foH7o",
+          "timestamp": "2025-12-12T08:18:45-08:00",
+          "tree_id": "7d7ba1cb6bd505bd48b4f0f49b00b1495886c0b4",
+          "url": "https://github.com/unicode-org/icu/commit/022b44e6046d999990ace24add179c9d2a9ed5ee"
+        },
+        "date": 1765559065093,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIsAlpha",
+            "value": 4.3041,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIsUpper",
+            "value": 4.5987,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIsLower",
+            "value": 4.3034,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIsDigit",
+            "value": 4.2869,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIsSpace",
+            "value": 4.9286,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIsAlphaNumeric",
+            "value": 4.2859,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIsPrint",
+            "value": 4.286,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIsControl",
+            "value": 4.3039,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestToLower",
+            "value": 5.515,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestToUpper",
+            "value": 5.1517,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIsWhiteSpace",
+            "value": 4.6123,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

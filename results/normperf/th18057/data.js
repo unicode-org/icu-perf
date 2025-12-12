@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1765489860330,
+  "lastUpdate": 1765559654682,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -87777,6 +87777,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_Orig_Text",
             "value": 12.8556,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "roubert@google.com",
+            "name": "Fredrik Roubert",
+            "username": "roubert"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "022b44e6046d999990ace24add179c9d2a9ed5ee",
+          "message": "ICU-23293 Remove attribute 'dllexport' from deleted functions.\n\nhttps://groups.google.com/a/unicode.org/g/icu-support/c/61hEq3foH7o",
+          "timestamp": "2025-12-12T08:18:45-08:00",
+          "tree_id": "7d7ba1cb6bd505bd48b4f0f49b00b1495886c0b4",
+          "url": "https://github.com/unicode-org/icu/commit/022b44e6046d999990ace24add179c9d2a9ed5ee"
+        },
+        "date": 1765559257903,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_NFD_Text",
+            "value": 12.7964,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_NFC_Text",
+            "value": 12.7897,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFC_Orig_Text",
+            "value": 12.8237,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFD_Text",
+            "value": 12.8966,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 12.8864,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestICU_NFD_Orig_Text",
+            "value": 12.8769,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
