@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1766433971903,
+  "lastUpdate": 1766616861914,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -41817,6 +41817,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUFormat",
             "value": 244.83290302095833,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kateinoigakukun@gmail.com",
+            "name": "Yuta Saito",
+            "username": "kateinoigakukun"
+          },
+          "committer": {
+            "email": "shane@unicode.org",
+            "name": "Shane F. Carr",
+            "username": "sffc"
+          },
+          "distinct": true,
+          "id": "604b4265d06d359a4ef3e64eddb20c59d30f83f9",
+          "message": "ICU-22838 Add WebAssembly/WASI cross-compilation support\n\n* Add config/mh-wasi and update configure script.\n\n  WebAssembly/WASI does not support threads and dynamic linking, so\n  the new mh-wasi file disables those features in ICU.\n\n* Teach putilimp.h not to define U_TZSET, U_TIMEZONE, and U_TZNAME for WASI\n\n  WASI does not define timezone-related functionalities, and wasi-libc\n  does not provide tzset, timezone, and tzname. This change teaches\n  putilimp.h not to define U_TZSET, U_TIMEZONE, and U_TZNAME for WASI.\n\n* Add GitHub Actions workflow to cross-compile ICU4C for WebAssembly/WASI",
+          "timestamp": "2025-12-24T16:32:22-06:00",
+          "tree_id": "21c563e60965e5d8d6e02965a49d0750ab89de40",
+          "url": "https://github.com/unicode-org/icu/commit/604b4265d06d359a4ef3e64eddb20c59d30f83f9"
+        },
+        "date": 1766616469293,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUFormat",
+            "value": 246.05869422392837,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

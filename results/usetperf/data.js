@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1766434884223,
+  "lastUpdate": 1766617899082,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -115359,6 +115359,84 @@ window.BENCHMARK_DATA = {
           {
             "name": "pattern3",
             "value": 2146.073,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kateinoigakukun@gmail.com",
+            "name": "Yuta Saito",
+            "username": "kateinoigakukun"
+          },
+          "committer": {
+            "email": "shane@unicode.org",
+            "name": "Shane F. Carr",
+            "username": "sffc"
+          },
+          "distinct": true,
+          "id": "604b4265d06d359a4ef3e64eddb20c59d30f83f9",
+          "message": "ICU-22838 Add WebAssembly/WASI cross-compilation support\n\n* Add config/mh-wasi and update configure script.\n\n  WebAssembly/WASI does not support threads and dynamic linking, so\n  the new mh-wasi file disables those features in ICU.\n\n* Teach putilimp.h not to define U_TZSET, U_TIMEZONE, and U_TZNAME for WASI\n\n  WASI does not define timezone-related functionalities, and wasi-libc\n  does not provide tzset, timezone, and tzname. This change teaches\n  putilimp.h not to define U_TZSET, U_TIMEZONE, and U_TZNAME for WASI.\n\n* Add GitHub Actions workflow to cross-compile ICU4C for WebAssembly/WASI",
+          "timestamp": "2025-12-24T16:32:22-06:00",
+          "tree_id": "21c563e60965e5d8d6e02965a49d0750ab89de40",
+          "url": "https://github.com/unicode-org/icu/commit/604b4265d06d359a4ef3e64eddb20c59d30f83f9"
+        },
+        "date": 1766617502089,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "titlecase_letter_add",
+            "value": 78245.5955,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_contains",
+            "value": 178772.4085,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "titlecase_letter_iterator",
+            "value": 0.5319,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_add",
+            "value": 10.7672,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_contains",
+            "value": 6.8023,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "unassigned_iterator",
+            "value": 0,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern1",
+            "value": 13022.4406,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern2",
+            "value": 46991.9663,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "pattern3",
+            "value": 2163.7471,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

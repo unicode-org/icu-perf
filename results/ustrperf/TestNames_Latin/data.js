@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1766435095457,
+  "lastUpdate": 1766618417184,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -140829,6 +140829,102 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestScan2",
             "value": 40.5527,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kateinoigakukun@gmail.com",
+            "name": "Yuta Saito",
+            "username": "kateinoigakukun"
+          },
+          "committer": {
+            "email": "shane@unicode.org",
+            "name": "Shane F. Carr",
+            "username": "sffc"
+          },
+          "distinct": true,
+          "id": "604b4265d06d359a4ef3e64eddb20c59d30f83f9",
+          "message": "ICU-22838 Add WebAssembly/WASI cross-compilation support\n\n* Add config/mh-wasi and update configure script.\n\n  WebAssembly/WASI does not support threads and dynamic linking, so\n  the new mh-wasi file disables those features in ICU.\n\n* Teach putilimp.h not to define U_TZSET, U_TIMEZONE, and U_TZNAME for WASI\n\n  WASI does not define timezone-related functionalities, and wasi-libc\n  does not provide tzset, timezone, and tzname. This change teaches\n  putilimp.h not to define U_TZSET, U_TIMEZONE, and U_TZNAME for WASI.\n\n* Add GitHub Actions workflow to cross-compile ICU4C for WebAssembly/WASI",
+          "timestamp": "2025-12-24T16:32:22-06:00",
+          "tree_id": "21c563e60965e5d8d6e02965a49d0750ab89de40",
+          "url": "https://github.com/unicode-org/icu/commit/604b4265d06d359a4ef3e64eddb20c59d30f83f9"
+        },
+        "date": 1766618019934,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCtor",
+            "value": 20.1066,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCtor1",
+            "value": 21.0352,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCtor2",
+            "value": 24.4679,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCtor3",
+            "value": 34.0995,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestAssign",
+            "value": 44.7786,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestAssign1",
+            "value": 37.5964,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestAssign2",
+            "value": 29.1425,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestGetch",
+            "value": 17.4065,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestCatenate",
+            "value": 100.1346,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestScan",
+            "value": 22.413,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestScan1",
+            "value": 36.6576,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestScan2",
+            "value": 40.0338,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
