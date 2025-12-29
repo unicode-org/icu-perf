@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1767012177921,
+  "lastUpdate": 1767043352442,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -41727,6 +41727,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 5.783669443134758,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "committer": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "distinct": true,
+          "id": "5b361800fd5cf2dbce31b73abeaf5c623bf92e4b",
+          "message": "ICU-23297 lookup Matcher only as an unhinged implementation detail",
+          "timestamp": "2025-12-29T21:30:57+01:00",
+          "tree_id": "27201c10c4c4dbc1bfae4858ddec21581bc868b3",
+          "url": "https://github.com/unicode-org/icu/commit/5b361800fd5cf2dbce31b73abeaf5c623bf92e4b"
+        },
+        "date": 1767042912383,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 5.777410218823992,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
