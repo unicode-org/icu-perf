@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1767041359070,
+  "lastUpdate": 1767051732765,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -83846,6 +83846,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFD_NFC_Text",
             "value": 8.682865333366198,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "committer": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "distinct": true,
+          "id": "27b8fb1b238c07c3e041c446792fa338798e3f45",
+          "message": "ICU-22851 A named-element is an element, not a set",
+          "timestamp": "2025-12-30T00:21:45+01:00",
+          "tree_id": "be006de267098fb1c12cd991e6115f4924c2f53d",
+          "url": "https://github.com/unicode-org/icu/commit/27b8fb1b238c07c3e041c446792fa338798e3f45"
+        },
+        "date": 1767051054697,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 10.859100417957332,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "committer": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "distinct": true,
+          "id": "27b8fb1b238c07c3e041c446792fa338798e3f45",
+          "message": "ICU-22851 A named-element is an element, not a set",
+          "timestamp": "2025-12-30T00:21:45+01:00",
+          "tree_id": "be006de267098fb1c12cd991e6115f4924c2f53d",
+          "url": "https://github.com/unicode-org/icu/commit/27b8fb1b238c07c3e041c446792fa338798e3f45"
+        },
+        "date": 1767051344561,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFD_NFC_Text",
+            "value": 9.335136957672209,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
