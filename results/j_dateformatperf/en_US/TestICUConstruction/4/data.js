@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1767051434680,
+  "lastUpdate": 1767137780433,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -41937,6 +41937,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUConstruction",
             "value": 1962.1412627125792,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "committer": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "distinct": true,
+          "id": "982db0338540843902b1767a6905109ebe78f824",
+          "message": "ICU-23297 Do not use lookupMatcher in UnicodeSet parsing",
+          "timestamp": "2025-12-31T00:15:53+01:00",
+          "tree_id": "11096d504eedac6b3d475e81dea5b8236f205be0",
+          "url": "https://github.com/unicode-org/icu/commit/982db0338540843902b1767a6905109ebe78f824"
+        },
+        "date": 1767137389788,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUConstruction",
+            "value": 2003.2459483809168,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
