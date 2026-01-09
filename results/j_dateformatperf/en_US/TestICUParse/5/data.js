@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1767137982132,
+  "lastUpdate": 1767918867374,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -41787,6 +41787,36 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICUParse",
             "value": 351.0358124421177,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "elango@unicode.org",
+            "name": "Elango Cheran",
+            "username": "echeran"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "fedc2a727383b31ca46e558dd07bd7d6dab9b749",
+          "message": "ICU-23231 Update the ICU 78 download page for the 78.2 release",
+          "timestamp": "2026-01-08T16:23:14-08:00",
+          "tree_id": "9cf9856c44d475e574426aff52faa94df35f586b",
+          "url": "https://github.com/unicode-org/icu/commit/fedc2a727383b31ca46e558dd07bd7d6dab9b749"
+        },
+        "date": 1767918470528,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICUParse",
+            "value": 394.2828979793002,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
