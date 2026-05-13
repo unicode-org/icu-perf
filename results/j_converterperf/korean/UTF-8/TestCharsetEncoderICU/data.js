@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1778548176126,
+  "lastUpdate": 1778635768184,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -45027,6 +45027,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestCharsetEncoderICU",
             "value": 2.616687528788383,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mbanck@debian.org",
+            "name": "Michael Banck",
+            "username": "mbanck"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "7de130650c4698af5f46d0bd30c3ce0b7783919e",
+          "message": "ICU-23402 Fix build on 64bit GNU/Hurd",
+          "timestamp": "2026-05-12T14:02:06-07:00",
+          "tree_id": "5416ea047156a0812aa74f599e106303db948671",
+          "url": "https://github.com/unicode-org/icu/commit/7de130650c4698af5f46d0bd30c3ce0b7783919e"
+        },
+        "date": 1778621173806,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 2.5269379919250166,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "4689a6f4ed185766f38defaf4ca0422aaf38010c",
+          "message": "ICU-23248 Remove 'NEW' tag on very old methods, remove bgcolor",
+          "timestamp": "2026-05-12T17:56:00-07:00",
+          "tree_id": "437c3fc7d2a90d1431668941f79c0054415e1832",
+          "url": "https://github.com/unicode-org/icu/commit/4689a6f4ed185766f38defaf4ca0422aaf38010c"
+        },
+        "date": 1778635256580,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestCharsetEncoderICU",
+            "value": 2.614056502822376,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }

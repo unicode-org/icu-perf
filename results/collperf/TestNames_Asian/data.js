@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1778548802397,
+  "lastUpdate": 1778636591834,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -85641,6 +85641,114 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 1987503.8084,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mbanck@debian.org",
+            "name": "Michael Banck",
+            "username": "mbanck"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "7de130650c4698af5f46d0bd30c3ce0b7783919e",
+          "message": "ICU-23402 Fix build on 64bit GNU/Hurd",
+          "timestamp": "2026-05-12T14:02:06-07:00",
+          "tree_id": "5416ea047156a0812aa74f599e106303db948671",
+          "url": "https://github.com/unicode-org/icu/commit/7de130650c4698af5f46d0bd30c3ce0b7783919e"
+        },
+        "date": 1778621993310,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 228.822,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 9006449.526,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 2116261.0316,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 8069859.1264,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 2088437.058,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "committer": {
+            "email": "nmihai_2000@yahoo.com",
+            "name": "Mihai Nita",
+            "username": "mihnita"
+          },
+          "distinct": true,
+          "id": "4689a6f4ed185766f38defaf4ca0422aaf38010c",
+          "message": "ICU-23248 Remove 'NEW' tag on very old methods, remove bgcolor",
+          "timestamp": "2026-05-12T17:56:00-07:00",
+          "tree_id": "437c3fc7d2a90d1431668941f79c0054415e1832",
+          "url": "https://github.com/unicode-org/icu/commit/4689a6f4ed185766f38defaf4ca0422aaf38010c"
+        },
+        "date": 1778636146698,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 205.6393,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 9046183.7879,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 1975056.4461,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 8324898.6536,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 1940431.2444,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
