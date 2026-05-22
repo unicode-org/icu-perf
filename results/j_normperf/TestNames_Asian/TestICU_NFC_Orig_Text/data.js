@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779371948278,
+  "lastUpdate": 1779468245852,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -45507,6 +45507,66 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestICU_NFC_Orig_Text",
             "value": 3.1380824524766355,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "committer": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "distinct": true,
+          "id": "dbaa22ebbae812355bdd27736f232c354d15d418",
+          "message": "ICU-23376 LinkedHashMap in the DFA minimizer",
+          "timestamp": "2026-05-22T02:12:32+02:00",
+          "tree_id": "602b4ee49275151c079833fd51fc24cd82e7a16f",
+          "url": "https://github.com/unicode-org/icu/commit/dbaa22ebbae812355bdd27736f232c354d15d418"
+        },
+        "date": 1779409032841,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_Orig_Text",
+            "value": 3.148734271134798,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "vichang@google.com",
+            "name": "Victor Chang",
+            "username": "gvictor"
+          },
+          "committer": {
+            "email": "markus.icu@gmail.com",
+            "name": "Markus Scherer",
+            "username": "markusicu"
+          },
+          "distinct": true,
+          "id": "177fbc931d8f7d929c077c2b2254b79a741a4fae",
+          "message": "ICU-23371 Use weak reference for the values in the stvStringPool cache",
+          "timestamp": "2026-05-22T09:35:23-07:00",
+          "tree_id": "d22273f35a54975050250f32c89ebc69871d5044",
+          "url": "https://github.com/unicode-org/icu/commit/177fbc931d8f7d929c077c2b2254b79a741a4fae"
+        },
+        "date": 1779467871880,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestICU_NFC_Orig_Text",
+            "value": 2.5375315066319004,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
