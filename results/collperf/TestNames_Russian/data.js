@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1779841415734,
+  "lastUpdate": 1780405449649,
   "repoUrl": "https://github.com/unicode-org/icu",
   "entries": {
     "Benchmark": [
@@ -86613,6 +86613,168 @@ window.BENCHMARK_DATA = {
           {
             "name": "TestIcu_BinarySearch_usekey",
             "value": 116591.8672,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "committer": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "distinct": true,
+          "id": "69619a44a403d128d869acdec149ff6f7c693c77",
+          "message": "ICU-23404 Dictionary break opportunities before a hard break should not be hard breaks\n\nCo-authored-by: Markus Scherer <markus.icu@gmail.com>",
+          "timestamp": "2026-05-30T01:33:26+02:00",
+          "tree_id": "81df9b2ea26f92b6ba2c696afb57863ef255d9ca",
+          "url": "https://github.com/unicode-org/icu/commit/69619a44a403d128d869acdec149ff6f7c693c77"
+        },
+        "date": 1780100275370,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 530.74,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 603805.6398,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 97864.8681,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 508276.5344,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 71515.326,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "committer": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "distinct": true,
+          "id": "69619a44a403d128d869acdec149ff6f7c693c77",
+          "message": "ICU-23404 Dictionary break opportunities before a hard break should not be hard breaks\n\nCo-authored-by: Markus Scherer <markus.icu@gmail.com>",
+          "timestamp": "2026-05-30T01:33:26+02:00",
+          "tree_id": "81df9b2ea26f92b6ba2c696afb57863ef255d9ca",
+          "url": "https://github.com/unicode-org/icu/commit/69619a44a403d128d869acdec149ff6f7c693c77"
+        },
+        "date": 1780328919313,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 535.7299,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 608420.8539,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 98189.4755,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 508247.6049,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 71091.3451,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "committer": {
+            "email": "egg.robin.leroy@gmail.com",
+            "name": "Robin Leroy",
+            "username": "eggrobin"
+          },
+          "distinct": true,
+          "id": "69619a44a403d128d869acdec149ff6f7c693c77",
+          "message": "ICU-23404 Dictionary break opportunities before a hard break should not be hard breaks\n\nCo-authored-by: Markus Scherer <markus.icu@gmail.com>",
+          "timestamp": "2026-05-30T01:33:26+02:00",
+          "tree_id": "81df9b2ea26f92b6ba2c696afb57863ef255d9ca",
+          "url": "https://github.com/unicode-org/icu/commit/69619a44a403d128d869acdec149ff6f7c693c77"
+        },
+        "date": 1780404971247,
+        "tool": "ndjson",
+        "benches": [
+          {
+            "name": "TestIcu_KeyGen_null",
+            "value": 557.8666,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_strcoll_null",
+            "value": 614114.7546,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_qsort_usekey",
+            "value": 88444.9834,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_strcoll_null",
+            "value": 543445.647,
+            "unit": "ns/iter",
+            "biggerIsBetter": false
+          },
+          {
+            "name": "TestIcu_BinarySearch_usekey",
+            "value": 117766.7069,
             "unit": "ns/iter",
             "biggerIsBetter": false
           }
