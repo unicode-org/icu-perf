@@ -1,9 +1,23 @@
 # icu-perf
 ICU performance test results. Maintained by ICU-TC.
 
+## About this repository
+
+The data files collected in the `results` folder are generated and uploaded here
+by a continuous integration workflow running in
+[the ICU repository](https://github.com/unicode-org/icu)
+
+The workflow is _"GHA ICU Perf Merge CI"_, in the
+`.github/workflows/icu_merge_ci_perf.yml` file.
+
+It used to run as a post-merge action, but it was disabled because it was flaky
+running in the GitHub VMs.
+
+You can manually trigger it either from the GitHub GUI, of from CLI using `gh`.
+
 ## Performance Test Methodology
 
-The performance tests execution and time measurment is a layered process.
+The performance tests execution and time measurement is a layered process.
 
 * API invocation iteration: A performance test invocation for an API under
   tests iterates over the full test data and calls the API once for each test
